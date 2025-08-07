@@ -42,13 +42,9 @@ jobs:
       - name: Run consolidate script
         run: npm run consolidate
 
-      - name: Run Style Dictionary build
-        run: npm run style-build
-
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build-outputs
           path: |
-            dist/
             tokensource.json
