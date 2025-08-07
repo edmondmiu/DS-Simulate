@@ -1,0 +1,20 @@
+{
+  "typography": {
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "lineHeight": "1.5"
+      },
+      "$description": "Base body typography"
+    }
+  },
+  "colors": {
+    "text": {
+      "$type": "color",
+      "$value": "{color.primary}",
+      "$description": "Primary text color using reference"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "button": {
+    "padding": {
+      "$type": "dimension",
+      "$value": "{spacing.base}",
+      "$description": "Button padding using spacing reference"
+    },
+    "background": {
+      "$type": "color",
+      "$value": "{color.primary}",
+      "$description": "Button background color"
+    }
+  }
+}

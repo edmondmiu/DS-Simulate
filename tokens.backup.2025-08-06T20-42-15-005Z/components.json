@@ -1,0 +1,14 @@
+{
+  "button": {
+    "padding": {
+      "$type": "dimension",
+      "$value": "{spacing.md}",
+      "$description": "Button padding"
+    },
+    "borderRadius": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Button border radius"
+    }
+  }
+}

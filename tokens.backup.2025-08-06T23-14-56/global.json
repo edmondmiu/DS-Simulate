@@ -1,0 +1,22 @@
+{
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "$type": "fontFamily",
+        "$value": [
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "Primary font family"
+      }
+    },
+    "fontSize": {
+      "base": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Base font size"
+      }
+    }
+  }
+}

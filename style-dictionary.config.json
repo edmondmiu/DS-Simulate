@@ -1,0 +1,26 @@
+{
+  "source": ["tokensource.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "dist/css/",
+      "files": [
+        {
+          "destination": "tokens.css",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "dart": {
+      "transformGroup": "flutter-separate",
+      "buildPath": "dist/dart/",
+      "files": [
+        {
+          "destination": "tokens.dart",
+          "format": "flutter/define.dart",
+          "className": "DesignTokens"
+        }
+      ]
+    }
+  }
+}

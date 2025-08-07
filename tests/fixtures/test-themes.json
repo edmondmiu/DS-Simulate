@@ -1,0 +1,11 @@
+[
+  {
+    "id": "test-light",
+    "name": "Test Light",
+    "selectedTokenSets": {
+      "core": "source",
+      "global": "enabled",
+      "components": "enabled"
+    }
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "tokenSetOrder": [
+    "core",
+    "global",
+    "global-light",
+    "components"
+  ]
+}

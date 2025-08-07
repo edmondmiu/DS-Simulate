@@ -1,0 +1,49 @@
+{
+  "name": "design-system-tooling",
+  "version": "1.0.0",
+  "description": "Token pipeline tooling for design system development",
+  "main": "dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.1",
+    "npm": ">=10.2.4"
+  },
+  "workspaces": [
+    "scripts",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "consolidate": "npm run build && node dist/scripts/consolidate.js",
+    "split": "npm run build && node dist/scripts/split.js",
+    "import-export": "npm run build && node dist/scripts/import-export.js",
+    "style-build": "npm run build && node dist/scripts/build.js"
+  },
+  "dependencies": {
+    "style-dictionary": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.11.1",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "8.57.0",
+    "jest": "29.7.0",
+    "prettier": "3.2.5",
+    "ts-jest": "^29.4.1",
+    "typescript": "5.4.5"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "style-dictionary",
+    "typescript"
+  ],
+  "author": "Design System Team",
+  "license": "MIT"
+}

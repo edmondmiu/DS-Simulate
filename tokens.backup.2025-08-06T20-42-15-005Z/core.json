@@ -1,0 +1,31 @@
+{
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#007bff",
+      "$description": "Primary brand color"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#6c757d",
+      "$description": "Secondary brand color"
+    }
+  },
+  "spacing": {
+    "xs": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Extra small spacing"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Small spacing"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Medium spacing"
+    }
+  }
+}
