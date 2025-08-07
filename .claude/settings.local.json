@@ -50,7 +50,8 @@
       "Bash(npm ls:*)",
       "Bash(npx style-dictionary:*)",
       "Bash(npm run validate-tokens:*)",
-      "Bash(npx bmad-method:*)"
+      "Bash(npx bmad-method:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

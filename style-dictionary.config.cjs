@@ -14,6 +14,20 @@ module.exports = {
   // Source: Consolidated tokens from Token Studio files  
   source: ['tokensource.json'],
   
+  // Custom transforms for Token Studio modifiers
+  transform: {
+    'custom/color-modifiers': {
+      type: 'value',
+      matcher: (token) => {
+        return token.type === 'color' && token.$extensions && token.$extensions['studio.tokens'];
+      },
+      transformer: (token) => {
+        // For now, return the base reference - modifiers will need proper resolution
+        return token.value;
+      }
+    }
+  },
+  
   // Multi-platform output configuration
   platforms: {
     // Web Developer Format: CSS Custom Properties

@@ -1074,53 +1074,118 @@
           "$description": "Cool Neutral / Cool Neutral 1300\n#F9FAFA\n13.77:1\n(AAA) Large text\n(AAA) Small text"
         }
       },
-      "Neutral Math Test": {
+      "Neutral Modifier Test": {
         "base": {
           "$type": "color",
           "$value": "#35383d",
-          "$description": "Base color for mathematical generation"
+          "$description": "Base color for Token Studio Color Modifiers - your card background"
         },
-        "base-lightness": {
-          "$type": "number",
-          "$value": 0.34
-        },
-        "base-chroma": {
-          "$type": "number",
-          "$value": 0.01
-        },
-        "base-hue": {
-          "$type": "number",
-          "$value": 261
-        },
-        "Math 0000": {
+        "surface-darker": {
           "$type": "color",
-          "$value": "oklch({Neutral Math Test.base-lightness} * 0.25, {Neutral Math Test.base-chroma}, {Neutral Math Test.base-hue})",
-          "$description": "Darkest - 25% of base lightness"
+          "$value": "{Neutral Modifier Test.base}",
+          "$description": "Elevated surface - slightly darker for 3D effect",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.03",
+                "space": "lch"
+              }
+            }
+          }
         },
-        "Math 0300": {
+        "surface-lighter": {
           "$type": "color",
-          "$value": "oklch({Neutral Math Test.base-lightness} * 0.85, {Neutral Math Test.base-chroma}, {Neutral Math Test.base-hue})",
-          "$description": "Card background - 85% of base (subtle difference)"
+          "$value": "{Neutral Modifier Test.base}",
+          "$description": "Interactive surface - slightly lighter for 3D effect",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.03",
+                "space": "lch"
+              }
+            }
+          }
         },
-        "Math 0400": {
+        "surface-subtle-mix": {
           "$type": "color",
-          "$value": "oklch({Neutral Math Test.base-lightness} * 0.90, {Neutral Math Test.base-chroma}, {Neutral Math Test.base-hue})",
-          "$description": "Elevated surface - 90% of base (5% difference for 3D effect)"
+          "$value": "{Neutral Modifier Test.base}",
+          "$description": "Border - mixed with slight blue tint for depth",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "mix",
+                "value": "0.05",
+                "color": "#4a5a6d",
+                "space": "lch"
+              }
+            }
+          }
         },
-        "Math 0500": {
+        "surface-transparent": {
           "$type": "color",
-          "$value": "oklch({Neutral Math Test.base-lightness} * 0.95, {Neutral Math Test.base-chroma} * 1.5, {Neutral Math Test.base-hue})",
-          "$description": "Interactive surface - 95% lightness, increased chroma for distinction"
+          "$value": "{Neutral Modifier Test.base}",
+          "$description": "Overlay surface with transparency",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.8",
+                "space": "lch"
+              }
+            }
+          }
+        }
+      },
+      "Amber Modifier Test": {
+        "base": {
+          "$type": "color",
+          "$value": "#ffd24d",
+          "$description": "Base amber - your primary CTA color"
         },
-        "Math 0600": {
+        "hover": {
           "$type": "color",
-          "$value": "oklch({Neutral Math Test.base-lightness} * 1.0, {Neutral Math Test.base-chroma} * 1.2, {Neutral Math Test.base-hue})",
-          "$description": "Border default - base color"
+          "$value": "{Amber Modifier Test.base}",
+          "$description": "Hover state - slightly lighter",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.1",
+                "space": "lch"
+              }
+            }
+          }
         },
-        "Math 1300": {
+        "active": {
           "$type": "color",
-          "$value": "oklch(0.98, 0, {Neutral Math Test.base-hue})",
-          "$description": "Near white - fixed high lightness"
+          "$value": "{Amber Modifier Test.base}",
+          "$description": "Active state - darker",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.2",
+                "space": "lch"
+              }
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "{Amber Modifier Test.base}",
+          "$description": "Muted version - mixed with neutral",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "mix",
+                "value": "0.3",
+                "color": "#8a8a8a",
+                "space": "lch"
+              }
+            }
+          }
         }
       },
       "Smoked Grey": {
