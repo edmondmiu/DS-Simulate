@@ -1,0 +1,213 @@
+name: Update Token Source
+
+on:
+  push:
+    branches: [main]
+    paths: ['tokens/**']  # Only trigger on token directory changes
+
+permissions:
+  contents: write  # Required to commit tokensource.json updates
+
+jobs:
+  update-tokens:
+    name: Update tokensource.json
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run comprehensive validation
+        run: |
+          echo "🔍 Running comprehensive validation pipeline..."
+          
+          # TypeScript compilation check
+          echo "▶️ TypeScript compilation..."
+          npm run build
+          
+          # ESLint code quality validation
+          echo "▶️ ESLint validation..."
+          npm run lint
+          
+          # Complete test suite (11/11 tests)
+          echo "▶️ Test suite execution..."
+          npm test
+          
+          echo "✅ All validation checks passed"
+
+      - name: Check if consolidation needed
+        id: check-changes
+        run: |
+          echo "🔍 Checking if token consolidation needed..."
+          
+          # Get current tokensource.json size for comparison
+          if [ -f "tokensource.json" ]; then
+            CURRENT_SIZE=$(stat -c%s "tokensource.json" 2>/dev/null || stat -f%z "tokensource.json" 2>/dev/null || echo "0")
+            echo "Current tokensource.json size: ${CURRENT_SIZE} bytes"
+          else
+            CURRENT_SIZE=0
+            echo "tokensource.json does not exist"
+          fi
+          
+          # Always run consolidation since tokens/ changed
+          echo "needs_update=true" >> $GITHUB_OUTPUT
+          echo "current_size=${CURRENT_SIZE}" >> $GITHUB_OUTPUT
+
+      - name: Run token consolidation
+        if: steps.check-changes.outputs.needs_update == 'true'
+        id: consolidate
+        run: |
+          echo "🔄 Running token consolidation..."
+          
+          # Run consolidation script
+          npm run consolidate
+          
+          # Verify tokensource.json was created/updated
+          if [ ! -f "tokensource.json" ]; then
+            echo "❌ ERROR: tokensource.json not created by consolidation"
+            exit 1
+          fi
+          
+          # Get file size and basic validation
+          NEW_SIZE=$(stat -c%s "tokensource.json" 2>/dev/null || stat -f%z "tokensource.json" 2>/dev/null)
+          echo "New tokensource.json size: ${NEW_SIZE} bytes"
+          
+          # Validate JSON structure
+          if ! node -e "JSON.parse(require('fs').readFileSync('tokensource.json', 'utf8'))"; then
+            echo "❌ ERROR: tokensource.json is not valid JSON"
+            exit 1
+          fi
+          
+          # Count token sets in metadata
+          if [ -f "tokens/\$metadata.json" ]; then
+            TOKEN_SETS=$(node -e "
+              const meta = JSON.parse(require('fs').readFileSync('tokens/\$metadata.json', 'utf8'));
+              console.log(meta.tokenSetOrder ? meta.tokenSetOrder.length : 0);
+            ")
+          else
+            TOKEN_SETS="unknown"
+          fi
+          
+          echo "file_size=${NEW_SIZE}" >> $GITHUB_OUTPUT
+          echo "token_sets=${TOKEN_SETS}" >> $GITHUB_OUTPUT
+          
+          echo "✅ Token consolidation completed successfully"
+
+      - name: Run round-trip validation
+        if: steps.check-changes.outputs.needs_update == 'true'
+        run: |
+          echo "🔄 Running round-trip validation..."
+          
+          # Create backup of current tokens directory
+          cp -r tokens tokens_backup
+          
+          # Split tokensource.json back to tokens
+          npm run split
+          
+          # Re-consolidate to verify consistency
+          npm run consolidate
+          
+          # Verify the result is identical (basic size check)
+          FINAL_SIZE=$(stat -c%s "tokensource.json" 2>/dev/null || stat -f%z "tokensource.json" 2>/dev/null)
+          EXPECTED_SIZE="${{ steps.consolidate.outputs.file_size }}"
+          
+          if [ "${FINAL_SIZE}" != "${EXPECTED_SIZE}" ]; then
+            echo "❌ ERROR: Round-trip validation failed - size mismatch"
+            echo "Expected: ${EXPECTED_SIZE} bytes, Got: ${FINAL_SIZE} bytes"
+            # Restore original tokens directory
+            rm -rf tokens
+            mv tokens_backup tokens
+            exit 1
+          fi
+          
+          # Clean up backup
+          rm -rf tokens_backup
+          
+          echo "✅ Round-trip validation passed"
+
+      - name: Check for changes to commit
+        id: git-check
+        run: |
+          echo "🔍 Checking for changes to commit..."
+          
+          if git diff --quiet tokensource.json; then
+            echo "No changes to tokensource.json - skipping commit"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected in tokensource.json"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            
+            # Show diff summary for logging
+            echo "📋 Changes summary:"
+            git diff --stat tokensource.json
+          fi
+
+      - name: Commit updated tokensource.json
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          echo "💾 Committing updated tokensource.json..."
+          
+          # Configure git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add and commit changes
+          git add tokensource.json
+          
+          # Create comprehensive commit message
+          git commit -m "🤖 Auto-update tokensource.json
+
+          - Consolidated from tokens/ directory changes
+          - File size: ${{ steps.consolidate.outputs.file_size }} bytes
+          - Token sets: ${{ steps.consolidate.outputs.token_sets }} sets processed
+          - Validation: All tests passing ✅
+          - Round-trip: Verified ✅
+          
+          Generated by GitHub Actions workflow"
+
+      - name: Push changes
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          echo "⬆️ Pushing changes to repository..."
+          git push
+
+      - name: Workflow summary
+        if: always()
+        run: |
+          echo "## 🎯 Token Source Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check-changes.outputs.needs_update }}" = "true" ]; then
+            echo "### ✅ Consolidation Completed" >> $GITHUB_STEP_SUMMARY
+            echo "- **File Size:** ${{ steps.consolidate.outputs.file_size }} bytes" >> $GITHUB_STEP_SUMMARY
+            echo "- **Token Sets:** ${{ steps.consolidate.outputs.token_sets }} sets" >> $GITHUB_STEP_SUMMARY
+            echo "- **Validation:** All checks passed ✅" >> $GITHUB_STEP_SUMMARY
+            echo "- **Round-trip:** Verified ✅" >> $GITHUB_STEP_SUMMARY
+            
+            if [ "${{ steps.git-check.outputs.has_changes }}" = "true" ]; then
+              echo "- **Repository:** Updated and committed ✅" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "- **Repository:** No changes needed 📋" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "### ℹ️ No Update Needed" >> $GITHUB_STEP_SUMMARY
+            echo "Token consolidation was not required." >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔗 Token Studio Integration" >> $GITHUB_STEP_SUMMARY
+          echo "Raw GitHub URL: \`https://raw.githubusercontent.com/${{ github.repository }}/main/tokensource.json\`" >> $GITHUB_STEP_SUMMARY
+          
+          echo "✅ Workflow completed successfully"

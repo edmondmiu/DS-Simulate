@@ -2,8 +2,10 @@
   "tokenSetOrder": [
     "core",
     "global",
+    "global light",
     "components",
     "bet9ja dark",
+    "bet9ja light",
     "Content Typography"
   ]
 }

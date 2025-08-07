@@ -22,7 +22,9 @@
     "consolidate": "npm run build && node dist/scripts/consolidate.js",
     "split": "npm run build && node dist/scripts/split.js",
     "import-export": "npm run build && node dist/scripts/import-export.js",
-    "style-build": "npm run build && node dist/scripts/build.js"
+    "style-build": "npm run build && node dist/scripts/build.js",
+    "validate-workflow": "node scripts/validate-workflow.js",
+    "validate-token-studio": "node scripts/validate-token-studio.js"
   },
   "dependencies": {
     "style-dictionary": "4.0.0"

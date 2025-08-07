@@ -125,12 +125,56 @@ class ConsolidateScript {
         }
         this.log(`Validated ${tokenPaths.size} token paths for references`);
     }
+    readTokenStudioMetadata() {
+        try {
+            // Read $metadata.json for Token Studio metadata
+            const metadataPath = path.join(this.tokensDir, '$metadata.json');
+            if (fs.existsSync(metadataPath)) {
+                const metadataContent = fs.readFileSync(metadataPath, 'utf8');
+                return JSON.parse(metadataContent);
+            }
+            return null;
+        }
+        catch (error) {
+            this.log(`Warning: Could not read Token Studio metadata: ${error instanceof Error ? error.message : String(error)}`);
+            return null;
+        }
+    }
+    readTokenStudioThemes() {
+        try {
+            // Read $themes.json for Token Studio themes
+            const themesPath = path.join(this.tokensDir, '$themes.json');
+            if (fs.existsSync(themesPath)) {
+                const themesContent = fs.readFileSync(themesPath, 'utf8');
+                return JSON.parse(themesContent);
+            }
+            return null;
+        }
+        catch (error) {
+            this.log(`Warning: Could not read Token Studio themes: ${error instanceof Error ? error.message : String(error)}`);
+            return null;
+        }
+    }
     writeConsolidatedTokens(consolidatedTokens) {
         try {
             // Validate token references before writing
             this.validateTokenReferences(consolidatedTokens);
+            // Create Token Studio compatible output structure
+            const tokenStudioOutput = { ...consolidatedTokens };
+            // Add Token Studio metadata if available
+            const tokenStudioMetadata = this.readTokenStudioMetadata();
+            if (tokenStudioMetadata) {
+                tokenStudioOutput.$metadata = tokenStudioMetadata;
+                this.log('Added Token Studio $metadata');
+            }
+            // Add Token Studio themes if available
+            const tokenStudioThemes = this.readTokenStudioThemes();
+            if (tokenStudioThemes) {
+                tokenStudioOutput.$themes = tokenStudioThemes;
+                this.log('Added Token Studio $themes');
+            }
             // Format JSON with proper indentation (2 spaces as specified)
-            const jsonOutput = JSON.stringify(consolidatedTokens, null, 2);
+            const jsonOutput = JSON.stringify(tokenStudioOutput, null, 2);
             // Ensure output directory exists
             const outputDir = path.dirname(this.outputFile);
             if (!fs.existsSync(outputDir)) {
@@ -141,6 +185,13 @@ class ConsolidateScript {
             // Verify output file was created
             const stats = fs.statSync(this.outputFile);
             this.log(`Output written to ${this.outputFile} (${stats.size} bytes)`);
+            // Log Token Studio compatibility
+            if (tokenStudioMetadata || tokenStudioThemes) {
+                this.log('Token Studio compatibility: Enhanced with metadata and themes');
+            }
+            else {
+                this.log('Token Studio compatibility: Basic (tokens only)');
+            }
         }
         catch (error) {
             throw new Error(`Failed to write consolidated tokens: ${error instanceof Error ? error.message : String(error)}`);

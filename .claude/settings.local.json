@@ -28,7 +28,17 @@
       "Bash(diff:*)",
       "Bash(rm:*)",
       "Bash(npm run import-export:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(gh repo view:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git tag:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(chmod:*)",
+      "Bash(npm run validate-workflow:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
