@@ -1074,6 +1074,55 @@
           "$description": "Cool Neutral / Cool Neutral 1300\n#F9FAFA\n13.77:1\n(AAA) Large text\n(AAA) Small text"
         }
       },
+      "Neutral Math Test": {
+        "base": {
+          "$type": "color",
+          "$value": "#35383d",
+          "$description": "Base color for mathematical generation"
+        },
+        "base-lightness": {
+          "$type": "number",
+          "$value": 0.34
+        },
+        "base-chroma": {
+          "$type": "number",
+          "$value": 0.01
+        },
+        "base-hue": {
+          "$type": "number",
+          "$value": 261
+        },
+        "Math 0000": {
+          "$type": "color",
+          "$value": "oklch({Neutral Math Test.base-lightness} * 0.25, {Neutral Math Test.base-chroma}, {Neutral Math Test.base-hue})",
+          "$description": "Darkest - 25% of base lightness"
+        },
+        "Math 0300": {
+          "$type": "color",
+          "$value": "oklch({Neutral Math Test.base-lightness} * 0.85, {Neutral Math Test.base-chroma}, {Neutral Math Test.base-hue})",
+          "$description": "Card background - 85% of base (subtle difference)"
+        },
+        "Math 0400": {
+          "$type": "color",
+          "$value": "oklch({Neutral Math Test.base-lightness} * 0.90, {Neutral Math Test.base-chroma}, {Neutral Math Test.base-hue})",
+          "$description": "Elevated surface - 90% of base (5% difference for 3D effect)"
+        },
+        "Math 0500": {
+          "$type": "color",
+          "$value": "oklch({Neutral Math Test.base-lightness} * 0.95, {Neutral Math Test.base-chroma} * 1.5, {Neutral Math Test.base-hue})",
+          "$description": "Interactive surface - 95% lightness, increased chroma for distinction"
+        },
+        "Math 0600": {
+          "$type": "color",
+          "$value": "oklch({Neutral Math Test.base-lightness} * 1.0, {Neutral Math Test.base-chroma} * 1.2, {Neutral Math Test.base-hue})",
+          "$description": "Border default - base color"
+        },
+        "Math 1300": {
+          "$type": "color",
+          "$value": "oklch(0.98, 0, {Neutral Math Test.base-hue})",
+          "$description": "Near white - fixed high lightness"
+        }
+      },
       "Smoked Grey": {
         "Smoked Grey 0000": {
           "$type": "color",
@@ -3663,7 +3712,9 @@
       "components",
       "bet9ja dark",
       "bet9ja light",
-      "Content Typography"
+      "Content Typography",
+      "$metadata",
+      "$themes"
     ]
   },
   "$themes": [

@@ -38,7 +38,19 @@
       "WebFetch(domain:github.com)",
       "Bash(chmod:*)",
       "Bash(npm run validate-workflow:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(jq:*)",
+      "Bash(for file in \"core.json\" \"global.json\" \"global light.json\" \"components.json\" \"bet9ja dark.json\" \"bet9ja light.json\")",
+      "Bash(do echo \"Checking $file:\")",
+      "Bash(if [ -f \"tokens/$file\" ])",
+      "Bash(then echo \"✅ EXISTS\")",
+      "Bash(else echo \"❌ MISSING\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(npm ls:*)",
+      "Bash(npx style-dictionary:*)",
+      "Bash(npm run validate-tokens:*)",
+      "Bash(npx bmad-method:*)"
     ],
     "deny": []
   }

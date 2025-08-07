@@ -23,10 +23,14 @@
     "split": "npm run build && node dist/scripts/split.js",
     "import-export": "npm run build && node dist/scripts/import-export.js",
     "style-build": "npm run build && node dist/scripts/build.js",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.cjs",
+    "validate-tokens": "npm run build:tokens && echo 'Token build validation completed'",
     "validate-workflow": "node scripts/validate-workflow.js",
     "validate-token-studio": "node scripts/validate-token-studio.js"
   },
   "dependencies": {
+    "bmad-method": "^4.35.3",
+    "culori": "^4.0.2",
     "style-dictionary": "4.0.0"
   },
   "devDependencies": {

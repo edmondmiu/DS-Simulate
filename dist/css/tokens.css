@@ -1,0 +1,2303 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --core-color-ramp-black-black-000: #272a2f; /* darkest colour */
+  /**
+   * Amber / Amber 0000
+   * #1c1602
+   * Darkest amber
+   */
+  --core-color-ramp-amber-amber-0000: #1c1602;
+  /**
+   * Amber / Amber 0100
+   * #2f2404
+   * Very dark amber
+   */
+  --core-color-ramp-amber-amber-0100: #2f2404;
+  /**
+   * Amber / Amber 0200
+   * #4b3a06
+   * Dark amber
+   */
+  --core-color-ramp-amber-amber-0200: #4b3a06;
+  /**
+   * Amber / Amber 0300
+   * #7a5c00
+   * Medium dark amber
+   */
+  --core-color-ramp-amber-amber-0300: #7a5c00;
+  /**
+   * Amber / Amber 0400
+   * #b38600
+   * Active state
+   */
+  --core-color-ramp-amber-amber-0400: #b38600;
+  /**
+   * Amber / Amber 0500
+   * #ffd24d
+   * Primary CTA default (gradient end)
+   */
+  --core-color-ramp-amber-amber-0500: #ffd24d;
+  /**
+   * Amber / Amber 0600
+   * #ffdf80
+   * Primary CTA hover (gradient start)
+   */
+  --core-color-ramp-amber-amber-0600: #ffdf80;
+  /**
+   * Amber / Amber 0700
+   * #ffe8a3
+   * Light amber
+   */
+  --core-color-ramp-amber-amber-0700: #ffe8a3;
+  /**
+   * Amber / Amber 0800
+   * #fceec5
+   * Very light amber
+   */
+  --core-color-ramp-amber-amber-0800: #fceec5;
+  /**
+   * Amber / Amber 0900
+   * #fbf3da
+   * Very light amber
+   */
+  --core-color-ramp-amber-amber-0900: #fbf3da;
+  /**
+   * Amber / Amber 1000
+   * #fbf7e9
+   * Pale amber
+   */
+  --core-color-ramp-amber-amber-1000: #fbf7e9;
+  /**
+   * Amber / Amber 1100
+   * #fcfaf2
+   * Very pale amber
+   */
+  --core-color-ramp-amber-amber-1100: #fcfaf2;
+  /**
+   * Amber / Amber 1200
+   * #fdfbf7
+   * Near white amber
+   */
+  --core-color-ramp-amber-amber-1200: #fdfbf7;
+  /**
+   * Amber / Amber 1300
+   * #fefdfb
+   * Lightest amber
+   */
+  --core-color-ramp-amber-amber-1300: #fefdfb;
+  /**
+   * Neutral / Neutral 0000
+   * #17181c
+   * Darkest background
+   */
+  --core-color-ramp-neutral-neutral-0000: #17181c;
+  /**
+   * Neutral / Neutral 0100
+   * #1c1d21
+   * Very dark background
+   */
+  --core-color-ramp-neutral-neutral-0100: #1c1d21;
+  /**
+   * Neutral / Neutral 0200
+   * #202225
+   * Dark background
+   */
+  --core-color-ramp-neutral-neutral-0200: #202225;
+  /**
+   * Neutral / Neutral 0300
+   * #35383d
+   * Card background
+   */
+  --core-color-ramp-neutral-neutral-0300: #35383d;
+  /**
+   * Neutral / Neutral 0400
+   * #3a3d42
+   * Elevated surface
+   */
+  --core-color-ramp-neutral-neutral-0400: #3a3d42;
+  /**
+   * Neutral / Neutral 0500
+   * #353642
+   * Interactive surface
+   */
+  --core-color-ramp-neutral-neutral-0500: #353642;
+  /**
+   * Neutral / Neutral 0600
+   * #484a55
+   * Border default
+   */
+  --core-color-ramp-neutral-neutral-0600: #484a55;
+  /**
+   * Neutral / Neutral 0700
+   * #595b6a
+   * Button surface
+   */
+  --core-color-ramp-neutral-neutral-0700: #595b6a;
+  /**
+   * Neutral / Neutral 0800
+   * #727284
+   * Tertiary text
+   */
+  --core-color-ramp-neutral-neutral-0800: #727284;
+  /**
+   * Neutral / Neutral 0900
+   * #8a8a8a
+   * Medium grey
+   */
+  --core-color-ramp-neutral-neutral-0900: #8a8a8a;
+  /**
+   * Neutral / Neutral 1000
+   * #aeb4b9
+   * Secondary text
+   */
+  --core-color-ramp-neutral-neutral-1000: #aeb4b9;
+  /**
+   * Neutral / Neutral 1100
+   * #cccccc
+   * Light grey
+   */
+  --core-color-ramp-neutral-neutral-1100: #cccccc;
+  /**
+   * Neutral / Neutral 1200
+   * #dee2e7
+   * Primary text
+   */
+  --core-color-ramp-neutral-neutral-1200: #dee2e7;
+  /**
+   * Neutral / Neutral 1300
+   * #ffffff
+   * Pure white
+   */
+  --core-color-ramp-neutral-neutral-1300: #ffffff;
+  /**
+   * Red / Red 000
+   * #6D0A0A
+   * 1.16:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-red-red-0000: #6d0a0a;
+  /**
+   * Red / Red 100
+   * #740B0B
+   * 1.23:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-red-red-0100: #740b0b;
+  /**
+   * Red / Red 200
+   * #8D0D0D
+   * 1.51:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-red-red-0200: #8d0d0d;
+  /**
+   * Red / Red 300
+   * #AE1111
+   * 1.98:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-red-red-0300: #ae1111;
+  /**
+   * Red / Red 400
+   * #D41414
+   * 2.68:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-red-red-0400: #d41414;
+  /**
+   * Red / Red 500
+   * #ED3D3D
+   * 3.66:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-red-red-0500: #ed3d3d;
+  /**
+   * Red / Red 600
+   * #F16E6E
+   * 4.93:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-red-red-0600: #f16e6e;
+  /**
+   * Red / Red 700
+   * #F59595
+   * 6.59:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-red-red-0700: #f59595;
+  /**
+   * Red / Red 800
+   * #F8B9B9
+   * 8.66:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-red-red-0800: #f8b9b9;
+  /**
+   * Green / Green 900
+   * #9BF4C0
+   * 11.04:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-red-red-0900: #fbd9d9;
+  /**
+   * Green / Green 1000
+   * #BDF7D6
+   * 11.96:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-red-red-1000: #fce4e4;
+  /**
+   * Green / Green 1100
+   * #DBFBE8
+   * 13.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-red-red-1100: #fef0f0;
+  /**
+   * Green / Green 1200
+   * #E9FCF1
+   * 13.48:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-red-red-1200: #fef5f5;
+  /**
+   * Red / Red 900
+   * #FFFAFA
+   * 13.92:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-red-red-1300: #fffafa;
+  /**
+   * Green / Green 000
+   * #073C1D
+   * 1.15:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-green-green-0000: #073c1d;
+  /**
+   * Green / Green 100
+   * #074120
+   * 1.22:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-green-green-0100: #074120;
+  /**
+   * Green / Green 200
+   * #095027
+   * 1.50:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-green-green-0200: #095027;
+  /**
+   * Green / Green 300
+   * #0B6431
+   * 1.98:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-green-green-0300: #0b6431;
+  /**
+   * Green / Green 400
+   * #0d7B3C
+   * 2.69:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-green-green-0400: #0d7b3c;
+  /**
+   * Green / Green 500
+   * #119348
+   * 3.63:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-green-green-0500: #119348;
+  /**
+   * Green / Green 600
+   * #14AE55
+   * 4.95:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-green-green-0600: #14ae55;
+  /**
+   * Green / Green 700
+   * #17CA62
+   * 6.62:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-green-green-0700: #17ca62;
+  /**
+   * Green / Green 800
+   * #24E676
+   * 8.68:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-green-green-0800: #24e676;
+  /**
+   * Green / Green 900
+   * #9BF4C0
+   * 11.04:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-green-green-0900: #9bf4c0;
+  /**
+   * Green / Green 1000
+   * #BDF7D6
+   * 11.96:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-green-green-1000: #bdf7d6;
+  /**
+   * Green / Green 1100
+   * #DBFBE8
+   * 13.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-green-green-1100: #dbfbe8;
+  /**
+   * Green / Green 1200
+   * #E9FCF1
+   * 13.48:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-green-green-1200: #e9fcf1;
+  /**
+   * Green / Green 1300
+   * #F5FEF9
+   * 14.01:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-green-green-1300: #f5fef9;
+  /**
+   * Orange / Orange 000
+   * #572706
+   * 1.16:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-orange-orange-0000: #572706;
+  /**
+   * Orange / Orange 100
+   * #5C2907
+   * 1.22:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-orange-orange-0100: #5c2907;
+  /**
+   * Orange / Orange 200
+   * #723308
+   * 1.50:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-orange-orange-0200: #723308;
+  /**
+   * Orange / Orange 300
+   * #8E400A
+   * 1.98:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-orange-orange-0300: #8e400a;
+  /**
+   * Orange / Orange 400
+   * #AE4F0C
+   * 2.69:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-orange-orange-0400: #ae4f0c;
+  /**
+   * Orange / Orange 500
+   * #D15E0F
+   * 3.65:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-orange-orange-0500: #d15e0f;
+  /**
+   * Orange / Orange 600
+   * #EF7520
+   * 4.96:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-orange-orange-0600: #ef7520;
+  /**
+   * Orange / Orange 700
+   * #F5A56F
+   * 7.20:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-0700: #f5a56f;
+  /**
+   * Orange / Orange 800
+   * #F7BD94
+   * 8.68:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-0800: #f7bd94;
+  /**
+   * Orange / Orange 900
+   * #FBDBC6
+   * 11.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-0900: #fbdbc6;
+  /**
+   * Orange / Orange 1000
+   * #FCE6D8
+   * 11.96:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-1000: #fce6d8;
+  /**
+   * Orange / Orange 1000
+   * #FDF1E9
+   * 12.98:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-1100: #fdf1e9;
+  /**
+   * Orange / Orange 1100
+   * #FEF6F1
+   * 13.48:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-1200: #fef6f1;
+  /**
+   * Orange / Orange 1300
+   * #FFFBF9
+   * 14.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-orange-orange-1300: #fffbf9;
+  /**
+   * Yellow / Yellow 000
+   * #373531
+   * 1.18:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0000: #373531;
+  /**
+   * Yellow / Yellow 100
+   * #3B3831
+   * 1.23:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0100: #3b3831;
+  /**
+   * Yellow / Yellow 200
+   * #4D4532
+   * 1.52:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0200: #4d4532;
+  /**
+   * Yellow / Yellow 300
+   * #645733
+   * 2.02:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0300: #645733;
+  /**
+   * Yellow / Yellow 400
+   * #7B6A33
+   * 2.71:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0400: #7b6a33;
+  /**
+   * Yellow / Yellow 500
+   * #957F31
+   * 3.67:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0500: #957f31;
+  /**
+   * Yellow / Yellow 600
+   * #B79A2C
+   * 5.26:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0600: #b79a2c;
+  /**
+   * Yellow / Yellow 700
+   * #D6B522
+   * 7.19:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0700: #d6b522;
+  /**
+   * Yellow / Yellow 800
+   * #FFD600
+   * 10.20:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0800: #ffd600;
+  /**
+   * Yellow / Yellow 900
+   * #FFE900
+   * 11.59:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-0900: #ffe900;
+  /**
+   * Yellow / Yellow 1000
+   * #FFF07E
+   * 12.35:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-1000: #fff07e;
+  /**
+   * Yellow / Yellow 1100
+   * #FFF4C9
+   * 12.98:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-1100: #fff5ae;
+  /**
+   * Yellow / Yellow 1200
+   * #FFFAD4
+   * 13.63:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-1200: #fffad4;
+  /**
+   * Yellow / Yellow 1300
+   * #FFFCEA
+   * 13.96:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-yellow-yellow-1300: #fffcea;
+  /**
+   * Gold Yellow / Gold Yellow 000
+   * #493012
+   * 1.18:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0000: #493012;
+  /**
+   * Gold Yellow / Gold Yellow 100
+   * #4c3312
+   * 1.23:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0100: #4c3312;
+  /**
+   * Gold Yellow / Gold Yellow 200
+   * #603f13
+   * 1.52:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0200: #603f13;
+  /**
+   * Gold Yellow / Gold Yellow 300
+   * #784f14
+   * 2.01:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0300: #784f14;
+  /**
+   * Gold Yellow / Gold Yellow 400
+   * #956014
+   * 2.72:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0400: #956014;
+  /**
+   * Gold Yellow / Gold Yellow 500
+   * #b27312
+   * 3.67:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0500: #b27312;
+  /**
+   * Gold Yellow / Gold Yellow 600
+   * #d98c0c
+   * 5.28:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0600: #d98c0c;
+  /**
+   * Gold Yellow / Gold Yellow 700
+   * #ffa300
+   * 7.19:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0700: #ffa300;
+  /**
+   * Gold Yellow / Gold Yellow 800
+   * #ffbc60
+   * 8.65:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0800: #ffbc60;
+  /**
+   * Gold Yellow / Gold Yellow 900
+   * #ffdcad
+   * 11.03:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-0900: #ffdcad;
+  /**
+   * Gold Yellow / Gold Yellow 1000
+   * #ffebcf
+   * 12.37:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-1000: #ffebcf;
+  /**
+   * Gold Yellow / Gold Yellow 1100
+   * #fff1df
+   * 12.96:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-1100: #fff1df;
+  /**
+   * Gold Yellow / Gold Yellow 1200
+   * #fff7ed
+   * 13.56:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-1200: #fff7ed;
+  /**
+   * Gold Yellow / Gold Yellow 1300
+   * 
+   * #fffcf7
+   * 14.07:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-gold-yellow-gold-yellow-1300: #fffcf7;
+  /**
+   * Royal Blue / Royal Blue 000
+   * #002d72
+   * 1.07:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0000: #002d72;
+  /**
+   * Royal Blue / Royal Blue 100
+   * #003587
+   * 1.24:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0100: #003587;
+  /**
+   * Royal Blue / Royal Blue 200
+   * #003B92
+   * 1.36:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0200: #003b92;
+  /**
+   * Royal Blue / Royal Blue 300
+   * #003F97
+   * 1.44:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0300: #003f97;
+  /**
+   * Royal Blue / Royal Blue 400
+   * #0046A0
+   * 2.59:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0400: #0046a0;
+  /**
+   * Royal Blue / Royal Blue 500
+   * #1B57AE
+   * 2.01:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0500: #1b57ae;
+  /**
+   * Royal Blue / Royal Blue 600
+   * #075ECF
+   * 2.73:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0600: #075ecf;
+  /**
+   * Royal Blue / Royal Blue 700
+   * #4984D3
+   * 3.68:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0700: #4984d3;
+  /**
+   * Royal Blue / Royal Blue 800
+   * #67A2EA
+   * 5.28:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0800: #67a2ea;
+  /**
+   * Royal Blue / Royal Blue 900
+   * #83BFFF
+   * 7.23:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-0900: #83bfff;
+  /**
+   * Royal Blue / Royal Blue 1000
+   * #A7CFFF
+   * 8.66:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-1000: #a7cfff;
+  /**
+   * Royal Blue / Royal Blue 1100
+   * #D3E6FF
+   * 11.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-1100: #d3e6ff;
+  /**
+   * Royal Blue / Royal Blue 1200
+   * #E8F2FF
+   * 12.36:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-1200: #e8f2ff;
+  /**
+   * Royal Blue / Royal Blue 1300
+   * #F9FBFF
+   * 13.49:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-royal-blue-royal-blue-1300: #f9fbff;
+  /**
+   * Deep Blue / Deep Blue 000
+   * #2D2F4C
+   * 1.08:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0000: #2d2f4c;
+  /**
+   * Deep Blue / Deep Blue 100
+   * #373855
+   * 1.24:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0100: #373855;
+  /**
+   * Deep Blue / Deep Blue 200
+   * #603f13
+   * 1.35:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0200: #3d3e5a;
+  /**
+   * Deep Blue / Deep Blue 300
+   * #41425E
+   * 1.44:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0300: #41425e;
+  /**
+   * Deep Blue / Deep Blue 400
+   * #484863
+   * 1.59:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0400: #484863;
+  /**
+   * Deep Blue / Deep Blue 500
+   * #575770
+   * 2.00:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0500: #575770;
+  /**
+   * Deep Blue / Deep Blue 600
+   * #6C6C82
+   * 2.73:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0600: #6c6c82;
+  /**
+   * Deep Blue / Deep Blue 700
+   * #828195
+   * 3.68:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0700: #828195;
+  /**
+   * Deep Blue / Deep Blue 800
+   * #9E9EAD
+   * 5.29:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0800: #9e9ead;
+  /**
+   * Deep Blue / Deep Blue 900
+   * #BAB9C5
+   * 7.21:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-0900: #bab9c5;
+  /**
+   * Gold Yellow / Gold Yellow 1000
+   * #CBCAD3
+   * 8.60:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-1000: #cbcad3;
+  /**
+   * Deep Blue / Deep Blue 1100
+   * #E4E3E8
+   * 10.95:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-1100: #e4e3e8;
+  /**
+   * Deep Blue / Deep Blue 1200
+   * #F1F0F3
+   * 12.31:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-1200: #f1f0f3;
+  /**
+   * Deep Blue / Deep Blue 1300
+   * 
+   * #FCFBFC
+   * 13.54:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-deep-blue-deep-blue-1300: #fcfbfc;
+  /**
+   * Midnight / Midnight 000
+   * #1d1c2b
+   * 1.25:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0000: #1d1c2b;
+  /**
+   * Midnight / Midnight 100
+   * #2A2D3F
+   * 1.28:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0100: #2a2d3f;
+  /**
+   * Midnight / Midnight 200
+   * #313452
+   * 1.32:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0200: #313452;
+  /**
+   * Midnight / Midnight 300
+   * #3E415C
+   * 1.47:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0300: #3e415c;
+  /**
+   * Midnight / Midnight 400
+   * #52526B
+   * 1.68:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0400: #52526b;
+  /**
+   * Midnight / Midnight 500
+   * #373855
+   * 1.86:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0500: #373855;
+  /**
+   * Midnight / Midnight 600
+   * #3b3d59
+   * 2.00:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0600: #3b3d59;
+  /**
+   * Midnight / Midnight 700
+   * #3c3e5a
+   * 2.03:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0700: #3c3e5a;
+  /**
+   * Midnight / Midnight 800
+   * #52526b
+   * 2.78:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0800: #52526b;
+  /**
+   * Midnight / Midnight 900
+   * #757589
+   * 4.66:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-midnight-midnight-0900: #757589;
+  /**
+   * Midnight / Midnight 1000
+   * #9393a2
+   * 6.94:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-midnight-midnight-1000: #9393a2;
+  /**
+   * Midnight / Midnight 1100
+   * #aeafb9
+   * 9.63:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-midnight-midnight-1100: #aeafb9;
+  /**
+   * Midnight / Midnight 1200
+   * #c7c9ce
+   * 12.67:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-midnight-midnight-1200: #c7c9ce;
+  /**
+   * Midnight / Midnight 1300
+   * 
+   * #fafbfc
+   * 20.27:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-midnight-midnight-1300: #fafbfc;
+  /**
+   * Mint / Mint 000
+   * #003D23
+   * 1.16:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0000: #003d23;
+  /**
+   * Mint / Mint 100
+   * #004125
+   * 1.22:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0100: #004125;
+  /**
+   * Mint / Mint 200
+   * #00502D
+   * 1.50:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0200: #00502d;
+  /**
+   * Mint / Mint 300
+   * #006439
+   * 1.98:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0300: #006439;
+  /**
+   * Mint / Mint 400
+   * #007B46
+   * 2.69:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0400: #007b46;
+  /**
+   * Mint / Mint 500
+   * #009354
+   * 3.63:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0500: #009354;
+  /**
+   * Mint / Mint 600
+   * #2EAB75
+   * 4.94:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0600: #2eab75;
+  /**
+   * Mint / Mint 700
+   * #74C7A4
+   * 7.16:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0700: #74c7a4;
+  /**
+   * Mint / Mint 800
+   * #98D6BB
+   * 8.69:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-mint-mint-0800: #98d6bb;
+  /**
+   * Mint / Mint 900
+   * #C7E9DA
+   * 11.04:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-mint-mint-0900: #c7e9da;
+  /**
+   * Mint / Mint 1000
+   * #D8F0E5
+   * 12.01:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-mint-mint-1000: #d8f0e5;
+  /**
+   * Mint / Mint 1100
+   * #EAF6F1
+   * 12.99:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-mint-mint-1100: #eaf6f1;
+  /**
+   * Mint / Mint 1200
+   * #F1FAF6
+   * 13.54:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-mint-mint-1200: #f1faf6;
+  /**
+   * Mint / Mint 1300
+   * #F9FCFB
+   * 13.95:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-mint-mint-1300: #f9fcfb;
+  /**
+   * Tiger Orange / Tiger Orange 000
+   * #542C10
+   * 1.20:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0000: #542c10;
+  /**
+   * Tiger Orange / Tiger Orange 100
+   * #693511
+   * 1.45:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0100: #693511;
+  /**
+   * Tiger Orange / Tiger Orange 200
+   * #7E3F11
+   * 1.79:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0200: #7e3f11;
+  /**
+   * Tiger Orange / Tiger Orange 300
+   * #984A11
+   * 2.28:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0300: #984a11;
+  /**
+   * Tiger Orange / Tiger Orange 400
+   * #BC5B0E
+   * 3.18:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0400: #bc5b0e;
+  /**
+   * Tiger Orange / Tiger Orange 500
+   * #E06B08
+   * 4.30:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0500: #e06b08;
+  /**
+   * Tiger Orange / Tiger Orange 600
+   * #FF7800
+   * 5.44:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0600: #ff7800;
+  /**
+   * Tiger Orange / Tiger Orange 700
+   * #FFA35F
+   * 7.31:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0700: #ffa35f;
+  /**
+   * Tiger Orange / Tiger Orange 800
+   * #FFBA88
+   * 8.66:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0800: #ffba88;
+  /**
+   * Tiger Orange / Tiger Orange 900
+   * #FFDABF
+   * 10.99:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-0900: #ffdabf;
+  /**
+   * Tiger Orange / Tiger Orange 1000
+   * #FFEADB
+   * 12.37:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-1000: #ffeadb;
+  /**
+   * Tiger Orange / Tiger Orange 1100
+   * #FFF1E5
+   * 13.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-1100: #fff1e5;
+  /**
+   * Tiger Orange / Tiger Orange 1200
+   * #FFF7F2
+   * 13.60:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-1200: #fff7f2;
+  /**
+   * Tiger Orange / Tiger Orange 1300
+   * #FFFBF9
+   * 14.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-tiger-orange-tiger-orange-1300: #fffbf9;
+  --core-color-ramp-neutral-light-neutral-light-0000: #f9f9f9;
+  --core-color-ramp-neutral-light-neutral-light-0100: #f3f3f3;
+  --core-color-ramp-neutral-light-neutral-light-0200: #eaeaea;
+  --core-color-ramp-neutral-light-neutral-light-0300: #e1e1e1;
+  --core-color-ramp-neutral-light-neutral-light-0400: #d7d7d7;
+  --core-color-ramp-neutral-light-neutral-light-0500: #c9c9c9;
+  --core-color-ramp-neutral-light-neutral-light-0600: #b1b1b1;
+  --core-color-ramp-neutral-light-neutral-light-0700: #979797;
+  --core-color-ramp-neutral-light-neutral-light-0800: #808080;
+  --core-color-ramp-neutral-light-neutral-light-0900: #6a6a6a;
+  --core-color-ramp-neutral-light-neutral-light-1000: #575757;
+  --core-color-ramp-neutral-light-neutral-light-1100: #454545;
+  --core-color-ramp-neutral-light-neutral-light-1200: #383838;
+  --core-color-ramp-neutral-light-neutral-light-1300: #343434;
+  /**
+   * Neon Green / Neon Green 100
+   * #004400
+   * 1.25:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0000: #004400;
+  /**
+   * Neon Green / Neon Green 200
+   * #005200
+   * 1.51:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0100: #005200;
+  /**
+   * Neon Green / Neon Green 300
+   * #006600
+   * 1.99:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0200: #006600;
+  /**
+   * Neon Green / Neon Green 400
+   * #008A00
+   * 3.18:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0300: #008a00;
+  /**
+   * Neon Green / Neon Green 500
+   * #00B600
+   * 5.27:1
+   * (AA) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0400: #00b600;
+  /**
+   * Neon Green / Neon Green 600
+   * #00CF00
+   * 6.81:1
+   * (AAA) Large text
+   * (AA) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0500: #00cf00;
+  /**
+   * Neon Green / Neon Green 700
+   * #00E600
+   * 8.45:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0600: #00e600;
+  /**
+   * Neon Green / Neon Green 800
+   * #00FF00
+   * 10.49:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-neon-green-neon-green-0700: #00ff00;
+  /**
+   * Neon Green / Neon Green 900
+   * #69FF69
+   * 11.04:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-neon-green-neon-green-0800: #69ff69;
+  /**
+   * Neon Green / Neon Green 1000
+   * #A7FFA7
+   * 12.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-neon-green-neon-green-0900: #a7ffa7;
+  /**
+   * Neon Green / Neon Green 1100
+   * #D2FFD2
+   * 13.01:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-neon-green-neon-green-1000: #d2ffd2;
+  /**
+   * Neon Green / Neon Green 1200
+   * #E5FFE5
+   * 13.55:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-neon-green-neon-green-1100: #e5ffe5;
+  /**
+   * Neon Green / Neon Green 1300
+   * #F3FFF3
+   * 13.99:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --core-color-ramp-neon-green-neon-green-1200: #f3fff3;
+  /**
+   * Neon Green / Neon Green 000
+   * #003E00
+   * 1.16:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --core-color-ramp-neon-green-neon-green-1300: #003e00;
+  /**
+   * Cool Neutral / Cool Neutral 000
+   * #313436
+   * 1.15:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0000: #313436;
+  /**
+   * Cool Neutral / Cool Neutral 100
+   * #34383B
+   * 1.22:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0100: #34383b;
+  /**
+   * Cool Neutral / Cool Neutral 200
+   * #42464A
+   * 1.51:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0200: #42464a;
+  /**
+   * Cool Neutral / Cool Neutral 300
+   * #52585C
+   * 1.99:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0300: #52585c;
+  /**
+   * Cool Neutral / Cool Neutral 400
+   * #656B71
+   * 2.67:1
+   * (N/A) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0400: #656b71;
+  /**
+   * Cool Neutral / Cool Neutral 500
+   * #7A8188
+   * 3.65:1
+   * (AA) Large text
+   * (N/A) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0500: #7a8188;
+  /**
+   * Cool Neutral / Cool Neutral 600
+   * #92989D
+   * 4.94:1
+   * (AAA) Large text
+   * (AA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0600: #92989d;
+  /**
+   * Cool Neutral / Cool Neutral 700
+   * #ADB2B6
+   * 6.73:1
+   * (AAA) Large text
+   * (AA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0700: #adb2b6;
+  /**
+   * Cool Neutral / Cool Neutral 800
+   * #C6C9CC
+   * 8.66:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0800: #c6c9cc;
+  /**
+   * Cool Neutral / Cool Neutral 800
+   * #D5D7D9
+   * 9.98:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-0900: #d5d7d9;
+  /**
+   * Cool Neutral / Cool Neutral 1000
+   * #E0E1E3
+   * 11.00:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-1000: #e0e1e3;
+  /**
+   * Cool Neutral / Cool Neutral 1100
+   * #E9EBEC
+   * 12.04:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-1100: #e9ebec;
+  /**
+   * Cool Neutral / Cool Neutral 1200
+   * #F3F3F4
+   * 12.98:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-1200: #f3f3f4;
+  /**
+   * Cool Neutral / Cool Neutral 1300
+   * #F9FAFA
+   * 13.77:1
+   * (AAA) Large text
+   * (AAA) Small text
+   */
+  --core-color-ramp-cool-neutral-cool-neutral-1300: #f9fafa;
+  --core-color-ramp-smoked-grey-smoked-grey-0000: #222426; /* Background of cool neutral */
+  /**
+   * Logifuture Green.100
+   * #034123
+   * 1.22:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0000: #034123;
+  /**
+   * Logifuture Green.200
+   * #04502B
+   * 1.50:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0100: #04502b;
+  /**
+   * Logifuture Green.300
+   * #056436
+   * 1.98:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0200: #056436;
+  /**
+   * Logifuture Green.400
+   * #067B42
+   * 2.69:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0300: #067b42;
+  /**
+   * Logifuture Green.500
+   * #079350
+   * 3.63:1
+   * (AA) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0400: #079350;
+  /**
+   * Logifuture Green.600
+   * #08AE5E
+   * 4.95:1
+   * (AAA) Large Text
+   * (AA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0500: #08ae5e;
+  /**
+   * Logifuture Green.700
+   * #0AD774
+   * 7.53:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0600: #0ad774;
+  /**
+   * Logifuture Green.800
+   * #0BE67C
+   * 8.66:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0700: #0be67c;
+  /**
+   * Logifuture Green.900
+   * #7AF9BC
+   * 11.04:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0800: #7af9bc;
+  /**
+   * Logifuture Green.1000
+   * #ACFBD5
+   * 12.01:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-0900: #acfbd5;
+  /**
+   * Logifuture Green.1100
+   * #D2FDE8
+   * 13.00:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-1000: #d2fde8;
+  /**
+   * Logifuture Green.1200
+   * #E4FEF2
+   * 13.55:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-1100: #e4fef2;
+  /**
+   * Logifuture Green.1300
+   * #F4FEFA
+   * 13.99:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-1200: #f4fefa;
+  /**
+   * Logifuture Green.000
+   * #033C20
+   * 1.15:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-green-logifuture-green-1300: #033c20;
+  /**
+   * Logifuture Blue / Logifuture Blue 000
+   * #1C2744
+   * 1.07:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0000: #1c2744;
+  /**
+   * Logifuture Blue / Logifuture Blue 100
+   * #222F51
+   * 1.20:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0100: #222f51;
+  /**
+   * Logifuture Blue / Logifuture Blue 200
+   * #2A3A64
+   * 1.42:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0200: #2a3a64;
+  /**
+   * Logifuture Blue / Logifuture Blue 300
+   * #314370
+   * 1.63:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0300: #314370;
+  /**
+   * Logifuture Blue/ Logifuture Blue 400
+   * #43507B
+   * 2.01:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   * 
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0400: #43507b;
+  /**
+   * Logifuture Blue / Logifuture Blue 500
+   * #545E87
+   * 2.50:1
+   * (N/A) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0500: #545e87;
+  /**
+   * Logifuture Blue / Logifuture Blue600
+   * #656E93
+   * 3.16:1
+   * (AA) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0600: #656e93;
+  /**
+   * Logifuture Blue / Logifuture Blue 700
+   * #777EA0
+   * 3.96:1
+   * (AA) Large Text
+   * (N/A) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0700: #777ea0;
+  /**
+   * Logifuture Blue/ Logifuture Blue 800
+   * #898FAC
+   * 4.95:1
+   * (AAA) Large Text
+   * (AA) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0800: #898fac;
+  /**
+   * Logifuture Blue / Logifuture Blue 900
+   * #9CA0BA
+   * 6.12:1
+   * (AAA) Large Text
+   * (AA) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-0900: #9ca0ba;
+  /**
+   * Logifuture Blue / Logifuture Blue 1000
+   * #AFB2C7
+   * 7.53:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-1000: #afb2c7;
+  /**
+   * Logifuture Blue/ Logifuture Blue 1100
+   * #C2C5D5
+   * 9.20:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-1100: #c2c5d5;
+  /**
+   * Logifuture Blue / Logifuture Blue 1200
+   * #D6D8E2
+   * 11.11:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-1200: #d6d8e2;
+  /**
+   * Logifuture Blue / Logifuture Blue 1300
+   * #F3F3F7
+   * 14.26:1
+   * (AAA) Large Text
+   * (AAA) Small Text
+   */
+  --core-color-ramp-logifuture-blue-logifuture-blue-1300: #f3f3f7;
+  --core-color-ramp-logifuture-skynight-logifuture-skynight-0000: #18223b; /* background colour for Logifuture theme */
+  --core-color-ramp-casino-casino-0000: #074f37;
+  --core-color-ramp-casino-casino-0100: #05c75c;
+  --core-color-ramp-casino-casino-0200: #4c5eba;
+  --core-color-ramp-casino-casino-0300: #cfd867;
+  --core-color-ramp-casino-casino-0400: #009945;
+  --core-color-ramp-casino-casino-0500: #3f4b88;
+  --core-color-ramp-casino-casino-0600: #8b942e;
+  /**
+   * Golden / Golden 0000
+   * #1a1000
+   * Darkest golden
+   */
+  --core-color-ramp-golden-golden-0000: #1a1000;
+  /**
+   * Golden / Golden 0100
+   * #2d1b00
+   * Very dark golden
+   */
+  --core-color-ramp-golden-golden-0100: #2d1b00;
+  /**
+   * Golden / Golden 0200
+   * #4a2c00
+   * Dark golden
+   */
+  --core-color-ramp-golden-golden-0200: #4a2c00;
+  /**
+   * Golden / Golden 0300
+   * #6b3d00
+   * Medium dark golden
+   */
+  --core-color-ramp-golden-golden-0300: #6b3d00;
+  /**
+   * Golden / Golden 0400
+   * #9d6b03
+   * Active state
+   */
+  --core-color-ramp-golden-golden-0400: #9d6b03;
+  /**
+   * Golden / Golden 0500
+   * #f6b52d
+   * Primary CTA default (gradient end)
+   */
+  --core-color-ramp-golden-golden-0500: #f6b52d;
+  /**
+   * Golden / Golden 0600
+   * #ffc959
+   * Primary CTA hover (gradient start)
+   */
+  --core-color-ramp-golden-golden-0600: #ffc959;
+  /**
+   * Golden / Golden 0700
+   * #ffd270
+   * Light golden
+   */
+  --core-color-ramp-golden-golden-0700: #ffd270;
+  /**
+   * Golden / Golden 0800
+   * #ffe0a3
+   * Very light golden
+   */
+  --core-color-ramp-golden-golden-0800: #ffe0a3;
+  /**
+   * Golden / Golden 0900
+   * #f1e3c6
+   * Very light golden
+   */
+  --core-color-ramp-golden-golden-0900: #f1e3c6;
+  /**
+   * Golden / Golden 1000
+   * #f8f0d8
+   * Pale golden
+   */
+  --core-color-ramp-golden-golden-1000: #f8f0d8;
+  /**
+   * Golden / Golden 1100
+   * #fdf8e8
+   * Very pale golden
+   */
+  --core-color-ramp-golden-golden-1100: #fdf8e8;
+  /**
+   * Golden / Golden 1200
+   * #fefdbe
+   * Near white golden
+   */
+  --core-color-ramp-golden-golden-1200: #fefdbe;
+  /**
+   * Golden / Golden 1300
+   * #fff8e1
+   * Lightest golden
+   */
+  --core-color-ramp-golden-golden-1300: #fff8e1;
+  /**
+   * Crimson / Crimson 0000
+   * #1f0d0d
+   * Darkest red
+   */
+  --core-color-ramp-crimson-crimson-0000: #1f0d0d;
+  /**
+   * Crimson / Crimson 0100
+   * #2e1a1a
+   * Very dark red
+   */
+  --core-color-ramp-crimson-crimson-0100: #2e1a1a;
+  /**
+   * Crimson / Crimson 0200
+   * #48242f
+   * Dark red
+   */
+  --core-color-ramp-crimson-crimson-0200: #48242f;
+  /**
+   * Crimson / Crimson 0300
+   * #5a3b3b
+   * Medium dark red
+   */
+  --core-color-ramp-crimson-crimson-0300: #5a3b3b;
+  /**
+   * Crimson / Crimson 0400
+   * #6b4a4a
+   * Medium red
+   */
+  --core-color-ramp-crimson-crimson-0400: #6b4a4a;
+  /**
+   * Crimson / Crimson 0500
+   * #f5222d
+   * Error default
+   */
+  --core-color-ramp-crimson-crimson-0500: #f5222d;
+  /**
+   * Crimson / Crimson 0600
+   * #f54a54
+   * Light error
+   */
+  --core-color-ramp-crimson-crimson-0600: #f54a54;
+  /**
+   * Crimson / Crimson 0700
+   * #f76b73
+   * Very light red
+   */
+  --core-color-ramp-crimson-crimson-0700: #f76b73;
+  /**
+   * Crimson / Crimson 0800
+   * #f0a6a6
+   * Pale red
+   */
+  --core-color-ramp-crimson-crimson-0800: #f0a6a6;
+  /**
+   * Crimson / Crimson 0900
+   * #f9e1e1
+   * Very pale red
+   */
+  --core-color-ramp-crimson-crimson-0900: #f9e1e1;
+  /**
+   * Crimson / Crimson 1000
+   * #fce8e8
+   * Light red tint
+   */
+  --core-color-ramp-crimson-crimson-1000: #fce8e8;
+  /**
+   * Crimson / Crimson 1100
+   * #fef0f0
+   * Very light red tint
+   */
+  --core-color-ramp-crimson-crimson-1100: #fef0f0;
+  /**
+   * Crimson / Crimson 1200
+   * #fff5f5
+   * Near white red
+   */
+  --core-color-ramp-crimson-crimson-1200: #fff5f5;
+  /**
+   * Crimson / Crimson 1300
+   * #fffafa
+   * Lightest red
+   */
+  --core-color-ramp-crimson-crimson-1300: #fffafa;
+  /**
+   * Forest Green / Forest Green 0000
+   * #0d1f0d
+   * Darkest green
+   */
+  --core-color-ramp-forest-green-forest-green-0000: #0d1f0d;
+  /**
+   * Forest Green / Forest Green 0100
+   * #1a2e1a
+   * Very dark green
+   */
+  --core-color-ramp-forest-green-forest-green-0100: #1a2e1a;
+  /**
+   * Forest Green / Forest Green 0200
+   * #2a4a2a
+   * Dark green
+   */
+  --core-color-ramp-forest-green-forest-green-0200: #2a4a2a;
+  /**
+   * Forest Green / Forest Green 0300
+   * #3b5a3b
+   * Medium dark green
+   */
+  --core-color-ramp-forest-green-forest-green-0300: #3b5a3b;
+  /**
+   * Forest Green / Forest Green 0400
+   * #4a6b4a
+   * Medium green
+   */
+  --core-color-ramp-forest-green-forest-green-0400: #4a6b4a;
+  /**
+   * Forest Green / Forest Green 0500
+   * #53b157
+   * Success default
+   */
+  --core-color-ramp-forest-green-forest-green-0500: #53b157;
+  /**
+   * Forest Green / Forest Green 0600
+   * #66d4b1
+   * Light success
+   */
+  --core-color-ramp-forest-green-forest-green-0600: #66d4b1;
+  /**
+   * Forest Green / Forest Green 0700
+   * #81f8b4
+   * Very light green
+   */
+  --core-color-ramp-forest-green-forest-green-0700: #81f8b4;
+  /**
+   * Forest Green / Forest Green 0800
+   * #a8e6a8
+   * Pale green
+   */
+  --core-color-ramp-forest-green-forest-green-0800: #a8e6a8;
+  /**
+   * Forest Green / Forest Green 0900
+   * #c8e6c9
+   * Very pale green
+   */
+  --core-color-ramp-forest-green-forest-green-0900: #c8e6c9;
+  /**
+   * Forest Green / Forest Green 1000
+   * #d8f0d8
+   * Light green tint
+   */
+  --core-color-ramp-forest-green-forest-green-1000: #d8f0d8;
+  /**
+   * Forest Green / Forest Green 1100
+   * #e8f5e8
+   * Very light green tint
+   */
+  --core-color-ramp-forest-green-forest-green-1100: #e8f5e8;
+  /**
+   * Forest Green / Forest Green 1200
+   * #f0f8f0
+   * Near white green
+   */
+  --core-color-ramp-forest-green-forest-green-1200: #f0f8f0;
+  /**
+   * Forest Green / Forest Green 1300
+   * #f8fdf8
+   * Lightest green
+   */
+  --core-color-ramp-forest-green-forest-green-1300: #f8fdf8;
+  /**
+   * Ocean Blue / Ocean Blue 0000
+   * #0a1a2d
+   * Darkest blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0000: #0a1a2d;
+  /**
+   * Ocean Blue / Ocean Blue 0100
+   * #1a2e3d
+   * Very dark blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0100: #1a2e3d;
+  /**
+   * Ocean Blue / Ocean Blue 0200
+   * #2a3a4d
+   * Dark blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0200: #2a3a4d;
+  /**
+   * Ocean Blue / Ocean Blue 0300
+   * #33333d
+   * Medium dark blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0300: #33333d;
+  /**
+   * Ocean Blue / Ocean Blue 0400
+   * #4a5a6d
+   * Medium blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0400: #4a5a6d;
+  /**
+   * Ocean Blue / Ocean Blue 0500
+   * #2196f3
+   * Info default
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0500: #2196f3;
+  /**
+   * Ocean Blue / Ocean Blue 0600
+   * #42a5f5
+   * Light info
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0600: #42a5f5;
+  /**
+   * Ocean Blue / Ocean Blue 0700
+   * #64b5f6
+   * Very light blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0700: #64b5f6;
+  /**
+   * Ocean Blue / Ocean Blue 0800
+   * #90caf9
+   * Pale blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0800: #90caf9;
+  /**
+   * Ocean Blue / Ocean Blue 0900
+   * #bbdefb
+   * Very pale blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-0900: #bbdefb;
+  /**
+   * Ocean Blue / Ocean Blue 1000
+   * #c8e6fc
+   * Light blue tint
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-1000: #c8e6fc;
+  /**
+   * Ocean Blue / Ocean Blue 1100
+   * #e0f2fe
+   * Very light blue tint
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-1100: #e0f2fe;
+  /**
+   * Ocean Blue / Ocean Blue 1200
+   * #f0f8ff
+   * Near white blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-1200: #f0f8ff;
+  /**
+   * Ocean Blue / Ocean Blue 1300
+   * #f8fcff
+   * Lightest blue
+   */
+  --core-color-ramp-ocean-blue-ocean-blue-1300: #f8fcff;
+  /**
+   * Cool Grey / Cool Grey 0000
+   * #17181c
+   * Darkest background
+   */
+  --core-color-ramp-cool-grey-cool-grey-0000: #17181c;
+  /**
+   * Cool Grey / Cool Grey 0100
+   * #1c1d21
+   * Very dark background
+   */
+  --core-color-ramp-cool-grey-cool-grey-0100: #1c1d21;
+  /**
+   * Cool Grey / Cool Grey 0200
+   * #202225
+   * Dark background
+   */
+  --core-color-ramp-cool-grey-cool-grey-0200: #202225;
+  /**
+   * Cool Grey / Cool Grey 0300
+   * #35383d
+   * Card background
+   */
+  --core-color-ramp-cool-grey-cool-grey-0300: #35383d;
+  /**
+   * Cool Grey / Cool Grey 0400
+   * #3a3d42
+   * Elevated surface
+   */
+  --core-color-ramp-cool-grey-cool-grey-0400: #3a3d42;
+  /**
+   * Cool Grey / Cool Grey 0500
+   * #353642
+   * Interactive surface
+   */
+  --core-color-ramp-cool-grey-cool-grey-0500: #353642;
+  /**
+   * Cool Grey / Cool Grey 0600
+   * #484a55
+   * Border default
+   */
+  --core-color-ramp-cool-grey-cool-grey-0600: #484a55;
+  /**
+   * Cool Grey / Cool Grey 0700
+   * #595b6a
+   * Button surface
+   */
+  --core-color-ramp-cool-grey-cool-grey-0700: #595b6a;
+  /**
+   * Cool Grey / Cool Grey 0800
+   * #727284
+   * Tertiary text
+   */
+  --core-color-ramp-cool-grey-cool-grey-0800: #727284;
+  /**
+   * Cool Grey / Cool Grey 0900
+   * #8a8a8a
+   * Medium grey
+   */
+  --core-color-ramp-cool-grey-cool-grey-0900: #8a8a8a;
+  /**
+   * Cool Grey / Cool Grey 1000
+   * #aeb4b9
+   * Secondary text
+   */
+  --core-color-ramp-cool-grey-cool-grey-1000: #aeb4b9;
+  /**
+   * Cool Grey / Cool Grey 1100
+   * #cccccc
+   * Light grey
+   */
+  --core-color-ramp-cool-grey-cool-grey-1100: #cccccc;
+  /**
+   * Cool Grey / Cool Grey 1200
+   * #dee2e7
+   * Primary text
+   */
+  --core-color-ramp-cool-grey-cool-grey-1200: #dee2e7;
+  /**
+   * Cool Grey / Cool Grey 1300
+   * #ffffff
+   * Pure white
+   */
+  --core-color-ramp-cool-grey-cool-grey-1300: #ffffff;
+  /**
+   * Orange / Orange 1000
+   * #FCE6D8
+   * 11.96:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-1000: #fce6d8;
+  /**
+   * Orange / Orange 1000
+   * #FDF1E9
+   * 12.98:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-1100: #fdf1e9;
+  /**
+   * Orange / Orange 1100
+   * #FEF6F1
+   * 13.48:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-1200: #fef6f1;
+  /**
+   * Orange / Orange 1300
+   * #FFFBF9
+   * 14.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-1300: #fffbf9;
+  /**
+   * Orange / Orange 000
+   * #572706
+   * 1.16:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --global-warning-0000: #572706;
+  /**
+   * Orange / Orange 100
+   * #5C2907
+   * 1.22:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --global-warning-0100: #5c2907;
+  /**
+   * Orange / Orange 200
+   * #723308
+   * 1.50:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --global-warning-0200: #723308;
+  /**
+   * Orange / Orange 300
+   * #8E400A
+   * 1.98:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --global-warning-0300: #8e400a;
+  /**
+   * Orange / Orange 400
+   * #AE4F0C
+   * 2.69:1
+   * (N/A) Large text
+   * (N/A) Normal text
+   */
+  --global-warning-0400: #ae4f0c;
+  /**
+   * Orange / Orange 500
+   * #D15E0F
+   * 3.65:1
+   * (AA) Large text
+   * (N/A) Normal text
+   */
+  --global-warning-0500: #d15e0f;
+  /**
+   * Orange / Orange 600
+   * #EF7520
+   * 4.96:1
+   * (AAA) Large text
+   * (AA) Normal text
+   */
+  --global-warning-0600: #ef7520;
+  /**
+   * Orange / Orange 700
+   * #F5A56F
+   * 7.20:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-0700: #f5a56f;
+  /**
+   * Orange / Orange 800
+   * #F7BD94
+   * 8.68:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-0800: #f7bd94;
+  /**
+   * Orange / Orange 900
+   * #FBDBC6
+   * 11.00:1
+   * (AAA) Large text
+   * (AAA) Normal text
+   */
+  --global-warning-0900: #fbdbc6;
+  --components-button-cta-hover-label: #;
+}
