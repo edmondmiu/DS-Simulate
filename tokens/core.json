@@ -1073,30 +1073,72 @@
         "$description": "Cool Neutral / Cool Neutral 1300\n#F9FAFA\n13.77:1\n(AAA) Large text\n(AAA) Small text"
       }
     },
-    "Neutral Modifier Test": {
-      "base": {
+    "Dynamic Neutral": {
+      "base-500": {
         "$type": "color",
         "$value": "#35383d",
-        "$description": "Base color for Token Studio Color Modifiers - your card background"
+        "$description": "Base neutral - your card background (matches Neutral 0300)"
       },
-      "surface-darker": {
+      "0000": {
         "$type": "color",
-        "$value": "{Neutral Modifier Test.base}",
-        "$description": "Elevated surface - slightly darker for 3D effect",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Darkest background - generated from base",
         "$extensions": {
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.03",
+              "value": "0.85",
               "space": "lch"
             }
           }
         }
       },
-      "surface-lighter": {
+      "0100": {
         "$type": "color",
-        "$value": "{Neutral Modifier Test.base}",
-        "$description": "Interactive surface - slightly lighter for 3D effect",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Very dark background",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.75",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0200": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Dark background", 
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.65",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0300": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Card background - base color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0400": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Elevated surface - subtle difference for 3D effect",
         "$extensions": {
           "studio.tokens": {
             "modify": {
@@ -1107,80 +1149,321 @@
           }
         }
       },
-      "surface-subtle-mix": {
+      "0500": {
         "$type": "color",
-        "$value": "{Neutral Modifier Test.base}",
-        "$description": "Border - mixed with slight blue tint for depth",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Interactive surface - very subtle lighter",
         "$extensions": {
           "studio.tokens": {
             "modify": {
-              "type": "mix",
-              "value": "0.05",
-              "color": "#4a5a6d",
+              "type": "darken",
+              "value": "0.02",
               "space": "lch"
             }
           }
         }
       },
-      "surface-transparent": {
+      "0600": {
         "$type": "color",
-        "$value": "{Neutral Modifier Test.base}",
-        "$description": "Overlay surface with transparency",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Border default - slightly lighter for definition",
         "$extensions": {
           "studio.tokens": {
             "modify": {
-              "type": "alpha",
-              "value": "0.8",
+              "type": "lighten",
+              "value": "0.12",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0700": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Button surface",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.20",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0800": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Tertiary text",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.30",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0900": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Medium grey",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.42",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Secondary text",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.55",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1100": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Light grey",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.68",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1200": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Primary text",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.80",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1300": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Pure white",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.90",
               "space": "lch"
             }
           }
         }
       }
     },
-    "Amber Modifier Test": {
-      "base": {
+    "Dynamic Amber": {
+      "base-500": {
         "$type": "color",
         "$value": "#ffd24d",
-        "$description": "Base amber - your primary CTA color"
+        "$description": "Base amber - your primary CTA color (matches Amber 0500)"
       },
-      "hover": {
+      "0000": {
         "$type": "color",
-        "$value": "{Amber Modifier Test.base}",
-        "$description": "Hover state - slightly lighter",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.1",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "active": {
-        "$type": "color",
-        "$value": "{Amber Modifier Test.base}",
-        "$description": "Active state - darker",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Darkest amber",
         "$extensions": {
           "studio.tokens": {
             "modify": {
               "type": "darken",
-              "value": "0.2",
+              "value": "0.90",
               "space": "lch"
             }
           }
         }
       },
-      "muted": {
+      "0100": {
         "$type": "color",
-        "$value": "{Amber Modifier Test.base}",
-        "$description": "Muted version - mixed with neutral",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Very dark amber",
         "$extensions": {
           "studio.tokens": {
             "modify": {
-              "type": "mix",
-              "value": "0.3",
-              "color": "#8a8a8a",
+              "type": "darken",
+              "value": "0.80",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0200": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Dark amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.65",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0300": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Medium dark amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.50",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0400": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Active state - darker for pressed",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.30",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0500": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Primary CTA default - base color"
+      },
+      "0600": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Primary CTA hover - lighter",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.08",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0700": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Light amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.15",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0800": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Very light amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.25",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "0900": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Very light amber tint",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.35",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Pale amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.45",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1100": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Very pale amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.55",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1200": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Near white amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.65",
+              "space": "lch"
+            }
+          }
+        }
+      },
+      "1300": {
+        "$type": "color",
+        "$value": "{Color Ramp.Dynamic Amber.base-500}",
+        "$description": "Lightest amber",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.75",
               "space": "lch"
             }
           }
