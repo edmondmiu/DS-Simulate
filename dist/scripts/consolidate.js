@@ -215,9 +215,8 @@ class ConsolidateScript {
             for (const tokenSetName of metadata.tokenSetOrder) {
                 this.log(`Processing token set: ${tokenSetName}`);
                 const tokenData = this.readTokenSet(tokenSetName);
-                if (Object.keys(tokenData).length > 0) {
-                    consolidatedTokens[tokenSetName] = tokenData;
-                }
+                // Include all token sets even if empty - Token Studio requires them for theme references
+                consolidatedTokens[tokenSetName] = tokenData;
             }
             // Write consolidated tokens to output file
             this.writeConsolidatedTokens(consolidatedTokens);

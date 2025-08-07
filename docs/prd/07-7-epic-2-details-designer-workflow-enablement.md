@@ -19,4 +19,7 @@
 - **Story 2.4: Document the Designer Setup**
   - **As a** Designer, **I want** clear, step-by-step documentation on how to set up the Token Studio sync, **so that** I can quickly and easily connect to the design system.
 
+- **Story 2.6: Fix Token Set Metadata Configuration**
+  - **As a** Design System Engineer, **I want** the `$metadata.json` file to accurately reflect all existing token sets in the correct order, **so that** the consolidate/split scripts process all token files correctly and Token Studio can import all available sets.
+
 ---
