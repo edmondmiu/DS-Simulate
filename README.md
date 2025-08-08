@@ -41,11 +41,13 @@ This project provides a comprehensive token management system that enables desig
 
 ```
 design-system-tooling/
+├── .dse/                 # DSE color management configurations
+│   └── color-library.json # OKLCH color configurations for DSE workflow
 ├── scripts/              # Core pipeline scripts
 │   ├── consolidate.ts    # Merge modular tokens → tokensource.json
 │   └── split.ts          # Split tokensource.json → modular tokens
 ├── src/                  # Shared utilities and types (future use)
-├── tokens/               # Modular token source files
+├── tokens/               # Token Studio mirror - modular token source files
 │   ├── $metadata.json    # Token set order configuration
 │   ├── $themes.json      # Theme definitions
 │   ├── core.json         # Core design tokens (colors, spacing)
@@ -63,6 +65,29 @@ design-system-tooling/
 ```
 
 ## Token Workflow and File Structure
+
+### DSE Color Management Architecture
+
+The system implements a clean separation between DSE-specific color configurations and Token Studio mirror files:
+
+**DSE Configuration Directory (`.dse/`):**
+- Contains OKLCH color configurations and DSE-specific settings
+- `color-library.json` - OKLCH color space parameters, accessibility thresholds, and color generation rules
+- Consolidate script reads from `.dse/` configurations
+- Preserves DSE configurations independently from Token Studio files
+
+**Token Studio Mirror Directory (`tokens/`):**
+- Pure mirror of Token Studio format specifications
+- Maintains compatibility with Figma Token Studio plugin
+- Split script outputs processed tokens to this directory
+- No DSE-specific configurations stored here
+
+**Workflow Integration:**
+1. DSE configurations in `.dse/color-library.json` define color generation rules
+2. Consolidate script reads from `.dse/` and processes color tokens using OKLCH
+3. Enhanced tokens are output to `tokensource.json` 
+4. Split script distributes tokens to `tokens/` directory for Token Studio compatibility
+5. Both `.dse/` configurations and `tokens/` outputs are preserved
 
 ### Token Studio Format
 
@@ -432,6 +457,95 @@ npm run type-check # TypeScript type checking
 2. Run quality checks: `npm run lint && npm run format`
 3. Verify round-trip compatibility works correctly
 4. Update documentation for any new features
+
+## DSE Configuration System
+
+### Overview
+
+The Design System Engineer (DSE) configuration system provides advanced color management capabilities through the `.dse/` directory. This system enables OKLCH color space support, accessibility validation, and brand-specific color configurations while maintaining complete Token Studio compatibility.
+
+### Architecture
+
+```
+.dse/                           # DSE configuration directory
+├── README.md                   # DSE documentation
+├── color-library.json          # OKLCH color configuration
+├── schema.ts                   # TypeScript schema definitions
+├── validator.ts                # Configuration validation utilities
+├── config-loader.ts           # Configuration loading system
+└── integration-example.ts      # Integration examples
+```
+
+### Configuration Structure
+
+The `color-library.json` file defines OKLCH color parameters:
+
+```json
+{
+  "colorLibrary": {
+    "colorSpace": "oklch",
+    "lightnessRange": { "min": 15, "max": 95 },
+    "chromaRange": { "primary": 0.15, "neutral": 0.05 },
+    "accessibilityThresholds": { "AA": 4.5, "AAA": 7.0 },
+    "conversionOptions": {
+      "outputFormat": "hex",
+      "preserveOriginal": true
+    },
+    "brandSpecific": {
+      "bet9ja": {
+        "chromaMultiplier": 1.2,
+        "hueShift": 0
+      }
+    }
+  }
+}
+```
+
+### Key Features
+
+- **OKLCH Color Space**: Perceptually uniform color generation
+- **Accessibility Validation**: WCAG AA/AAA compliance checking  
+- **Brand-Specific Overrides**: Per-brand color adjustments
+- **Token Studio Compatibility**: Zero impact on existing workflows
+- **Validation System**: Comprehensive configuration validation
+
+### Using DSE Configuration
+
+**Validate Configuration:**
+```bash
+npx tsx .dse/test-validation.ts
+```
+
+**Load Configuration in Scripts:**
+```typescript
+import { getDSEConfig } from './.dse/config-loader.js';
+
+const dseConfig = getDSEConfig();
+const { config } = dseConfig.loadColorLibraryConfig();
+```
+
+### Architectural Separation
+
+- **`.dse/` directory**: DSE-specific configurations and color management
+- **`tokens/` directory**: Pure Token Studio mirror format (unchanged)
+- **`tokensource.json`**: Enhanced output combining both systems
+
+This separation ensures that existing Token Studio workflows continue unchanged while enabling advanced color management features for Design System Engineers.
+
+### Configuration Options
+
+| Setting | Purpose | Example Values |
+|---------|---------|----------------|
+| `colorSpace` | Color space for calculations | `"oklch"` |
+| `lightnessRange` | Accessible lightness bounds | `{"min": 15, "max": 95}` |
+| `chromaRange` | Color intensity settings | `{"primary": 0.15, "neutral": 0.05}` |
+| `accessibilityThresholds` | WCAG compliance levels | `{"AA": 4.5, "AAA": 7.0}` |
+| `outputFormat` | Primary color format | `"hex"`, `"oklch"`, `"rgb"` |
+| `brandSpecific` | Per-brand adjustments | Lightness, chroma, hue overrides |
+
+## Roadmap and Future Updates
+
+For information about planned features, deferred enhancements, and future development priorities, see [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## License
 

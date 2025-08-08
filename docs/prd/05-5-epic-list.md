@@ -11,4 +11,7 @@
 - **Epic 3: Developer Consumption Pipeline**
   - **Goal:** Integrate Style Dictionary to automatically transform the `tokensource.json` into multi-platform, code-ready formats (CSS & Dart) for component developers.
 
+- **Epic 4: DSE Color Management**
+  - **Goal:** Implement advanced color management with OKLCH integration and .dse/ architecture for sophisticated color science capabilities while maintaining Token Studio compatibility.
+
 ---

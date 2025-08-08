@@ -1,0 +1,43 @@
+{
+  "colorLibrary": {
+    "colorSpace": "oklch",
+    "lightnessRange": {
+      "min": 15,
+      "max": 95
+    },
+    "chromaRange": {
+      "primary": 0.15,
+      "neutral": 0.05
+    },
+    "accessibilityThresholds": {
+      "AA": 4.5,
+      "AAA": 7.0
+    },
+    "conversionOptions": {
+      "outputFormat": "hex",
+      "preserveOriginal": true
+    },
+    "brandSpecific": {
+      "bet9ja": {
+        "lightnessAdjustment": 0,
+        "chromaMultiplier": 1.2,
+        "hueShift": 0
+      },
+      "global": {
+        "lightnessAdjustment": 0,
+        "chromaMultiplier": 1.0,
+        "hueShift": 0
+      },
+      "core": {
+        "lightnessAdjustment": 0,
+        "chromaMultiplier": 1.0,
+        "hueShift": 0
+      }
+    },
+    "colorGeneration": {
+      "rampSteps": 9,
+      "preserveKeyColors": true,
+      "algorithmicGeneration": false
+    }
+  }
+}
