@@ -51,7 +51,14 @@
       "Bash(npx style-dictionary:*)",
       "Bash(npm run validate-tokens:*)",
       "Bash(npx bmad-method:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "WebFetch(domain:docs.tokens.studio)",
+      "WebFetch(domain:help.figma.com)",
+      "Bash(npx tsx:*)",
+      "Bash(npm run typecheck:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(npx tsc:*)",
+      "Bash(npx ts-node:*)"
     ],
     "deny": []
   }

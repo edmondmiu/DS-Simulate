@@ -105,7 +105,7 @@ export class DSEConfigLoader {
    * @param tokenSetName - Name of the token set (e.g., 'bet9ja', 'global')
    * @returns Brand-specific configuration or undefined
    */
-  public getBrandConfig(tokenSetName: string): ColorLibraryConfig['colorLibrary']['brandSpecific'][string] | undefined {
+  public getBrandConfig(tokenSetName: string): { lightnessAdjustment?: number; chromaMultiplier?: number; hueShift?: number; } | undefined {
     const { config } = this.loadColorLibraryConfig();
     return config.colorLibrary.brandSpecific?.[tokenSetName];
   }

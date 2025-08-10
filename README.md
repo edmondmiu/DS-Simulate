@@ -547,6 +547,18 @@ This separation ensures that existing Token Studio workflows continue unchanged 
 
 For information about planned features, deferred enhancements, and future development priorities, see [docs/ROADMAP.md](docs/ROADMAP.md).
 
+### Future DSE AI Agent Support
+
+The roadmap includes plans for **Epic 5: DSE AI Agent Support**, which will enhance the DSE system with AI-powered capabilities:
+
+- **BMad Method Integration**: Using the BMad Method expansion creator for intelligent DSE agent creation
+- **AI-Assisted Color Management**: Intelligent color palette generation using OKLCH color science
+- **Smart Accessibility Recommendations**: AI-powered WCAG compliance and accessibility optimization
+- **Brand Color Harmony**: Automated brand consistency analysis and color harmony suggestions
+- **Enhanced .dse/ Integration**: AI suggestions integrated with existing color-library.json configuration
+
+This enhancement will preserve manual control for DSEs while providing intelligent assistance for color management, accessibility validation, and brand consistency across complex multi-brand design systems.
+
 ## License
 
 MIT License - see LICENSE file for details.

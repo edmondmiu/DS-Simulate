@@ -20,6 +20,7 @@
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "consolidate": "npm run build && node dist/scripts/consolidate.js",
+    "consolidate-enhanced": "npm run build && node dist/scripts/consolidate-enhanced.js",
     "split": "npm run build && node dist/scripts/split.js",
     "import-export": "npm run build && node dist/scripts/import-export.js",
     "validate-workflow": "node scripts/validate-workflow.js",
@@ -30,6 +31,7 @@
     "culori": "^4.0.2"
   },
   "devDependencies": {
+    "@types/culori": "^4.0.0",
     "@types/jest": "^29.5.0",
     "@types/node": "^20.11.1",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

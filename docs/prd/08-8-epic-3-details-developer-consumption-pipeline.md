@@ -1,8 +1,12 @@
-### **8. Epic 3 Details: Developer Consumption Pipeline**
+### **8. Epic 3 Details: Developer Consumption Pipeline (DEFERRED)**
 
-**Expanded Goal:** This epic completes the core value chain of the design system by getting the tokens into the hands of developers. The focus is on integrating the Style Dictionary engine to transform the single source of truth (`tokensource.json`) into multiple, platform-specific formats. Upon completion, the token pipeline will be fully automated, and developers on both web and mobile platforms will have code-ready token files to use in their projects.
+**Status:** DEFERRED - See [ROADMAP.md](/docs/ROADMAP.md) for future implementation plans
 
-**Stories:**
+**Expanded Goal:** This epic would complete the core value chain of the design system by getting the tokens into the hands of developers. The focus would be on integrating the Style Dictionary engine to transform the single source of truth (`tokensource.json`) into multiple, platform-specific formats. Upon completion, the token pipeline would be fully automated, and developers on both web and mobile platforms would have code-ready token files to use in their projects.
+
+**Deferral Rationale:** This epic has been deferred due to complexity without immediate developer team demand, current Style Dictionary reference resolution challenges, and the strategic decision to perfect the designer workflow before adding developer consumption complexity.
+
+**Stories (Planned for Future Implementation):**
 
 - **Story 3.1: Install and Configure Style Dictionary**
 

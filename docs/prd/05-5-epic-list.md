@@ -14,4 +14,7 @@
 - **Epic 4: DSE Color Management**
   - **Goal:** Implement advanced color management with OKLCH integration and .dse/ architecture for sophisticated color science capabilities while maintaining Token Studio compatibility.
 
+- **Epic 5: DSE AI Agent Support** (Future Enhancement)
+  - **Goal:** Enhance the DSE system with AI capabilities leveraging the BMad Method expansion creator for intelligent DSE agent creation, providing AI-assisted color management while preserving manual control for DSEs.
+
 ---

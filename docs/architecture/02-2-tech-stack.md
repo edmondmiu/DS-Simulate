@@ -59,13 +59,13 @@
   <tr>
    <td><strong>Core Engine</strong>
    </td>
-   <td>Style Dictionary
+   <td>Token Studio Integration
    </td>
-   <td>4.0.0
+   <td>Current
    </td>
-   <td>Transforming tokens into platform-specific outputs.
+   <td>Design token management and Figma synchronization.
    </td>
-   <td>The chosen core technology for the pipeline, as defined in the PRD.
+   <td>Direct Token Studio integration for designer workflow. Style Dictionary deferred for future developer consumption needs.
    </td>
   </tr>
   <tr>

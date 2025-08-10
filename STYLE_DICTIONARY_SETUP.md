@@ -4,140 +4,110 @@
 
 ## Overview
 
-Style Dictionary is now installed and configured to transform design tokens into platform-specific formats for developers.
+Style Dictionary has been **temporarily removed** from the pipeline to simplify the build process and prepare for future integration with the latest version.
 
-## Installation Status ✅
+## Current Status ⏸️
 
-- **Style Dictionary 4.0.0** - Installed and configured
-- **Configuration**: `style-dictionary.config.cjs` (CommonJS format)
-- **Input**: Token JSON files
-- **Outputs**: CSS Custom Properties and Dart class constants
+- **Style Dictionary v4.0.0** - **REMOVED** (can be re-added with latest version later)
+- **Configuration**: Deleted (no longer needed)
+- **Generated Files**: Cleaned up from `dist/` folder
+- **Pipeline**: Streamlined to focus on Token Studio → tokensource.json workflow
 
-## Current Configuration
+## Removal Rationale
 
-### Input Sources
-- `tokens-simple.json` - Simplified token structure for testing
-- Future: `tokensource.json` - Full Epic 2 token source (requires reference resolution)
+### Why Removed?
+1. **Version Strategy**: Style Dictionary v4.0.0 had complex reference resolution issues
+2. **Pipeline Simplification**: Focus on core Token Studio workflow first
+3. **Future-Proofing**: Plan to integrate latest Style Dictionary version when needed
+4. **Clean Build**: Eliminated 604+ token reference errors that were blocking CI/CD
 
-### Output Platforms
+### What Was Removed
+- `style-dictionary` dependency from package.json
+- `style-dictionary.config.cjs` configuration file
+- Generated CSS/Dart output files in `dist/` folder
+- Related npm scripts (`build:tokens`, `validate-tokens`, `style-build`)
+- Style Dictionary build step from GitHub Actions workflow
 
-**CSS (Web Developers)**
-- **Location**: `dist/css/tokens.css`
-- **Format**: CSS Custom Properties in `:root`
-- **Transform Group**: `css` (hex colors, rem units, kebab-case naming)
+## Current Active Pipeline
 
-**Dart (Flutter Developers)**
-- **Location**: `dist/dart/tokens.dart`
-- **Format**: Dart class with static constants
-- **Class Name**: `DesignTokens`
-- **Transform Group**: `flutter-separate` (Color objects, double values)
+### ✅ Working Components
+- **Token Studio Integration**: Full Figma ↔ GitHub sync working
+- **Token Consolidation**: `npm run consolidate` creates `tokensource.json`
+- **Dynamic Color Tokens**: DaisyUI-style mathematical color generation preserved
+- **GitHub Actions**: Clean CI/CD pipeline without Style Dictionary complexity
+- **Multi-brand Support**: Token sets for different brands maintained
 
-## Usage Commands
+## Future Re-integration Plan
 
+📋 **For detailed future planning, see [docs/ROADMAP.md](docs/ROADMAP.md)**
+
+### When to Add Style Dictionary Back
+- **Epic 3.2+**: When developer consumption pipeline is needed
+- **Latest Version**: Use Style Dictionary v5+ for modern features and better token support
+- **Reference Resolution**: After Token Studio token structure is fully stabilized
+
+### Quick Re-integration Steps
 ```bash
-# Build tokens for all platforms
-npm run build:tokens
+# Step 1: Install latest Style Dictionary
+npm install style-dictionary@latest
 
-# Build and validate token generation
-npm run validate-tokens
+# Step 2: Create new configuration
+# (Modern config format, improved reference handling)
 
-# Direct Style Dictionary CLI (with config)
-npx style-dictionary build --config style-dictionary.config.cjs
+# Step 3: Add back npm scripts
+npm run build:tokens, npm run validate-tokens
+
+# Step 4: Re-add GitHub Actions build step
+# (After local testing confirms everything works)
 ```
 
-## Generated Output Examples
+**See [docs/ROADMAP.md](docs/ROADMAP.md) for complete implementation strategy and decision framework.**
 
-### CSS Output (`dist/css/tokens.css`)
-```css
-:root {
-  --color-primary-500: #ffd24d; /* Primary brand color */
-  --color-primary-600: #ffdf80; /* Primary brand color hover */
-  --color-neutral-000: #272a2f; /* Darkest neutral */
-  --spacing-base: 8px; /* Base spacing unit */
-}
-```
+## Current Epic Status
 
-### Dart Output (`dist/dart/tokens.dart`)
-```dart
-import 'dart:ui';
+### ✅ Epic 1: COMPLETE
+- **Core Pipeline**: Consolidate/split scripts working
+- **Project Foundation**: Monorepo structure established
 
-class DesignTokens {
-    DesignTokens._();
-    
-    static const colorPrimary500 = Color(0xFFFFD24D); /* Primary brand color */
-    static const colorPrimary600 = Color(0xFFFFDF80); /* Primary brand color hover */
-    static const colorNeutral000 = Color(0xFF272A2F); /* Darkest neutral */
-    static const spacingBase = 128.00; /* Base spacing unit */
-}
-```
+### ✅ Epic 2: COMPLETE  
+- **Designer Workflow**: Token Studio ↔ Figma integration working
+- **GitHub Sync**: Automated tokensource.json updates
+- **Multi-brand Tokens**: Dynamic color generation implemented
+- **DaisyUI Integration**: Mathematical color modifications working in Token Studio
 
-## Integration Status
+### ⏸️ Epic 3: PAUSED (Style Dictionary Removed)
+- **Epic 3.1**: Style Dictionary foundation - **DEFERRED** 
+- **Epic 3.2**: Web CSS transforms - **WAITING**
+- **Epic 3.3**: Mobile Dart transforms - **WAITING**  
+- **Epic 3.4**: Automated transformation pipeline - **WAITING**
 
-### ✅ Completed (Epic 3.1)
-- Style Dictionary 4.0.0 installation
-- Basic configuration for CSS and Dart platforms  
-- NPM script integration
-- Simple token processing (colors, spacing)
-- Build pipeline validation
+## Available Commands
 
-### 🔄 Next Steps (Epic 3.2+)
-- **Token Reference Resolution**: Handle complex `{token.reference}` syntax from tokensource.json
-- **Full Token Set Processing**: Integrate complete Epic 2 token structure
-- **Advanced Transforms**: Typography, shadows, and component tokens
-- **CI/CD Integration**: Automate token builds on source changes
-
-## Configuration Details
-
-### File Structure
-```
-├── style-dictionary.config.cjs      # Main configuration
-├── tokens-simple.json               # Test token source
-├── dist/
-│   ├── css/tokens.css               # CSS output
-│   └── dart/tokens.dart             # Dart output
-└── package.json                     # NPM scripts
-```
-
-### Known Limitations
-- **Reference Resolution**: Current tokensource.json contains 576 unresolved references
-- **Typography Tokens**: Complex composite tokens need custom handling
-- **Brand Variants**: Multi-brand token sets require advanced configuration
-
-## Technical Notes
-
-### Node.js Compatibility
-- **Required**: Node.js ≥20.11.1 (current: 24.3.0) ✅
-- **Module System**: CommonJS config (.cjs) required due to ES modules in package.json
-
-### Transform Groups
-- **CSS**: Handles colors (#hex), dimensions (px/rem), names (kebab-case)
-- **Flutter**: Handles colors (Color objects), dimensions (double), names (camelCase)
-
-### Build Performance
-- **Current**: <1 second for simple tokens
-- **Expected**: <30 seconds for full tokensource.json (after reference resolution)
-
-## Troubleshooting
-
-### Common Issues
-1. **"module is not defined"** → Use `.cjs` extension for config file
-2. **"Cannot find config file"** → Specify `--config style-dictionary.config.cjs`
-3. **Reference Errors** → Use simple token structure without `{references}` for now
-
-### Validation Commands
+### ✅ Currently Working
 ```bash
-# Check Style Dictionary installation
-npx style-dictionary --version
+# Core pipeline commands (Epic 1 & 2)
+npm run build              # TypeScript compilation
+npm run consolidate        # Create tokensource.json from tokens/
+npm run split             # Split tokensource.json back to tokens/
+npm run import-export     # Token Studio file management
 
-# Validate configuration syntax
-node -c style-dictionary.config.cjs
+# Development commands
+npm run dev               # Watch mode TypeScript compilation
+npm run test              # Run test suite
+npm run lint              # Code linting
+npm run type-check        # TypeScript validation
+```
 
-# Check output files exist
-ls -la dist/css/ dist/dart/
+### ❌ Removed Commands
+```bash
+# These were removed with Style Dictionary
+npm run build:tokens      # ❌ Removed
+npm run validate-tokens   # ❌ Removed  
+npm run style-build       # ❌ Removed
 ```
 
 ---
 
-**Epic 3.1 Status: ✅ COMPLETE**
+**Current Status: Epic 2 Complete ✅ | Epic 3 Paused ⏸️**
 
-Style Dictionary foundation is established and ready for Epic 3.2 (Web CSS Transform) and Epic 3.3 (Mobile Dart Transform) enhancements.
+The design system pipeline is fully functional for designers. Developer consumption (Epic 3) is ready to be implemented when needed with modern tooling.

@@ -4,13 +4,10 @@
  */
 
 import { readFileSync } from 'fs';
-import { join } from 'path';
 import {
-  ColorLibraryConfig,
   ValidationResult,
   ValidationError,
-  ValidationWarning,
-  COLOR_LIBRARY_JSON_SCHEMA
+  ValidationWarning
 } from './schema.js';
 
 /**
@@ -74,7 +71,7 @@ export function validateColorLibraryConfig(config: unknown): ValidationResult {
   return {
     isValid: errors.length === 0,
     errors,
-    warnings: warnings.length > 0 ? warnings : undefined
+    warnings: warnings.length > 0 ? warnings : []
   };
 }
 
@@ -337,7 +334,7 @@ function validateConversionOptions(colorLibrary: Record<string, unknown>, errors
 function validateBrandSpecific(
   brandSpecific: unknown, 
   errors: ValidationError[], 
-  warnings: ValidationWarning[]
+  _warnings: ValidationWarning[]
 ): void {
   if (typeof brandSpecific !== 'object' || brandSpecific === null) {
     errors.push({
