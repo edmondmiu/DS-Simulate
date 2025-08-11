@@ -80,26 +80,6 @@
       }
     },
     "Neutral": {
-      "Neutral 1000": {
-        "$type": "color",
-        "$value": "#aeb4b9",
-        "$description": "Neutral / Neutral 1000\n#aeb4b9\nSecondary text"
-      },
-      "Neutral 1100": {
-        "$type": "color",
-        "$value": "#cccccc",
-        "$description": "Neutral / Neutral 1100\n#cccccc\nLight grey"
-      },
-      "Neutral 1200": {
-        "$type": "color",
-        "$value": "#dee2e7",
-        "$description": "Neutral / Neutral 1200\n#dee2e7\nPrimary text"
-      },
-      "Neutral 1300": {
-        "$type": "color",
-        "$value": "#ffffff",
-        "$description": "Neutral / Neutral 1300\n#ffffff\nPure white"
-      },
       "Neutral 0": {
         "$type": "color",
         "$value": "#17181c",
@@ -149,6 +129,26 @@
         "$type": "color",
         "$value": "#8a8a8a",
         "$description": "Neutral / Neutral 0900\n#8a8a8a\nMedium grey"
+      },
+      "Neutral 1000": {
+        "$type": "color",
+        "$value": "#aeb4b9",
+        "$description": "Neutral / Neutral 1000\n#aeb4b9\nSecondary text"
+      },
+      "Neutral 1100": {
+        "$type": "color",
+        "$value": "#cccccc",
+        "$description": "Neutral / Neutral 1100\n#cccccc\nLight grey"
+      },
+      "Neutral 1200": {
+        "$type": "color",
+        "$value": "#dee2e7",
+        "$description": "Neutral / Neutral 1200\n#dee2e7\nPrimary text"
+      },
+      "Neutral 1300": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Neutral / Neutral 1300\n#ffffff\nPure white"
       }
     },
     "Red": {
@@ -440,26 +440,6 @@
       }
     },
     "Gold Yellow": {
-      "Gold Yellow 1000": {
-        "$type": "color",
-        "$value": "#ffebcf",
-        "$description": "Gold Yellow / Gold Yellow 1000\n#ffebcf\n12.37:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Gold Yellow 1100": {
-        "$type": "color",
-        "$value": "#fff1df",
-        "$description": "Gold Yellow / Gold Yellow 1100\n#fff1df\n12.96:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Gold Yellow 1200": {
-        "$type": "color",
-        "$value": "#fff7ed",
-        "$description": "Gold Yellow / Gold Yellow 1200\n#fff7ed\n13.56:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Gold Yellow 1300": {
-        "$type": "color",
-        "$value": "#fffcf7",
-        "$description": "Gold Yellow / Gold Yellow 1300\n\n#fffcf7\n14.07:1\n(AAA) Large text\n(AAA) Normal text"
-      },
       "Gold Yellow 0": {
         "$type": "color",
         "$value": "#493012",
@@ -509,6 +489,26 @@
         "$type": "color",
         "$value": "#ffdcad",
         "$description": "Gold Yellow / Gold Yellow 900\n#ffdcad\n11.03:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1000": {
+        "$type": "color",
+        "$value": "#ffebcf",
+        "$description": "Gold Yellow / Gold Yellow 1000\n#ffebcf\n12.37:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1100": {
+        "$type": "color",
+        "$value": "#fff1df",
+        "$description": "Gold Yellow / Gold Yellow 1100\n#fff1df\n12.96:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1200": {
+        "$type": "color",
+        "$value": "#fff7ed",
+        "$description": "Gold Yellow / Gold Yellow 1200\n#fff7ed\n13.56:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1300": {
+        "$type": "color",
+        "$value": "#fffcf7",
+        "$description": "Gold Yellow / Gold Yellow 1300\n\n#fffcf7\n14.07:1\n(AAA) Large text\n(AAA) Normal text"
       }
     },
     "Royal Blue": {
@@ -584,26 +584,6 @@
       }
     },
     "Deep Blue": {
-      "Deep Blue 1000": {
-        "$type": "color",
-        "$value": "#CBCAD3",
-        "$description": "Gold Yellow / Gold Yellow 1000\n#CBCAD3\n8.60:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Deep Blue 1100": {
-        "$type": "color",
-        "$value": "#E4E3E8",
-        "$description": "Deep Blue / Deep Blue 1100\n#E4E3E8\n10.95:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Deep Blue 1200": {
-        "$type": "color",
-        "$value": "#F1F0F3",
-        "$description": "Deep Blue / Deep Blue 1200\n#F1F0F3\n12.31:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Deep Blue 1300": {
-        "$type": "color",
-        "$value": "#FCFBFC",
-        "$description": "Deep Blue / Deep Blue 1300\n\n#FCFBFC\n13.54:1\n(AAA) Large text\n(AAA) Normal text"
-      },
       "Deep Blue 0": {
         "$type": "color",
         "$value": "#2D2F4C",
@@ -653,29 +633,29 @@
         "$type": "color",
         "$value": "#BAB9C5",
         "$description": "Deep Blue / Deep Blue 900\n#BAB9C5\n7.21:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1000": {
+        "$type": "color",
+        "$value": "#CBCAD3",
+        "$description": "Gold Yellow / Gold Yellow 1000\n#CBCAD3\n8.60:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1100": {
+        "$type": "color",
+        "$value": "#E4E3E8",
+        "$description": "Deep Blue / Deep Blue 1100\n#E4E3E8\n10.95:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1200": {
+        "$type": "color",
+        "$value": "#F1F0F3",
+        "$description": "Deep Blue / Deep Blue 1200\n#F1F0F3\n12.31:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1300": {
+        "$type": "color",
+        "$value": "#FCFBFC",
+        "$description": "Deep Blue / Deep Blue 1300\n\n#FCFBFC\n13.54:1\n(AAA) Large text\n(AAA) Normal text"
       }
     },
     "Midnight": {
-      "Midnight 1000": {
-        "$type": "color",
-        "$value": "#9393a2",
-        "$description": "Midnight / Midnight 1000\n#9393a2\n6.94:1\n(AAA) Large text\n(AA) Normal text"
-      },
-      "Midnight 1100": {
-        "$type": "color",
-        "$value": "#aeafb9",
-        "$description": "Midnight / Midnight 1100\n#aeafb9\n9.63:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Midnight 1200": {
-        "$type": "color",
-        "$value": "#c7c9ce",
-        "$description": "Midnight / Midnight 1200\n#c7c9ce\n12.67:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Midnight 1300": {
-        "$type": "color",
-        "$value": "#fafbfc",
-        "$description": "Midnight / Midnight 1300\n\n#fafbfc\n20.27:1\n(AAA) Large text\n(AAA) Normal text"
-      },
       "Midnight 0": {
         "$type": "color",
         "$value": "#1d1c2b",
@@ -725,29 +705,29 @@
         "$type": "color",
         "$value": "#757589",
         "$description": "Midnight / Midnight 900\n#757589\n4.66:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Midnight 1000": {
+        "$type": "color",
+        "$value": "#9393a2",
+        "$description": "Midnight / Midnight 1000\n#9393a2\n6.94:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Midnight 1100": {
+        "$type": "color",
+        "$value": "#aeafb9",
+        "$description": "Midnight / Midnight 1100\n#aeafb9\n9.63:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Midnight 1200": {
+        "$type": "color",
+        "$value": "#c7c9ce",
+        "$description": "Midnight / Midnight 1200\n#c7c9ce\n12.67:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Midnight 1300": {
+        "$type": "color",
+        "$value": "#fafbfc",
+        "$description": "Midnight / Midnight 1300\n\n#fafbfc\n20.27:1\n(AAA) Large text\n(AAA) Normal text"
       }
     },
     "Mint": {
-      "Mint 1000": {
-        "$type": "color",
-        "$value": "#D8F0E5",
-        "$description": "Mint / Mint 1000\n#D8F0E5\n12.01:1\n(AAA) Large text\n(AA) Normal text"
-      },
-      "Mint 1100": {
-        "$type": "color",
-        "$value": "#EAF6F1",
-        "$description": "Mint / Mint 1100\n#EAF6F1\n12.99:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Mint 1200": {
-        "$type": "color",
-        "$value": "#F1FAF6",
-        "$description": "Mint / Mint 1200\n#F1FAF6\n13.54:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Mint 1300": {
-        "$type": "color",
-        "$value": "#F9FCFB",
-        "$description": "Mint / Mint 1300\n#F9FCFB\n13.95:1\n(AAA) Large text\n(AAA) Normal text"
-      },
       "Mint 0": {
         "$type": "color",
         "$value": "#003D23",
@@ -797,29 +777,29 @@
         "$type": "color",
         "$value": "#C7E9DA",
         "$description": "Mint / Mint 900\n#C7E9DA\n11.04:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Mint 1000": {
+        "$type": "color",
+        "$value": "#D8F0E5",
+        "$description": "Mint / Mint 1000\n#D8F0E5\n12.01:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Mint 1100": {
+        "$type": "color",
+        "$value": "#EAF6F1",
+        "$description": "Mint / Mint 1100\n#EAF6F1\n12.99:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Mint 1200": {
+        "$type": "color",
+        "$value": "#F1FAF6",
+        "$description": "Mint / Mint 1200\n#F1FAF6\n13.54:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Mint 1300": {
+        "$type": "color",
+        "$value": "#F9FCFB",
+        "$description": "Mint / Mint 1300\n#F9FCFB\n13.95:1\n(AAA) Large text\n(AAA) Normal text"
       }
     },
     "Tiger Orange": {
-      "Tiger Orange 1000": {
-        "$type": "color",
-        "$value": "#FFEADB",
-        "$description": "Tiger Orange / Tiger Orange 1000\n#FFEADB\n12.37:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Tiger Orange 1100": {
-        "$type": "color",
-        "$value": "#FFF1E5",
-        "$description": "Tiger Orange / Tiger Orange 1100\n#FFF1E5\n13.00:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Tiger Orange 1200": {
-        "$type": "color",
-        "$value": "#FFF7F2",
-        "$description": "Tiger Orange / Tiger Orange 1200\n#FFF7F2\n13.60:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Tiger Orange 1300": {
-        "$type": "color",
-        "$value": "#FFFBF9",
-        "$description": "Tiger Orange / Tiger Orange 1300\n#FFFBF9\n14.00:1\n(AAA) Large text\n(AAA) Normal text"
-      },
       "Tiger Orange 0": {
         "$type": "color",
         "$value": "#542C10",
@@ -869,25 +849,29 @@
         "$type": "color",
         "$value": "#FFDABF",
         "$description": "Tiger Orange / Tiger Orange 900\n#FFDABF\n10.99:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Tiger Orange 1000": {
+        "$type": "color",
+        "$value": "#FFEADB",
+        "$description": "Tiger Orange / Tiger Orange 1000\n#FFEADB\n12.37:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Tiger Orange 1100": {
+        "$type": "color",
+        "$value": "#FFF1E5",
+        "$description": "Tiger Orange / Tiger Orange 1100\n#FFF1E5\n13.00:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Tiger Orange 1200": {
+        "$type": "color",
+        "$value": "#FFF7F2",
+        "$description": "Tiger Orange / Tiger Orange 1200\n#FFF7F2\n13.60:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Tiger Orange 1300": {
+        "$type": "color",
+        "$value": "#FFFBF9",
+        "$description": "Tiger Orange / Tiger Orange 1300\n#FFFBF9\n14.00:1\n(AAA) Large text\n(AAA) Normal text"
       }
     },
     "NeutralLight": {
-      "NeutralLight 1000": {
-        "$type": "color",
-        "$value": "#575757"
-      },
-      "NeutralLight 1100": {
-        "$type": "color",
-        "$value": "#454545"
-      },
-      "NeutralLight 1200": {
-        "$type": "color",
-        "$value": "#383838"
-      },
-      "NeutralLight 1300": {
-        "$type": "color",
-        "$value": "#343434"
-      },
       "NeutralLight 0": {
         "$type": "color",
         "$value": "#F9F9F9"
@@ -927,29 +911,25 @@
       "NeutralLight 900": {
         "$type": "color",
         "$value": "#6A6A6A"
+      },
+      "NeutralLight 1000": {
+        "$type": "color",
+        "$value": "#575757"
+      },
+      "NeutralLight 1100": {
+        "$type": "color",
+        "$value": "#454545"
+      },
+      "NeutralLight 1200": {
+        "$type": "color",
+        "$value": "#383838"
+      },
+      "NeutralLight 1300": {
+        "$type": "color",
+        "$value": "#343434"
       }
     },
     "Neon Green": {
-      "Neon Green 1000": {
-        "$type": "color",
-        "$value": "#D2FFD2",
-        "$description": "Neon Green / Neon Green 1100\n#D2FFD2\n13.01:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Neon Green 1100": {
-        "$type": "color",
-        "$value": "#E5FFE5",
-        "$description": "Neon Green / Neon Green 1200\n#E5FFE5\n13.55:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Neon Green 1200": {
-        "$type": "color",
-        "$value": "#F3FFF3",
-        "$description": "Neon Green / Neon Green 1300\n#F3FFF3\n13.99:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Neon Green 1300": {
-        "$type": "color",
-        "$value": "#003E00",
-        "$description": "Neon Green / Neon Green 000\n#003E00\n1.16:1\n(N/A) Large text\n(N/A) Normal text"
-      },
       "Neon Green 0": {
         "$type": "color",
         "$value": "#004400",
@@ -999,6 +979,26 @@
         "$type": "color",
         "$value": "#A7FFA7",
         "$description": "Neon Green / Neon Green 1000\n#A7FFA7\n12.00:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1000": {
+        "$type": "color",
+        "$value": "#D2FFD2",
+        "$description": "Neon Green / Neon Green 1100\n#D2FFD2\n13.01:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1100": {
+        "$type": "color",
+        "$value": "#E5FFE5",
+        "$description": "Neon Green / Neon Green 1200\n#E5FFE5\n13.55:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1200": {
+        "$type": "color",
+        "$value": "#F3FFF3",
+        "$description": "Neon Green / Neon Green 1300\n#F3FFF3\n13.99:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1300": {
+        "$type": "color",
+        "$value": "#003E00",
+        "$description": "Neon Green / Neon Green 000\n#003E00\n1.16:1\n(N/A) Large text\n(N/A) Normal text"
       }
     },
     "Cool Neutral": {
@@ -1338,26 +1338,6 @@
       }
     },
     "Logifuture Green": {
-      "Logifuture Green 1000": {
-        "$type": "color",
-        "$value": "#D2FDE8",
-        "$description": "Logifuture Green.1100\n#D2FDE8\n13.00:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
-      "Logifuture Green 1100": {
-        "$type": "color",
-        "$value": "#E4FEF2",
-        "$description": "Logifuture Green.1200\n#E4FEF2\n13.55:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
-      "Logifuture Green 1200": {
-        "$type": "color",
-        "$value": "#F4FEFA",
-        "$description": "Logifuture Green.1300\n#F4FEFA\n13.99:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
-      "Logifuture Green 1300": {
-        "$type": "color",
-        "$value": "#033C20",
-        "$description": "Logifuture Green.000\n#033C20\n1.15:1\n(N/A) Large Text\n(N/A) Small Text"
-      },
       "Logifuture Green 0": {
         "$type": "color",
         "$value": "#034123",
@@ -1407,29 +1387,29 @@
         "$type": "color",
         "$value": "#ACFBD5",
         "$description": "Logifuture Green.1000\n#ACFBD5\n12.01:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Green 1000": {
+        "$type": "color",
+        "$value": "#D2FDE8",
+        "$description": "Logifuture Green.1100\n#D2FDE8\n13.00:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Green 1100": {
+        "$type": "color",
+        "$value": "#E4FEF2",
+        "$description": "Logifuture Green.1200\n#E4FEF2\n13.55:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Green 1200": {
+        "$type": "color",
+        "$value": "#F4FEFA",
+        "$description": "Logifuture Green.1300\n#F4FEFA\n13.99:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Green 1300": {
+        "$type": "color",
+        "$value": "#033C20",
+        "$description": "Logifuture Green.000\n#033C20\n1.15:1\n(N/A) Large Text\n(N/A) Small Text"
       }
     },
     "Logifuture Blue": {
-      "Logifuture Blue 1000": {
-        "$type": "color",
-        "$value": "#AFB2C7",
-        "$description": "Logifuture Blue / Logifuture Blue 1000\n#AFB2C7\n7.53:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
-      "Logifuture Blue 1100": {
-        "$type": "color",
-        "$value": "#C2C5D5",
-        "$description": "Logifuture Blue/ Logifuture Blue 1100\n#C2C5D5\n9.20:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
-      "Logifuture Blue 1200": {
-        "$type": "color",
-        "$value": "#D6D8E2",
-        "$description": "Logifuture Blue / Logifuture Blue 1200\n#D6D8E2\n11.11:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
-      "Logifuture Blue 1300": {
-        "$type": "color",
-        "$value": "#F3F3F7",
-        "$description": "Logifuture Blue / Logifuture Blue 1300\n#F3F3F7\n14.26:1\n(AAA) Large Text\n(AAA) Small Text"
-      },
       "Logifuture Blue 0": {
         "$type": "color",
         "$value": "#1C2744",
@@ -1479,6 +1459,26 @@
         "$type": "color",
         "$value": "#9CA0BA",
         "$description": "Logifuture Blue / Logifuture Blue 900\n#9CA0BA\n6.12:1\n(AAA) Large Text\n(AA) Small Text"
+      },
+      "Logifuture Blue 1000": {
+        "$type": "color",
+        "$value": "#AFB2C7",
+        "$description": "Logifuture Blue / Logifuture Blue 1000\n#AFB2C7\n7.53:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Blue 1100": {
+        "$type": "color",
+        "$value": "#C2C5D5",
+        "$description": "Logifuture Blue/ Logifuture Blue 1100\n#C2C5D5\n9.20:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Blue 1200": {
+        "$type": "color",
+        "$value": "#D6D8E2",
+        "$description": "Logifuture Blue / Logifuture Blue 1200\n#D6D8E2\n11.11:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Blue 1300": {
+        "$type": "color",
+        "$value": "#F3F3F7",
+        "$description": "Logifuture Blue / Logifuture Blue 1300\n#F3F3F7\n14.26:1\n(AAA) Large Text\n(AAA) Small Text"
       }
     },
     "Logifuture Skynight": {
@@ -1519,26 +1519,6 @@
       }
     },
     "Golden": {
-      "Golden 1000": {
-        "$type": "color",
-        "$value": "#f8f0d8",
-        "$description": "Golden / Golden 1000\n#f8f0d8\nPale golden"
-      },
-      "Golden 1100": {
-        "$type": "color",
-        "$value": "#fdf8e8",
-        "$description": "Golden / Golden 1100\n#fdf8e8\nVery pale golden"
-      },
-      "Golden 1200": {
-        "$type": "color",
-        "$value": "#fefdbe",
-        "$description": "Golden / Golden 1200\n#fefdbe\nNear white golden"
-      },
-      "Golden 1300": {
-        "$type": "color",
-        "$value": "#fff8e1",
-        "$description": "Golden / Golden 1300\n#fff8e1\nLightest golden"
-      },
       "Golden 0": {
         "$type": "color",
         "$value": "#1a1000",
@@ -1588,29 +1568,29 @@
         "$type": "color",
         "$value": "#f1e3c6",
         "$description": "Golden / Golden 0900\n#f1e3c6\nVery light golden"
+      },
+      "Golden 1000": {
+        "$type": "color",
+        "$value": "#f8f0d8",
+        "$description": "Golden / Golden 1000\n#f8f0d8\nPale golden"
+      },
+      "Golden 1100": {
+        "$type": "color",
+        "$value": "#fdf8e8",
+        "$description": "Golden / Golden 1100\n#fdf8e8\nVery pale golden"
+      },
+      "Golden 1200": {
+        "$type": "color",
+        "$value": "#fefdbe",
+        "$description": "Golden / Golden 1200\n#fefdbe\nNear white golden"
+      },
+      "Golden 1300": {
+        "$type": "color",
+        "$value": "#fff8e1",
+        "$description": "Golden / Golden 1300\n#fff8e1\nLightest golden"
       }
     },
     "Crimson": {
-      "Crimson 1000": {
-        "$type": "color",
-        "$value": "#fce8e8",
-        "$description": "Crimson / Crimson 1000\n#fce8e8\nLight red tint"
-      },
-      "Crimson 1100": {
-        "$type": "color",
-        "$value": "#fef0f0",
-        "$description": "Crimson / Crimson 1100\n#fef0f0\nVery light red tint"
-      },
-      "Crimson 1200": {
-        "$type": "color",
-        "$value": "#fff5f5",
-        "$description": "Crimson / Crimson 1200\n#fff5f5\nNear white red"
-      },
-      "Crimson 1300": {
-        "$type": "color",
-        "$value": "#fffafa",
-        "$description": "Crimson / Crimson 1300\n#fffafa\nLightest red"
-      },
       "Crimson 0": {
         "$type": "color",
         "$value": "#1f0d0d",
@@ -1660,29 +1640,29 @@
         "$type": "color",
         "$value": "#f9e1e1",
         "$description": "Crimson / Crimson 0900\n#f9e1e1\nVery pale red"
+      },
+      "Crimson 1000": {
+        "$type": "color",
+        "$value": "#fce8e8",
+        "$description": "Crimson / Crimson 1000\n#fce8e8\nLight red tint"
+      },
+      "Crimson 1100": {
+        "$type": "color",
+        "$value": "#fef0f0",
+        "$description": "Crimson / Crimson 1100\n#fef0f0\nVery light red tint"
+      },
+      "Crimson 1200": {
+        "$type": "color",
+        "$value": "#fff5f5",
+        "$description": "Crimson / Crimson 1200\n#fff5f5\nNear white red"
+      },
+      "Crimson 1300": {
+        "$type": "color",
+        "$value": "#fffafa",
+        "$description": "Crimson / Crimson 1300\n#fffafa\nLightest red"
       }
     },
     "Forest Green": {
-      "Forest Green 1000": {
-        "$type": "color",
-        "$value": "#d8f0d8",
-        "$description": "Forest Green / Forest Green 1000\n#d8f0d8\nLight green tint"
-      },
-      "Forest Green 1100": {
-        "$type": "color",
-        "$value": "#e8f5e8",
-        "$description": "Forest Green / Forest Green 1100\n#e8f5e8\nVery light green tint"
-      },
-      "Forest Green 1200": {
-        "$type": "color",
-        "$value": "#f0f8f0",
-        "$description": "Forest Green / Forest Green 1200\n#f0f8f0\nNear white green"
-      },
-      "Forest Green 1300": {
-        "$type": "color",
-        "$value": "#f8fdf8",
-        "$description": "Forest Green / Forest Green 1300\n#f8fdf8\nLightest green"
-      },
       "Forest Green 0": {
         "$type": "color",
         "$value": "#0d1f0d",
@@ -1732,29 +1712,29 @@
         "$type": "color",
         "$value": "#c8e6c9",
         "$description": "Forest Green / Forest Green 0900\n#c8e6c9\nVery pale green"
+      },
+      "Forest Green 1000": {
+        "$type": "color",
+        "$value": "#d8f0d8",
+        "$description": "Forest Green / Forest Green 1000\n#d8f0d8\nLight green tint"
+      },
+      "Forest Green 1100": {
+        "$type": "color",
+        "$value": "#e8f5e8",
+        "$description": "Forest Green / Forest Green 1100\n#e8f5e8\nVery light green tint"
+      },
+      "Forest Green 1200": {
+        "$type": "color",
+        "$value": "#f0f8f0",
+        "$description": "Forest Green / Forest Green 1200\n#f0f8f0\nNear white green"
+      },
+      "Forest Green 1300": {
+        "$type": "color",
+        "$value": "#f8fdf8",
+        "$description": "Forest Green / Forest Green 1300\n#f8fdf8\nLightest green"
       }
     },
     "Ocean Blue": {
-      "Ocean Blue 1000": {
-        "$type": "color",
-        "$value": "#c8e6fc",
-        "$description": "Ocean Blue / Ocean Blue 1000\n#c8e6fc\nLight blue tint"
-      },
-      "Ocean Blue 1100": {
-        "$type": "color",
-        "$value": "#e0f2fe",
-        "$description": "Ocean Blue / Ocean Blue 1100\n#e0f2fe\nVery light blue tint"
-      },
-      "Ocean Blue 1200": {
-        "$type": "color",
-        "$value": "#f0f8ff",
-        "$description": "Ocean Blue / Ocean Blue 1200\n#f0f8ff\nNear white blue"
-      },
-      "Ocean Blue 1300": {
-        "$type": "color",
-        "$value": "#f8fcff",
-        "$description": "Ocean Blue / Ocean Blue 1300\n#f8fcff\nLightest blue"
-      },
       "Ocean Blue 0": {
         "$type": "color",
         "$value": "#0a1a2d",
@@ -1804,29 +1784,29 @@
         "$type": "color",
         "$value": "#bbdefb",
         "$description": "Ocean Blue / Ocean Blue 0900\n#bbdefb\nVery pale blue"
+      },
+      "Ocean Blue 1000": {
+        "$type": "color",
+        "$value": "#c8e6fc",
+        "$description": "Ocean Blue / Ocean Blue 1000\n#c8e6fc\nLight blue tint"
+      },
+      "Ocean Blue 1100": {
+        "$type": "color",
+        "$value": "#e0f2fe",
+        "$description": "Ocean Blue / Ocean Blue 1100\n#e0f2fe\nVery light blue tint"
+      },
+      "Ocean Blue 1200": {
+        "$type": "color",
+        "$value": "#f0f8ff",
+        "$description": "Ocean Blue / Ocean Blue 1200\n#f0f8ff\nNear white blue"
+      },
+      "Ocean Blue 1300": {
+        "$type": "color",
+        "$value": "#f8fcff",
+        "$description": "Ocean Blue / Ocean Blue 1300\n#f8fcff\nLightest blue"
       }
     },
     "Cool Grey": {
-      "Cool Grey 1000": {
-        "$type": "color",
-        "$value": "#aeb4b9",
-        "$description": "Cool Grey / Cool Grey 1000\n#aeb4b9\nSecondary text"
-      },
-      "Cool Grey 1100": {
-        "$type": "color",
-        "$value": "#cccccc",
-        "$description": "Cool Grey / Cool Grey 1100\n#cccccc\nLight grey"
-      },
-      "Cool Grey 1200": {
-        "$type": "color",
-        "$value": "#dee2e7",
-        "$description": "Cool Grey / Cool Grey 1200\n#dee2e7\nPrimary text"
-      },
-      "Cool Grey 1300": {
-        "$type": "color",
-        "$value": "#ffffff",
-        "$description": "Cool Grey / Cool Grey 1300\n#ffffff\nPure white"
-      },
       "Cool Grey 0": {
         "$type": "color",
         "$value": "#17181c",
@@ -1876,6 +1856,26 @@
         "$type": "color",
         "$value": "#8a8a8a",
         "$description": "Cool Grey / Cool Grey 0900\n#8a8a8a\nMedium grey"
+      },
+      "Cool Grey 1000": {
+        "$type": "color",
+        "$value": "#aeb4b9",
+        "$description": "Cool Grey / Cool Grey 1000\n#aeb4b9\nSecondary text"
+      },
+      "Cool Grey 1100": {
+        "$type": "color",
+        "$value": "#cccccc",
+        "$description": "Cool Grey / Cool Grey 1100\n#cccccc\nLight grey"
+      },
+      "Cool Grey 1200": {
+        "$type": "color",
+        "$value": "#dee2e7",
+        "$description": "Cool Grey / Cool Grey 1200\n#dee2e7\nPrimary text"
+      },
+      "Cool Grey 1300": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Cool Grey / Cool Grey 1300\n#ffffff\nPure white"
       }
     }
   },
