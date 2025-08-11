@@ -5,11 +5,6 @@
         "$type": "color",
         "$value": "#272a2f",
         "$description": "darkest colour"
-      },
-      "Black 000": {
-        "$type": "color",
-        "$value": "#272a2f",
-        "$description": "darkest colour"
       }
     },
     "Amber": {
@@ -82,11 +77,6 @@
         "$type": "color",
         "$value": "#fefdfb",
         "$description": "Amber / Amber 1300\n#fefdfb\nLightest amber"
-      },
-      "Amber 0000": {
-        "$type": "color",
-        "$value": "#1c1602",
-        "$description": "Amber / Amber 0000\n#1c1602\nDarkest amber"
       },
       "Amber 0100": {
         "$type": "color",
@@ -277,11 +267,6 @@
         "$value": "#FFFAFA",
         "$description": "Red / Red 900\n#FFFAFA\n13.92:1\n(AAA) Large text\n(AAA) Normal text"
       },
-      "Red 0000": {
-        "$type": "color",
-        "$value": "#6d0a0a",
-        "$description": "Red / Red 000\n#6D0A0A\n1.16:1\n(N/A) Large text\n(N/A) Normal text"
-      },
       "Red 0100": {
         "$type": "color",
         "$value": "#740b0b",
@@ -398,11 +383,6 @@
         "$type": "color",
         "$value": "#F5FEF9",
         "$description": "Green / Green 1300\n#F5FEF9\n14.01:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Green 0000": {
-        "$type": "color",
-        "$value": "#073c1d",
-        "$description": "Green / Green 000\n#073C1D\n1.15:1\n(N/A) Large text\n(N/A) Normal text"
       },
       "Green 0100": {
         "$type": "color",
@@ -521,11 +501,6 @@
         "$value": "#fffbf9",
         "$description": "Orange / Orange 1300\n#FFFBF9\n14.00:1\n(AAA) Large text\n(AAA) Normal text"
       },
-      "Orange 0000": {
-        "$type": "color",
-        "$value": "#572706",
-        "$description": "Orange / Orange 000\n#572706\n1.16:1\n(N/A) Large text\n(N/A) Normal text"
-      },
       "Orange 0100": {
         "$type": "color",
         "$value": "#5c2907",
@@ -642,11 +617,6 @@
         "$type": "color",
         "$value": "#FFFCEA",
         "$description": "Yellow / Yellow 1300\n#FFFCEA\n13.96:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Yellow 0000": {
-        "$type": "color",
-        "$value": "#373531",
-        "$description": "Yellow / Yellow 000\n#373531\n1.18:1\n(N/A) Large text\n(N/A) Normal text"
       },
       "Yellow 0100": {
         "$type": "color",
@@ -836,11 +806,6 @@
         "$type": "color",
         "$value": "#F9FBFF",
         "$description": "Royal Blue / Royal Blue 1300\n#F9FBFF\n13.49:1\n(AAA) Large text\n(AAA) Normal text"
-      },
-      "Royal Blue 0000": {
-        "$type": "color",
-        "$value": "#002d72",
-        "$description": "Royal Blue / Royal Blue 000\n#002d72\n1.07:1\n(N/A) Large text\n(N/A) Normal text"
       },
       "Royal Blue 0100": {
         "$type": "color",
@@ -1377,11 +1342,6 @@
         "$value": "#F9FAFA",
         "$description": "Cool Neutral / Cool Neutral 1300\n#F9FAFA\n13.77:1\n(AAA) Large text\n(AAA) Small text"
       },
-      "Cool Neutral 0000": {
-        "$type": "color",
-        "$value": "#313436",
-        "$description": "Cool Neutral / Cool Neutral 000\n#313436\n1.15:1\n(N/A) Large text\n(N/A) Small text"
-      },
       "Cool Neutral 0100": {
         "$type": "color",
         "$value": "#34383B",
@@ -1429,80 +1389,10 @@
       }
     },
     "Dynamic Neutral": {
-      "1000": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
-        "$description": "Secondary text",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.55",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "1100": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
-        "$description": "Light grey",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.68",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "1200": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
-        "$description": "Primary text",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.80",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "1300": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
-        "$description": "Pure white",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.90",
-              "space": "lch"
-            }
-          }
-        }
-      },
       "base-500": {
         "$type": "color",
         "$value": "#35383d",
         "$description": "Base neutral - your card background (matches Neutral 0300)"
-      },
-      "0000": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
-        "$description": "Darkest background - generated from base",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "darken",
-              "value": "0.85",
-              "space": "lch"
-            }
-          }
-        }
       },
       "0100": {
         "$type": "color",
@@ -1632,80 +1522,10 @@
       }
     },
     "Dynamic Amber": {
-      "1000": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Amber.base-500}",
-        "$description": "Pale amber",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.45",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "1100": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Amber.base-500}",
-        "$description": "Very pale amber",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.55",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "1200": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Amber.base-500}",
-        "$description": "Near white amber",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.65",
-              "space": "lch"
-            }
-          }
-        }
-      },
-      "1300": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Amber.base-500}",
-        "$description": "Lightest amber",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "lighten",
-              "value": "0.75",
-              "space": "lch"
-            }
-          }
-        }
-      },
       "base-500": {
         "$type": "color",
         "$value": "#ffd24d",
         "$description": "Base amber - your primary CTA color (matches Amber 0500)"
-      },
-      "0000": {
-        "$type": "color",
-        "$value": "{Color Ramp.Dynamic Amber.base-500}",
-        "$description": "Darkest amber",
-        "$extensions": {
-          "studio.tokens": {
-            "modify": {
-              "type": "darken",
-              "value": "0.90",
-              "space": "lch"
-            }
-          }
-        }
       },
       "0100": {
         "$type": "color",
