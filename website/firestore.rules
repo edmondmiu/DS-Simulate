@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read/write to testing results for anyone (adjust for production)
+    match /epic4-testing/{document} {
+      allow read, write: if true;
+    }
+    
+    // Allow read access to design system metadata
+    match /system-info/{document} {
+      allow read: if true;
+      allow write: if false; // Only admin writes
+    }
+  }
+}
