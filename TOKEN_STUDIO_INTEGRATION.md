@@ -131,9 +131,10 @@ Apply {bet9ja dark.brand.Primary.400} for brand-specific buttons
 
 ### Typography
 ```
-Apply {Content Typography.header.h1} to main headings
-Apply {Content Typography.body.default} to paragraph text
-Apply {Content Typography.label.default} to form labels
+Apply {global.header.h1} to semantic headings
+Apply {global.body.default} to semantic body text
+Apply {global.label.default} to semantic form labels
+Apply {Content Typography.header.h1} to content-specific headings
 ```
 
 ### Spacing  

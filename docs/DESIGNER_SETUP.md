@@ -148,9 +148,10 @@ The design system provides several token categories:
 
 #### Typography Tokens
 ```
-{Content Typography.header.h1} - Main headings
-{Content Typography.body.default} - Paragraph text
-{Content Typography.label.default} - Form labels
+{global.header.h1} - Semantic headings
+{global.body.default} - Semantic body text
+{global.label.default} - Semantic form labels
+{Content Typography.header.h1} - Content-specific headings
 ```
 
 #### Spacing Tokens

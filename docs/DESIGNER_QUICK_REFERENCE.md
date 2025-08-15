@@ -60,9 +60,10 @@ Load Time: 30-60 seconds
 
 ### **Typography**  
 ```
-{Content Typography.header.h1}         → Main headings
-{Content Typography.body.default}      → Body text
-{Content Typography.label.default}     → Form labels
+{global.header.h1}                     → Semantic headings
+{global.body.default}                  → Semantic body text
+{global.label.default}                 → Semantic form labels
+{Content Typography.header.h1}         → Content-specific headings
 ```
 
 ### **Spacing**

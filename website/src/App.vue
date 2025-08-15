@@ -48,6 +48,17 @@
               Results
             </button>
             <button
+              @click="currentView = 'color-tools'"
+              :class="[
+                'px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+                currentView === 'color-tools' 
+                  ? 'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300' 
+                  : 'text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white'
+              ]"
+            >
+              Epic 4 Features
+            </button>
+            <button
               @click="toggleDarkMode"
               class="p-2 rounded-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
             >
@@ -68,12 +79,14 @@
       <DesignSystemShowcase 
         v-if="currentView === 'showcase'" 
         @show-testing="currentView = 'testing'"
+        @show-color-tools="currentView = 'color-tools'"
       />
       <TestingChecklist v-if="currentView === 'testing'" />
       <TestingResults 
         v-if="currentView === 'results'"
         @show-testing="currentView = 'testing'"
       />
+      <DocumentationViewer v-if="currentView === 'color-tools'" />
     </main>
   </div>
 </template>
@@ -83,6 +96,7 @@ import { ref, onMounted } from 'vue';
 import DesignSystemShowcase from './components/DesignSystemShowcase.vue';
 import TestingChecklist from './components/TestingChecklist.vue';
 import TestingResults from './components/TestingResults.vue';
+import DocumentationViewer from './components/DocumentationViewer.vue';
 
 const currentView = ref('showcase');
 const isDark = ref(false);
