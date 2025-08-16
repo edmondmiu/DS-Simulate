@@ -1,7 +1,17 @@
 {
   "colorLibrary": {
+    "version": "1.5.0",
+    "lastUpdated": "2025-08-16",
     "colorSpace": "oklch",
+    "optimizationStatus": "active",
     "dualBaseApproach": {
+      "strategy": "hybrid_base_optimization",
+      "description": "Dual-base OKLCH approach using Cool Neutral for neutrals and Amber for brand colors",
+      "validation": {
+        "deltaEThreshold": 2.0,
+        "harmonyScoreMinimum": 0.7,
+        "brandSeparationMinimum": 15.0
+      },
       "coolNeutralBase": {
         "hex": "#35383d",
         "oklch": {
@@ -11,7 +21,18 @@
         },
         "role": "neutral_foundation",
         "description": "Cool Neutral 300 - Mathematical foundation for all neutral color families",
-        "appliesTo": ["Neutral", "Cool Neutral", "NeutralLight", "Cool Grey", "Dynamic Neutral", "Smoked Grey"]
+        "appliesTo": ["Neutral", "Cool Neutral", "NeutralLight", "Cool Grey", "Dynamic Neutral", "Smoked Grey"],
+        "characteristics": {
+          "lowChroma": true,
+          "perceptuallyUniform": true,
+          "accessibilityFriendly": true,
+          "temperatureNeutral": true
+        },
+        "usage": {
+          "primary": "backgrounds, surfaces, text colors",
+          "secondary": "borders, dividers, subtle accents",
+          "avoid": "brand expression, call-to-action elements"
+        }
       },
       "amberBase": {
         "hex": "#ffd24d",
@@ -22,7 +43,18 @@
         },
         "role": "brand_foundation",
         "description": "Amber 500 - Mathematical foundation for all brand and accent color families",
-        "appliesTo": ["Amber", "Red", "Green", "Blue", "Orange", "Yellow", "Gold Yellow", "Royal Blue", "Deep Blue", "Midnight", "Mint", "Tiger Orange", "Neon Green", "Golden", "Crimson", "Forest Green", "Ocean Blue", "Logifuture Green", "Logifuture Blue", "Casino"]
+        "appliesTo": ["Amber", "Red", "Green", "Blue", "Orange", "Yellow", "Gold Yellow", "Royal Blue", "Deep Blue", "Midnight", "Mint", "Tiger Orange", "Neon Green", "Golden", "Crimson", "Forest Green", "Ocean Blue", "Logifuture Green", "Logifuture Blue", "Casino"],
+        "characteristics": {
+          "moderateChroma": true,
+          "warmth": "balanced",
+          "brandSuitable": true,
+          "vibrantCapable": true
+        },
+        "usage": {
+          "primary": "brand colors, call-to-action elements, accent colors",
+          "secondary": "interactive states, semantic colors",
+          "avoid": "neutral backgrounds, text colors"
+        }
       }
     },
     "lightnessRange": {
@@ -30,18 +62,45 @@
       "max": 95,
       "steps": 14,
       "distribution": "linear",
-      "description": "0-1300 range mapped to 15%-95% lightness for accessibility compliance"
+      "stepSize": 5.71,
+      "description": "0-1300 range mapped to 15%-95% lightness for accessibility compliance",
+      "calculation": "L = 0.15 + (step/13) * 0.8",
+      "optimization": {
+        "preserveKeySteps": [300, 500, 700],
+        "allowMicroAdjustments": true,
+        "maxDeviation": 0.02
+      }
     },
     "chromaRange": {
-      "primary": 0.15,
-      "neutral": 0.05,
-      "description": "Target chroma values - neutrals use low chroma, brand colors use moderate chroma"
+      "neutral": {
+        "min": 0.005,
+        "max": 0.02,
+        "target": 0.01,
+        "description": "Low chroma for neutral families - maintains subtle color character"
+      },
+      "brand": {
+        "min": 0.08,
+        "max": 0.25,
+        "target": 0.15,
+        "description": "Moderate chroma for brand families - balances vibrancy with accessibility"
+      },
+      "accent": {
+        "min": 0.12,
+        "max": 0.30,
+        "target": 0.20,
+        "description": "Higher chroma for accent colors - maximum impact while maintaining harmony"
+      }
     },
     "accessibilityThresholds": {
       "AA": 4.5,
       "AAA": 7.0,
       "deltaE": 2.0,
-      "description": "WCAG compliance thresholds and visual fidelity tolerance"
+      "description": "WCAG compliance thresholds and visual fidelity tolerance",
+      "validation": {
+        "contrastCalculation": "OKLCH-aware",
+        "backgroundAssumptions": ["#ffffff", "#000000", "#35383d"],
+        "minimumPassingColors": 2
+      }
     },
     "conversionOptions": {
       "outputFormat": "hex",
@@ -50,23 +109,38 @@
         "lightness": 3,
         "chroma": 4,
         "hue": 4
-      }
+      },
+      "roundingStrategy": "perceptual",
+      "fallbackStrategy": "closest_valid_color"
     },
     "brandSpecific": {
       "bet9ja": {
         "lightnessAdjustment": 0,
         "chromaMultiplier": 1.2,
-        "hueShift": 0
+        "hueShift": 0,
+        "baseRecommendation": "amber",
+        "characteristics": "gaming, vibrant, energetic"
+      },
+      "logifuture": {
+        "lightnessAdjustment": 0,
+        "chromaMultiplier": 0.9,
+        "hueShift": 0,
+        "baseRecommendation": "amber",
+        "characteristics": "tech, professional, cool"
       },
       "global": {
         "lightnessAdjustment": 0,
         "chromaMultiplier": 1.0,
-        "hueShift": 0
+        "hueShift": 0,
+        "baseRecommendation": "auto_detect",
+        "characteristics": "neutral, accessible, versatile"
       },
       "core": {
         "lightnessAdjustment": 0,
         "chromaMultiplier": 1.0,
-        "hueShift": 0
+        "hueShift": 0,
+        "baseRecommendation": "dual_base",
+        "characteristics": "foundational, systematic, consistent"
       }
     },
     "colorGeneration": {
@@ -74,7 +148,48 @@
       "preserveKeyColors": true,
       "algorithmicGeneration": true,
       "dualBaseOptimization": true,
-      "description": "Updated to use dual-base OKLCH optimization with 14-step ramps"
+      "description": "Updated to use dual-base OKLCH optimization with 14-step ramps",
+      "automation": {
+        "enabled": true,
+        "validateOnCreation": true,
+        "suggestBaseColor": true,
+        "enforceHarmony": true,
+        "autoCorrectDeltaE": true
+      },
+      "validation": {
+        "deltaECheck": true,
+        "harmonyScoreCheck": true,
+        "accessibilityCheck": true,
+        "brandSeparationCheck": true
+      }
+    },
+    "futureProofing": {
+      "newColorGuidelines": {
+        "stepOne": "Determine color purpose (neutral vs brand/accent)",
+        "stepTwo": "Select appropriate base (Cool Neutral vs Amber)",
+        "stepThree": "Extract or define target hue and chroma",
+        "stepFour": "Apply OKLCH lightness stepping from base",
+        "stepFive": "Validate Delta E < 2.0 and harmony requirements",
+        "stepSix": "Test accessibility compliance and brand separation"
+      },
+      "automationRules": {
+        "neutral_keywords": ["neutral", "grey", "gray", "surface", "background", "text"],
+        "brand_keywords": ["brand", "primary", "accent", "cta", "action", "semantic"],
+        "auto_base_selection": {
+          "neutral_triggers": "contains neutral_keywords OR chroma < 0.03",
+          "brand_triggers": "contains brand_keywords OR chroma >= 0.03"
+        }
+      },
+      "qualityAssurance": {
+        "mandatory_checks": ["deltaE_validation", "harmony_score", "accessibility_foundation"],
+        "recommended_checks": ["brand_separation", "contrast_validation", "semantic_appropriateness"],
+        "automated_fixes": ["lightness_adjustment", "chroma_normalization", "hue_preservation"]
+      },
+      "governance": {
+        "approval_required": ["new_brand_colors", "base_color_changes", "system_wide_modifications"],
+        "automatic_approval": ["neutral_additions", "accessibility_improvements", "mathematical_corrections"],
+        "documentation_required": ["decision_rationale", "validation_results", "impact_assessment"]
+      }
     }
   }
 }

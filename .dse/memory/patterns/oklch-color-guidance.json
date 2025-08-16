@@ -1,0 +1,271 @@
+{
+  "patternType": "color_guidance",
+  "version": "1.5.0",
+  "priority": "high",
+  "name": "OKLCH Dual-Base Color Guidance",
+  "description": "Comprehensive color guidance for DSE using dual-base OKLCH approach",
+  "triggers": [
+    "color creation",
+    "color optimization", 
+    "brand color questions",
+    "neutral color questions",
+    "accessibility concerns",
+    "color harmony issues",
+    "multi-brand coordination"
+  ],
+  "guidance": {
+    "decision_framework": {
+      "step_1": {
+        "question": "What is the purpose of this color?",
+        "options": {
+          "neutral": "Use Cool Neutral base (#35383d) for backgrounds, surfaces, text",
+          "brand": "Use Amber base (#ffd24d) for brand colors, CTAs, accents",
+          "semantic": "Use Amber base for semantic colors (success, error, warning)",
+          "accent": "Use Amber base for decorative and accent colors"
+        }
+      },
+      "step_2": {
+        "question": "What are the target characteristics?",
+        "neutral_path": {
+          "chroma": "Keep low (0.005-0.02) for subtle character",
+          "lightness": "Use Cool Neutral stepping (15%-95%)",
+          "hue": "Preserve existing or use cool spectrum (180°-300°)"
+        },
+        "brand_path": {
+          "chroma": "Moderate (0.08-0.25) for brand vibrancy",
+          "lightness": "Use Amber stepping pattern (15%-95%)",
+          "hue": "Unique brand hue with ≥15° separation from existing brands"
+        }
+      },
+      "step_3": {
+        "validation": [
+          "Delta E < 2.0 from optimized version",
+          "Harmony score maintains ≥0.7 system-wide",
+          "Accessibility foundation appropriate for usage",
+          "Brand separation ≥15° for brand colors"
+        ]
+      }
+    },
+    "base_color_selection": {
+      "cool_neutral_base": {
+        "use_when": [
+          "Creating neutral color families",
+          "Background and surface colors", 
+          "Text and border colors",
+          "Subtle accent colors",
+          "Low-chroma color needs"
+        ],
+        "characteristics": {
+          "hex": "#35383d",
+          "oklch": "L=34%, C=0.0097, H=260.7°",
+          "role": "Neutral foundation",
+          "temperament": "Professional, modern, accessible"
+        },
+        "optimization_benefits": [
+          "Perceptual uniformity across neutral families",
+          "Excellent accessibility foundation",
+          "Subtle color character preservation",
+          "Cohesive neutral palette relationships"
+        ]
+      },
+      "amber_base": {
+        "use_when": [
+          "Creating brand color families",
+          "Call-to-action elements",
+          "Semantic color meanings",
+          "Accent and decorative colors",
+          "Multi-brand coordination"
+        ],
+        "characteristics": {
+          "hex": "#ffd24d", 
+          "oklch": "L=88%, C=0.1535, H=89.8°",
+          "role": "Brand foundation",
+          "temperament": "Energetic, optimistic, versatile"
+        },
+        "optimization_benefits": [
+          "Mathematical consistency across brand families",
+          "Preserved brand hue/chroma characteristics", 
+          "Predictable lightness relationships",
+          "Enhanced multi-brand coordination"
+        ]
+      }
+    },
+    "brand_specific_recommendations": {
+      "core_brand": {
+        "base_recommendation": "dual_base",
+        "characteristics": "foundational, systematic, consistent",
+        "color_strategy": "Use Cool Neutral for neutrals, Amber for brand colors"
+      },
+      "logifuture": {
+        "base_recommendation": "amber",
+        "characteristics": "tech, professional, cool",
+        "color_strategy": "Amber base with cool hue bias (180°-270°)",
+        "chroma_multiplier": 0.9,
+        "brand_hue_range": "200°-260°"
+      },
+      "bet9ja": {
+        "base_recommendation": "amber", 
+        "characteristics": "gaming, vibrant, energetic",
+        "color_strategy": "Amber base with enhanced chroma",
+        "chroma_multiplier": 1.2,
+        "brand_hue_range": "190°-230°"
+      },
+      "global": {
+        "base_recommendation": "auto_detect",
+        "characteristics": "neutral, accessible, versatile",
+        "color_strategy": "Let purpose determine base selection"
+      }
+    },
+    "common_scenarios": {
+      "new_neutral_color": {
+        "steps": [
+          "Confirm neutral purpose (background, surface, text)",
+          "Use Cool Neutral base mathematics",
+          "Preserve minimal chroma (<0.02)",
+          "Apply standard lightness stepping",
+          "Validate accessibility compliance"
+        ],
+        "validation_command": "ColorValidator.validateColor({purpose: 'neutral'})"
+      },
+      "new_brand_color": {
+        "steps": [
+          "Define brand affiliation and purpose",
+          "Use Amber base mathematics", 
+          "Determine unique brand hue (≥15° separation)",
+          "Set appropriate chroma for brand vibrancy",
+          "Apply Amber lightness stepping",
+          "Validate multi-brand harmony"
+        ],
+        "validation_command": "ColorValidator.validateColor({purpose: 'brand'})"
+      },
+      "color_family_optimization": {
+        "steps": [
+          "Determine family type (neutral vs brand)",
+          "Select appropriate base color",
+          "Extract family characteristics (hue, chroma)",
+          "Apply base mathematics with preserved characteristics",
+          "Validate Delta E and harmony requirements"
+        ],
+        "tools": ["NeutralOptimizer", "BrandOptimizer"]
+      },
+      "multi_brand_validation": {
+        "steps": [
+          "Run MultiBrandValidator.validateMultiBrandIntegration()",
+          "Check brand separation (≥15° minimum)",
+          "Validate harmony score (≥0.7)",
+          "Verify accessibility foundation",
+          "Test cross-brand coordination"
+        ],
+        "success_criteria": {
+          "brand_separation": "≥15°",
+          "harmony_score": "≥0.7", 
+          "delta_e": "<2.0",
+          "accessibility": "≥2 AA compliant per brand"
+        }
+      }
+    },
+    "quality_assurance": {
+      "mandatory_checks": [
+        "deltaE_validation: Must be <2.0 from optimized version",
+        "harmony_score: System must maintain ≥0.7 overall harmony",
+        "accessibility_foundation: Lightness appropriate for intended usage"
+      ],
+      "recommended_checks": [
+        "brand_separation: ≥15° hue difference for brand colors",
+        "contrast_validation: Test against common backgrounds",
+        "semantic_appropriateness: Color matches intended meaning"
+      ],
+      "automated_tools": [
+        "ColorValidator: Comprehensive validation for new colors",
+        "MultiBrandValidator: Cross-brand harmony analysis", 
+        "Base optimizers: Mathematical OKLCH optimization"
+      ]
+    },
+    "troubleshooting": {
+      "high_delta_e": {
+        "problem": "Color requires significant optimization (ΔE > 2.0)",
+        "solutions": [
+          "Use base color lightness stepping",
+          "Adjust chroma to appropriate range for purpose",
+          "Consider if color serves intended purpose",
+          "Apply automated optimization suggestions"
+        ]
+      },
+      "brand_conflicts": {
+        "problem": "New brand color conflicts with existing brands",
+        "solutions": [
+          "Adjust hue to achieve ≥15° separation",
+          "Consider different chroma level for differentiation",
+          "Validate against all three brands (Base, Logifuture, Bet9ja)",
+          "Use MultiBrandValidator for comprehensive analysis"
+        ]
+      },
+      "accessibility_issues": {
+        "problem": "Color has poor accessibility potential",
+        "solutions": [
+          "Adjust lightness to 15%-35% or 65%-95% ranges",
+          "Test against recommended background colors",
+          "Consider color's intended usage context",
+          "Use OKLCH lightness optimization"
+        ]
+      },
+      "harmony_degradation": {
+        "problem": "New color reduces system harmony score",
+        "solutions": [
+          "Align with appropriate base color mathematics",
+          "Check chroma consistency within color purpose",
+          "Validate lightness stepping follows base pattern",
+          "Consider if color is necessary for system"
+        ]
+      }
+    }
+  },
+  "automation_rules": {
+    "auto_base_selection": {
+      "neutral_triggers": [
+        "name contains: neutral, grey, gray, surface, background, text",
+        "chroma < 0.03",
+        "purpose explicitly set to 'neutral'"
+      ],
+      "brand_triggers": [
+        "name contains: brand, primary, accent, cta, action, semantic", 
+        "chroma >= 0.03",
+        "purpose set to 'brand', 'accent', or 'semantic'"
+      ]
+    },
+    "validation_enforcement": {
+      "always_check": ["deltaE", "harmony_score", "accessibility_foundation"],
+      "brand_colors_check": ["brand_separation", "multi_brand_harmony"],
+      "auto_suggestions": ["lightness_optimization", "chroma_normalization"]
+    }
+  },
+  "success_metrics": {
+    "achieved": {
+      "colors_optimized": 616,
+      "average_delta_e": "0.07-0.39",
+      "brand_separation": "24.3° minimum", 
+      "harmony_score": "0.71",
+      "brands_validated": 3
+    },
+    "targets": {
+      "delta_e_threshold": "<2.0",
+      "harmony_minimum": "≥0.7",
+      "brand_separation_minimum": "≥15°",
+      "accessibility_compliance": "≥80% for new colors"
+    }
+  },
+  "integration": {
+    "validation_commands": {
+      "single_color": "ColorValidator.validateColor(request)",
+      "color_batch": "ColorValidator.validateColorBatch(requests)",
+      "multi_brand": "MultiBrandValidator.validateMultiBrandIntegration()",
+      "neutral_optimization": "NeutralOptimizer.optimizeFamily(family)",
+      "brand_optimization": "BrandOptimizer.optimizeFamily(family)"
+    },
+    "configuration_file": ".dse/color-library.json",
+    "documentation": ".dse/oklch/DUAL_BASE_APPROACH_GUIDE.md"
+  },
+  "context_priority": "high",
+  "last_updated": "2025-08-16",
+  "epic_reference": "Epic 4 - OKLCH Color Optimization (Stories 1.1-1.5)"
+}
