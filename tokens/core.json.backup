@@ -82,73 +82,73 @@
     "Neutral": {
       "Neutral 0": {
         "$type": "color",
-        "$value": "#090b0f",
-        "$description": "Neutral / Neutral 0000\n#17181c\nDarkest background (OKLCH optimized)"
+        "$value": "#17181c",
+        "$description": "Neutral / Neutral 0000\n#17181c\nDarkest background"
       },
       "Neutral 100": {
         "$type": "color",
-        "$value": "#16191d",
-        "$description": "Neutral / Neutral 0100\n#1c1d21\nVery dark background () (OKLCH optimized)"
+        "$value": "#1c1d21",
+        "$description": "Neutral / Neutral 0100\n#1c1d21\nVery dark background"
       },
       "Neutral 200": {
         "$type": "color",
-        "$value": "#24272c",
-        "$description": "Neutral / Neutral 0200\n#202225\nDark background () (OKLCH optimized)"
+        "$value": "#202225",
+        "$description": "Neutral / Neutral 0200\n#202225\nDark background"
       },
       "Neutral 300": {
         "$type": "color",
-        "$value": "#34373c",
-        "$description": "Neutral / Neutral 0300\n#35383d\nCard background () (OKLCH optimized)"
+        "$value": "#35383d",
+        "$description": "Neutral / Neutral 0300\n#35383d\nCard background"
       },
       "Neutral 400": {
         "$type": "color",
-        "$value": "#44474c",
-        "$description": "Neutral / Neutral 0400\n#3a3d42\nElevated surface () (OKLCH optimized)"
+        "$value": "#3a3d42",
+        "$description": "Neutral / Neutral 0400\n#3a3d42\nElevated surface"
       },
       "Neutral 500": {
         "$type": "color",
-        "$value": "#54585d",
-        "$description": "Neutral / Neutral 0500\n#353642\nInteractive surface () (OKLCH optimized)"
+        "$value": "#353642",
+        "$description": "Neutral / Neutral 0500\n#353642\nInteractive surface"
       },
       "Neutral 600": {
         "$type": "color",
-        "$value": "#65696e",
-        "$description": "Neutral / Neutral 0600\n#484a55\nBorder default () (OKLCH optimized)"
+        "$value": "#484a55",
+        "$description": "Neutral / Neutral 0600\n#484a55\nBorder default"
       },
       "Neutral 700": {
         "$type": "color",
-        "$value": "#777b80",
-        "$description": "Neutral / Neutral 0700\n#595b6a\nButton surface () (OKLCH optimized)"
+        "$value": "#595b6a",
+        "$description": "Neutral / Neutral 0700\n#595b6a\nButton surface"
       },
       "Neutral 800": {
         "$type": "color",
-        "$value": "#898d93",
-        "$description": "Neutral / Neutral 0800\n#727284\nTertiary text () (OKLCH optimized)"
+        "$value": "#727284",
+        "$description": "Neutral / Neutral 0800\n#727284\nTertiary text"
       },
       "Neutral 900": {
         "$type": "color",
-        "$value": "#9ca0a6",
-        "$description": "Neutral / Neutral 0900\n#8a8a8a\nMedium grey () (OKLCH optimized)"
+        "$value": "#8a8a8a",
+        "$description": "Neutral / Neutral 0900\n#8a8a8a\nMedium grey"
       },
       "Neutral 1000": {
         "$type": "color",
-        "$value": "#afb3b9",
-        "$description": "Neutral / Neutral 1000\n#aeb4b9\nSecondary text () (OKLCH optimized)"
+        "$value": "#aeb4b9",
+        "$description": "Neutral / Neutral 1000\n#aeb4b9\nSecondary text"
       },
       "Neutral 1100": {
         "$type": "color",
-        "$value": "#c3c6cd",
-        "$description": "Neutral / Neutral 1100\n#cccccc\nLight grey () () (OKLCH optimized)"
+        "$value": "#cccccc",
+        "$description": "Neutral / Neutral 1100\n#cccccc\nLight grey"
       },
       "Neutral 1200": {
         "$type": "color",
-        "$value": "#d6dae1",
-        "$description": "Neutral / Neutral 1200\n#dee2e7\nPrimary text () () (OKLCH optimized)"
+        "$value": "#dee2e7",
+        "$description": "Neutral / Neutral 1200\n#dee2e7\nPrimary text"
       },
       "Neutral 1300": {
         "$type": "color",
-        "$value": "#ebeff5",
-        "$description": "Neutral / Neutral 1300\n#ffffff\nPure white () () (OKLCH optimized)"
+        "$value": "#ffffff",
+        "$description": "Neutral / Neutral 1300\n#ffffff\nPure white"
       }
     },
     "Red": {
@@ -874,59 +874,59 @@
     "NeutralLight": {
       "NeutralLight 0": {
         "$type": "color",
-        "$value": "#090b0f"
+        "$value": "#F9F9F9"
       },
       "NeutralLight 100": {
         "$type": "color",
-        "$value": "#16191d"
+        "$value": "#F3F3F3"
       },
       "NeutralLight 200": {
         "$type": "color",
-        "$value": "#24272c"
+        "$value": "#EAEAEA"
       },
       "NeutralLight 300": {
         "$type": "color",
-        "$value": "#34373c"
+        "$value": "#E1E1E1"
       },
       "NeutralLight 400": {
         "$type": "color",
-        "$value": "#44474c"
+        "$value": "#D7D7D7"
       },
       "NeutralLight 500": {
         "$type": "color",
-        "$value": "#54585d"
+        "$value": "#C9C9C9"
       },
       "NeutralLight 600": {
         "$type": "color",
-        "$value": "#65696e"
+        "$value": "#B1B1B1"
       },
       "NeutralLight 700": {
         "$type": "color",
-        "$value": "#777b80"
+        "$value": "#979797"
       },
       "NeutralLight 800": {
         "$type": "color",
-        "$value": "#898d93"
+        "$value": "#808080"
       },
       "NeutralLight 900": {
         "$type": "color",
-        "$value": "#9ca0a6"
+        "$value": "#6A6A6A"
       },
       "NeutralLight 1000": {
         "$type": "color",
-        "$value": "#afb3b9"
+        "$value": "#575757"
       },
       "NeutralLight 1100": {
         "$type": "color",
-        "$value": "#c3c6cd"
+        "$value": "#454545"
       },
       "NeutralLight 1200": {
         "$type": "color",
-        "$value": "#d6dae1"
+        "$value": "#383838"
       },
       "NeutralLight 1300": {
         "$type": "color",
-        "$value": "#ebeff5"
+        "$value": "#343434"
       }
     },
     "Neon Green": {
@@ -1004,80 +1004,80 @@
     "Cool Neutral": {
       "Cool Neutral 0": {
         "$type": "color",
-        "$value": "#090b0f",
-        "$description": "Cool Neutral / Cool Neutral 000\n#313436\n1.15:1\n(N/A) Large text\n(N/A) Small text (OKLCH optimized)"
+        "$value": "#313436",
+        "$description": "Cool Neutral / Cool Neutral 000\n#313436\n1.15:1\n(N/A) Large text\n(N/A) Small text"
       },
       "Cool Neutral 100": {
         "$type": "color",
-        "$value": "#16191d",
-        "$description": "Cool Neutral / Cool Neutral 100\n#34383B\n1.22:1\n(N/A) Large text\n(N/A) Small text () (OKLCH optimized)"
+        "$value": "#34383B",
+        "$description": "Cool Neutral / Cool Neutral 100\n#34383B\n1.22:1\n(N/A) Large text\n(N/A) Small text"
       },
       "Cool Neutral 200": {
         "$type": "color",
-        "$value": "#24272c",
-        "$description": "Cool Neutral / Cool Neutral 200\n#42464A\n1.51:1\n(N/A) Large text\n(N/A) Small text () (OKLCH optimized)"
+        "$value": "#42464A",
+        "$description": "Cool Neutral / Cool Neutral 200\n#42464A\n1.51:1\n(N/A) Large text\n(N/A) Small text"
       },
       "Cool Neutral 300": {
         "$type": "color",
-        "$value": "#34373c",
-        "$description": "Cool Neutral / Cool Neutral 300\n#52585C\n1.99:1\n(N/A) Large text\n(N/A) Small text () (OKLCH optimized)"
+        "$value": "#52585C",
+        "$description": "Cool Neutral / Cool Neutral 300\n#52585C\n1.99:1\n(N/A) Large text\n(N/A) Small text"
       },
       "Cool Neutral 400": {
         "$type": "color",
-        "$value": "#44474c",
-        "$description": "Cool Neutral / Cool Neutral 400\n#656B71\n2.67:1\n(N/A) Large text\n(N/A) Small text () (OKLCH optimized)"
+        "$value": "#656B71",
+        "$description": "Cool Neutral / Cool Neutral 400\n#656B71\n2.67:1\n(N/A) Large text\n(N/A) Small text"
       },
       "Cool Neutral 500": {
         "$type": "color",
-        "$value": "#54585d",
-        "$description": "Cool Neutral / Cool Neutral 500\n#7A8188\n3.65:1\n(AA) Large text\n(N/A) Small text () (OKLCH optimized)"
+        "$value": "#7A8188",
+        "$description": "Cool Neutral / Cool Neutral 500\n#7A8188\n3.65:1\n(AA) Large text\n(N/A) Small text"
       },
       "Cool Neutral 600": {
         "$type": "color",
-        "$value": "#65696e",
-        "$description": "Cool Neutral / Cool Neutral 600\n#92989D\n4.94:1\n(AAA) Large text\n(AA) Small text () (OKLCH optimized)"
+        "$value": "#92989D",
+        "$description": "Cool Neutral / Cool Neutral 600\n#92989D\n4.94:1\n(AAA) Large text\n(AA) Small text"
       },
       "Cool Neutral 700": {
         "$type": "color",
-        "$value": "#777b80",
-        "$description": "Cool Neutral / Cool Neutral 700\n#ADB2B6\n6.73:1\n(AAA) Large text\n(AA) Small text () (OKLCH optimized)"
+        "$value": "#ADB2B6",
+        "$description": "Cool Neutral / Cool Neutral 700\n#ADB2B6\n6.73:1\n(AAA) Large text\n(AA) Small text"
       },
       "Cool Neutral 800": {
         "$type": "color",
-        "$value": "#898d93",
-        "$description": "Cool Neutral / Cool Neutral 800\n#C6C9CC\n8.66:1\n(AAA) Large text\n(AAA) Small text () (OKLCH optimized)"
+        "$value": "#C6C9CC",
+        "$description": "Cool Neutral / Cool Neutral 800\n#C6C9CC\n8.66:1\n(AAA) Large text\n(AAA) Small text"
       },
       "Cool Neutral 900": {
         "$type": "color",
-        "$value": "#9ca0a6",
-        "$description": "Cool Neutral / Cool Neutral 800\n#D5D7D9\n9.98:1\n(AAA) Large text\n(AAA) Small text () (OKLCH optimized)"
+        "$value": "#D5D7D9",
+        "$description": "Cool Neutral / Cool Neutral 800\n#D5D7D9\n9.98:1\n(AAA) Large text\n(AAA) Small text"
       },
       "Cool Neutral 1000": {
         "$type": "color",
-        "$value": "#afb3b9",
-        "$description": "Cool Neutral / Cool Neutral 1000\n#E0E1E3\n11.00:1\n(AAA) Large text\n(AAA) Small text () (OKLCH optimized)"
+        "$value": "#E0E1E3",
+        "$description": "Cool Neutral / Cool Neutral 1000\n#E0E1E3\n11.00:1\n(AAA) Large text\n(AAA) Small text"
       },
       "Cool Neutral 1100": {
         "$type": "color",
-        "$value": "#c3c6cd",
-        "$description": "Cool Neutral / Cool Neutral 1100\n#E9EBEC\n12.04:1\n(AAA) Large text\n(AAA) Small text () () (OKLCH optimized)"
+        "$value": "#E9EBEC",
+        "$description": "Cool Neutral / Cool Neutral 1100\n#E9EBEC\n12.04:1\n(AAA) Large text\n(AAA) Small text"
       },
       "Cool Neutral 1200": {
         "$type": "color",
-        "$value": "#d6dae1",
-        "$description": "Cool Neutral / Cool Neutral 1200\n#F3F3F4\n12.98:1\n(AAA) Large text\n(AAA) Small text () () (OKLCH optimized)"
+        "$value": "#F3F3F4",
+        "$description": "Cool Neutral / Cool Neutral 1200\n#F3F3F4\n12.98:1\n(AAA) Large text\n(AAA) Small text"
       },
       "Cool Neutral 1300": {
         "$type": "color",
-        "$value": "#ebeff5",
-        "$description": "Cool Neutral / Cool Neutral 1300\n#F9FAFA\n13.77:1\n(AAA) Large text\n(AAA) Small text () () (OKLCH optimized)"
+        "$value": "#F9FAFA",
+        "$description": "Cool Neutral / Cool Neutral 1300\n#F9FAFA\n13.77:1\n(AAA) Large text\n(AAA) Small text"
       }
     },
     "Dynamic Neutral": {
       "base-500": {
         "$type": "color",
-        "$value": "#54585d",
-        "$description": "Base neutral - your card background (matches Neutral 0300) (OKLCH optimized)"
+        "$value": "#35383d",
+        "$description": "Base neutral - your card background (matches Neutral 0300)"
       },
       "0100": {
         "$type": "color",
@@ -1137,8 +1137,8 @@
       },
       "0500": {
         "$type": "color",
-        "$value": "#54585d",
-        "$description": "Interactive surface - very subtle lighter (OKLCH optimized)",
+        "$value": "{Color Ramp.Dynamic Neutral.base-500}",
+        "$description": "Interactive surface - very subtle lighter",
         "$extensions": {
           "studio.tokens": {
             "modify": {
@@ -1333,8 +1333,8 @@
     "Smoked Grey": {
       "Smoked Grey 0": {
         "$type": "color",
-        "$value": "#090b0f",
-        "$description": "Background of cool neutral (OKLCH optimized)"
+        "$value": "#222426",
+        "$description": "Background of cool neutral"
       }
     },
     "Logifuture Green": {
@@ -1809,73 +1809,73 @@
     "Cool Grey": {
       "Cool Grey 0": {
         "$type": "color",
-        "$value": "#090b0f",
-        "$description": "Cool Grey / Cool Grey 0000\n#17181c\nDarkest background (OKLCH optimized)"
+        "$value": "#17181c",
+        "$description": "Cool Grey / Cool Grey 0000\n#17181c\nDarkest background"
       },
       "Cool Grey 100": {
         "$type": "color",
-        "$value": "#16191d",
-        "$description": "Cool Grey / Cool Grey 0100\n#1c1d21\nVery dark background () (OKLCH optimized)"
+        "$value": "#1c1d21",
+        "$description": "Cool Grey / Cool Grey 0100\n#1c1d21\nVery dark background"
       },
       "Cool Grey 200": {
         "$type": "color",
-        "$value": "#24272c",
-        "$description": "Cool Grey / Cool Grey 0200\n#202225\nDark background () (OKLCH optimized)"
+        "$value": "#202225",
+        "$description": "Cool Grey / Cool Grey 0200\n#202225\nDark background"
       },
       "Cool Grey 300": {
         "$type": "color",
-        "$value": "#34373c",
-        "$description": "Cool Grey / Cool Grey 0300\n#35383d\nCard background () (OKLCH optimized)"
+        "$value": "#35383d",
+        "$description": "Cool Grey / Cool Grey 0300\n#35383d\nCard background"
       },
       "Cool Grey 400": {
         "$type": "color",
-        "$value": "#44474c",
-        "$description": "Cool Grey / Cool Grey 0400\n#3a3d42\nElevated surface () (OKLCH optimized)"
+        "$value": "#3a3d42",
+        "$description": "Cool Grey / Cool Grey 0400\n#3a3d42\nElevated surface"
       },
       "Cool Grey 500": {
         "$type": "color",
-        "$value": "#54585d",
-        "$description": "Cool Grey / Cool Grey 0500\n#353642\nInteractive surface () (OKLCH optimized)"
+        "$value": "#353642",
+        "$description": "Cool Grey / Cool Grey 0500\n#353642\nInteractive surface"
       },
       "Cool Grey 600": {
         "$type": "color",
-        "$value": "#65696e",
-        "$description": "Cool Grey / Cool Grey 0600\n#484a55\nBorder default () (OKLCH optimized)"
+        "$value": "#484a55",
+        "$description": "Cool Grey / Cool Grey 0600\n#484a55\nBorder default"
       },
       "Cool Grey 700": {
         "$type": "color",
-        "$value": "#777b80",
-        "$description": "Cool Grey / Cool Grey 0700\n#595b6a\nButton surface () (OKLCH optimized)"
+        "$value": "#595b6a",
+        "$description": "Cool Grey / Cool Grey 0700\n#595b6a\nButton surface"
       },
       "Cool Grey 800": {
         "$type": "color",
-        "$value": "#898d93",
-        "$description": "Cool Grey / Cool Grey 0800\n#727284\nTertiary text () (OKLCH optimized)"
+        "$value": "#727284",
+        "$description": "Cool Grey / Cool Grey 0800\n#727284\nTertiary text"
       },
       "Cool Grey 900": {
         "$type": "color",
-        "$value": "#9ca0a6",
-        "$description": "Cool Grey / Cool Grey 0900\n#8a8a8a\nMedium grey () (OKLCH optimized)"
+        "$value": "#8a8a8a",
+        "$description": "Cool Grey / Cool Grey 0900\n#8a8a8a\nMedium grey"
       },
       "Cool Grey 1000": {
         "$type": "color",
-        "$value": "#afb3b9",
-        "$description": "Cool Grey / Cool Grey 1000\n#aeb4b9\nSecondary text () (OKLCH optimized)"
+        "$value": "#aeb4b9",
+        "$description": "Cool Grey / Cool Grey 1000\n#aeb4b9\nSecondary text"
       },
       "Cool Grey 1100": {
         "$type": "color",
-        "$value": "#c3c6cd",
-        "$description": "Cool Grey / Cool Grey 1100\n#cccccc\nLight grey () () (OKLCH optimized)"
+        "$value": "#cccccc",
+        "$description": "Cool Grey / Cool Grey 1100\n#cccccc\nLight grey"
       },
       "Cool Grey 1200": {
         "$type": "color",
-        "$value": "#d6dae1",
-        "$description": "Cool Grey / Cool Grey 1200\n#dee2e7\nPrimary text () () (OKLCH optimized)"
+        "$value": "#dee2e7",
+        "$description": "Cool Grey / Cool Grey 1200\n#dee2e7\nPrimary text"
       },
       "Cool Grey 1300": {
         "$type": "color",
-        "$value": "#ebeff5",
-        "$description": "Cool Grey / Cool Grey 1300\n#ffffff\nPure white () () (OKLCH optimized)"
+        "$value": "#ffffff",
+        "$description": "Cool Grey / Cool Grey 1300\n#ffffff\nPure white"
       }
     }
   },
