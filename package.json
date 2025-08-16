@@ -23,6 +23,9 @@
     "consolidate-enhanced": "npm run build && node dist/scripts/consolidate-enhanced.js",
     "split": "npm run build && node dist/scripts/split.js",
     "import-export": "npm run build && node dist/scripts/import-export.js",
+    "sync": "npm run pull-latest && npm run split-latest",
+    "pull-latest": "node scripts/pull-latest.js",
+    "split-latest": "npm run build && node dist/scripts/split.js --no-backup",
     "validate-workflow": "node scripts/validate-workflow.js",
     "validate-token-studio": "node scripts/validate-token-studio.js"
   },

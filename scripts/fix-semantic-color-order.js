@@ -10,13 +10,14 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const PROPER_COLOR_ORDER = [
-  '000', '100', '200', '300', '400', '500', 
+  '0', '100', '200', '300', '400', '500', 
   '600', '700', '800', '900',
   '1000', '1100', '1200', '1300'
 ];
 
 const OLD_TO_NEW_MAPPING = {
-  '0000': '000',
+  '0000': '0',
+  '000': '0',
   '0100': '100', 
   '0200': '200',
   '0300': '300',
@@ -32,15 +33,34 @@ const OLD_TO_NEW_MAPPING = {
   '1300': '1300'
 };
 
-// Also include surface and content colors as they follow the same pattern
-const ALL_COLOR_TOKENS = [
+// Semantic color tokens in global.json
+const SEMANTIC_COLOR_TOKENS = [
   'primary', 'secondary', 'success', 'warning', 'error', 'accent', 'info',
   'surface', 'content'
 ];
 
-const SEMANTIC_COLOR_TOKENS = [
-  'primary', 'secondary', 'success', 'warning', 'error', 'accent'
+// Core color ramps in core.json (nested under Color Ramp)
+const CORE_COLOR_RAMPS = [
+  'Amber', 'Cool Neutral', 'Red', 'Green', 'Royal Blue', 'Yellow', 'Orange', 'Black'
 ];
+
+// Warning token hardcoded values that should use Orange ramp
+const WARNING_VALUES_TO_FIX = {
+  '100': '#5c2907',
+  '200': '#723308', 
+  '300': '#8e400a',
+  '400': '#ae4f0c',
+  '500': '#d15e0f',
+  '600': '#ef7520',
+  '700': '#F5A56F',
+  '800': '#F7BD94',
+  '900': '#FBDBC6',
+  '1000': '#FCE6D8',
+  '1100': '#FDF1E9',
+  '1200': '#FEF6F1', 
+  '1300': '#fffbf9',
+  '0': '#572706'
+};
 
 function reorderColorTokens(tokenObject) {
   // Since JavaScript sorts numeric string keys automatically,
@@ -74,77 +94,157 @@ function processTokenFile(filePath) {
   const tokens = JSON.parse(content);
   
   let changesMade = false;
+  const fileName = path.basename(filePath);
   
-  // Check each color token (including surface and content)
-  ALL_COLOR_TOKENS.forEach(colorToken => {
-    if (tokens[colorToken]) {
-      console.log(`  🎨 Reordering ${colorToken} colors...`);
-      
-      const originalKeys = Object.keys(tokens[colorToken]);
-      const availableKeys = PROPER_COLOR_ORDER.filter(level => tokens[colorToken][level]);
-      
-      
-      // Check if tokens need renaming (from 0000 format to 000 format)
-      const needsRenaming = originalKeys.some(key => key.startsWith('0') && key.length === 4);
-      const needsReordering = originalKeys[0] === '1000' || originalKeys[0] === '0000';
-      
-      if (needsRenaming || needsReordering) {
-        changesMade = true;
-        console.log(`    ✅ Will fix naming and order: ${originalKeys.slice(0,3).join(', ')}... → ${PROPER_COLOR_ORDER.slice(0,3).join(', ')}...`);
-      } else {
-        console.log(`    ✨ Already in correct format`);
-      }
+  if (fileName === 'core.json') {
+    // Handle core color ramps
+    if (tokens['Color Ramp']) {
+      CORE_COLOR_RAMPS.forEach(colorRamp => {
+        if (tokens['Color Ramp'][colorRamp]) {
+          console.log(`  🎨 Reordering ${colorRamp} core colors...`);
+          
+          const rampTokens = tokens['Color Ramp'][colorRamp];
+          const originalKeys = Object.keys(rampTokens);
+          
+          // Check if needs renaming
+          const needsRenaming = originalKeys.some(key => key.includes('0000') || key.includes('000'));
+          
+          if (needsRenaming) {
+            changesMade = true;
+            console.log(`    ✅ Will fix core color naming: ${originalKeys.slice(0,2).join(', ')}...`);
+          } else {
+            console.log(`    ✨ Already in correct format`);
+          }
+        }
+      });
     }
-  });
+  } else if (fileName === 'global.json') {
+    // Handle semantic color tokens
+    SEMANTIC_COLOR_TOKENS.forEach(colorToken => {
+      if (tokens[colorToken]) {
+        console.log(`  🎨 Reordering ${colorToken} colors...`);
+        
+        const originalKeys = Object.keys(tokens[colorToken]);
+        
+        // Check if tokens need renaming (from 0000/000 format to 0 format)
+        const needsRenaming = originalKeys.some(key => key === '0000' || key === '000');
+        const needsReordering = originalKeys[0] === '1000' || originalKeys[0] === '0000' || originalKeys[0] === '000';
+        
+        // Check if warning has hardcoded values
+        const isHardcodedWarning = colorToken === 'warning' && 
+          originalKeys.some(key => tokens[colorToken][key].$value && tokens[colorToken][key].$value.startsWith('#'));
+        
+        if (needsRenaming || needsReordering || isHardcodedWarning) {
+          changesMade = true;
+          if (isHardcodedWarning) {
+            console.log(`    ✅ Will fix hardcoded warning colors to use Orange ramp`);
+          } else {
+            console.log(`    ✅ Will fix naming and order: ${originalKeys.slice(0,3).join(', ')}... → ${PROPER_COLOR_ORDER.slice(0,3).join(', ')}...`);
+          }
+        } else {
+          console.log(`    ✨ Already in correct format`);
+        }
+      }
+    });
+  }
   
   // Write back if changes were made
   if (changesMade) {
-    // Manually reconstruct the file with proper ordering
-    const orderedTokens = {};
-    
-    // Process each top-level key
-    Object.keys(tokens).forEach(topLevelKey => {
-      if (ALL_COLOR_TOKENS.includes(topLevelKey)) {
-        // This is a color token that needs reordering
-        const colorTokens = tokens[topLevelKey];
-        const orderedColorTokens = {};
-        
-        // Add color tokens in proper order with renamed keys
-        PROPER_COLOR_ORDER.forEach(newKey => {
-          // Check if this color token exists in either old or new format
-          if (colorTokens[newKey]) {
-            // Already in new format
-            orderedColorTokens[newKey] = colorTokens[newKey];
-          } else {
-            // Check if it exists in old format and needs renaming
-            const oldKey = Object.keys(OLD_TO_NEW_MAPPING).find(k => OLD_TO_NEW_MAPPING[k] === newKey);
-            if (oldKey && colorTokens[oldKey]) {
-              // Rename from old format to new format, and also update the $value reference
-              const tokenValue = colorTokens[oldKey];
-              if (tokenValue.$value && typeof tokenValue.$value === 'string' && tokenValue.$value.includes(oldKey)) {
-                // Update the reference in the $value to use the new key
-                tokenValue.$value = tokenValue.$value.replace(new RegExp(oldKey, 'g'), newKey);
+    if (fileName === 'core.json') {
+      // Handle core color ramps
+      if (tokens['Color Ramp']) {
+        CORE_COLOR_RAMPS.forEach(colorRamp => {
+          if (tokens['Color Ramp'][colorRamp]) {
+            const rampTokens = tokens['Color Ramp'][colorRamp];
+            const orderedRampTokens = {};
+            
+            // Process each color token in proper order
+            PROPER_COLOR_ORDER.forEach(newKey => {
+              const fullNewKey = `${colorRamp} ${newKey}`;
+              
+              // Check existing formats
+              if (rampTokens[fullNewKey]) {
+                orderedRampTokens[fullNewKey] = rampTokens[fullNewKey];
+              } else {
+                // Check old formats
+                const oldFormats = [`${colorRamp} 0000`, `${colorRamp} 000`];
+                if (newKey === '0') {
+                  for (const oldFormat of oldFormats) {
+                    if (rampTokens[oldFormat]) {
+                      orderedRampTokens[fullNewKey] = rampTokens[oldFormat];
+                      break;
+                    }
+                  }
+                } else {
+                  const oldFormat = `${colorRamp} 0${newKey}`;
+                  if (rampTokens[oldFormat]) {
+                    orderedRampTokens[fullNewKey] = rampTokens[oldFormat];
+                  }
+                }
               }
-              orderedColorTokens[newKey] = tokenValue;
-            }
+            });
+            
+            // Add any remaining keys
+            Object.keys(rampTokens).forEach(key => {
+              if (!orderedRampTokens[key]) {
+                orderedRampTokens[key] = rampTokens[key];
+              }
+            });
+            
+            tokens['Color Ramp'][colorRamp] = orderedRampTokens;
           }
         });
-        
-        // Add any other keys that aren't color levels (and weren't already processed)
-        Object.keys(colorTokens).forEach(key => {
-          if (!PROPER_COLOR_ORDER.includes(key) && !Object.keys(OLD_TO_NEW_MAPPING).includes(key)) {
-            orderedColorTokens[key] = colorTokens[key];
-          }
-        });
-        
-        orderedTokens[topLevelKey] = orderedColorTokens;
-      } else {
-        // Not a color token, keep as is
-        orderedTokens[topLevelKey] = tokens[topLevelKey];
       }
-    });
+    } else if (fileName === 'global.json') {
+      // Handle semantic color tokens
+      SEMANTIC_COLOR_TOKENS.forEach(colorToken => {
+        if (tokens[colorToken]) {
+          const colorTokens = tokens[colorToken];
+          const orderedColorTokens = {};
+          
+          // Special handling for warning - convert hardcoded to references
+          if (colorToken === 'warning') {
+            PROPER_COLOR_ORDER.forEach(newKey => {
+              if (colorTokens[newKey] || colorTokens[OLD_TO_NEW_MAPPING[newKey]]) {
+                const existingToken = colorTokens[newKey] || colorTokens[OLD_TO_NEW_MAPPING[newKey]];
+                orderedColorTokens[newKey] = {
+                  $type: "color",
+                  $value: `{Color Ramp.Orange.Orange ${newKey}}`
+                };
+              }
+            });
+          } else {
+            // Normal processing for other tokens
+            PROPER_COLOR_ORDER.forEach(newKey => {
+              if (colorTokens[newKey]) {
+                orderedColorTokens[newKey] = colorTokens[newKey];
+              } else {
+                const oldKey = Object.keys(OLD_TO_NEW_MAPPING).find(k => OLD_TO_NEW_MAPPING[k] === newKey);
+                if (oldKey && colorTokens[oldKey]) {
+                  const tokenValue = { ...colorTokens[oldKey] };
+                  // Update $value references
+                  if (tokenValue.$value && typeof tokenValue.$value === 'string') {
+                    tokenValue.$value = tokenValue.$value.replace(new RegExp(oldKey, 'g'), newKey);
+                  }
+                  orderedColorTokens[newKey] = tokenValue;
+                }
+              }
+            });
+          }
+          
+          // Add any other keys that weren't processed
+          Object.keys(colorTokens).forEach(key => {
+            if (!orderedColorTokens[key] && !PROPER_COLOR_ORDER.includes(key) && !Object.keys(OLD_TO_NEW_MAPPING).includes(key)) {
+              orderedColorTokens[key] = colorTokens[key];
+            }
+          });
+          
+          tokens[colorToken] = orderedColorTokens;
+        }
+      });
+    }
     
-    const updatedContent = JSON.stringify(orderedTokens, null, 2);
+    const updatedContent = JSON.stringify(tokens, null, 2);
     fs.writeFileSync(filePath, updatedContent, 'utf8');
     console.log(`  💾 Updated ${path.basename(filePath)}`);
     return true;
@@ -157,7 +257,7 @@ function processTokenFile(filePath) {
 function main() {
   console.log('🔧 Semantic Color Token Order Fix Script');
   console.log('======================================');
-  console.log('Target order: 000 → 100 → ... → 900 → 1000 → 1100 → 1200 → 1300');
+  console.log('Target order: 0 → 100 → ... → 900 → 1000 → 1100 → 1200 → 1300');
   
   const tokensDir = path.join(process.cwd(), 'tokens');
   
@@ -188,7 +288,7 @@ function main() {
   console.log('\n📊 Summary:');
   console.log(`Files processed: ${tokenFiles.length}`);
   console.log(`Files updated: ${totalChanges}`);
-  console.log(`Color tokens checked: ${ALL_COLOR_TOKENS.join(', ')}`);
+  console.log(`Semantic tokens checked: ${SEMANTIC_COLOR_TOKENS.join(', ')}`);
   
   if (totalChanges > 0) {
     console.log('\n✅ Token ordering fixes completed!');

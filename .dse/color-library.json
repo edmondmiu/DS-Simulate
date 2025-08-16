@@ -1,21 +1,56 @@
 {
   "colorLibrary": {
     "colorSpace": "oklch",
+    "dualBaseApproach": {
+      "coolNeutralBase": {
+        "hex": "#35383d",
+        "oklch": {
+          "l": 0.34,
+          "c": 0.0097,
+          "h": 260.7173
+        },
+        "role": "neutral_foundation",
+        "description": "Cool Neutral 300 - Mathematical foundation for all neutral color families",
+        "appliesTo": ["Neutral", "Cool Neutral", "NeutralLight", "Cool Grey", "Dynamic Neutral", "Smoked Grey"]
+      },
+      "amberBase": {
+        "hex": "#ffd24d",
+        "oklch": {
+          "l": 0.88,
+          "c": 0.1535,
+          "h": 89.7806
+        },
+        "role": "brand_foundation",
+        "description": "Amber 500 - Mathematical foundation for all brand and accent color families",
+        "appliesTo": ["Amber", "Red", "Green", "Blue", "Orange", "Yellow", "Gold Yellow", "Royal Blue", "Deep Blue", "Midnight", "Mint", "Tiger Orange", "Neon Green", "Golden", "Crimson", "Forest Green", "Ocean Blue", "Logifuture Green", "Logifuture Blue", "Casino"]
+      }
+    },
     "lightnessRange": {
       "min": 15,
-      "max": 95
+      "max": 95,
+      "steps": 14,
+      "distribution": "linear",
+      "description": "0-1300 range mapped to 15%-95% lightness for accessibility compliance"
     },
     "chromaRange": {
       "primary": 0.15,
-      "neutral": 0.05
+      "neutral": 0.05,
+      "description": "Target chroma values - neutrals use low chroma, brand colors use moderate chroma"
     },
     "accessibilityThresholds": {
       "AA": 4.5,
-      "AAA": 7.0
+      "AAA": 7.0,
+      "deltaE": 2.0,
+      "description": "WCAG compliance thresholds and visual fidelity tolerance"
     },
     "conversionOptions": {
       "outputFormat": "hex",
-      "preserveOriginal": true
+      "preserveOriginal": true,
+      "precision": {
+        "lightness": 3,
+        "chroma": 4,
+        "hue": 4
+      }
     },
     "brandSpecific": {
       "bet9ja": {
@@ -35,9 +70,11 @@
       }
     },
     "colorGeneration": {
-      "rampSteps": 9,
+      "rampSteps": 14,
       "preserveKeyColors": true,
-      "algorithmicGeneration": false
+      "algorithmicGeneration": true,
+      "dualBaseOptimization": true,
+      "description": "Updated to use dual-base OKLCH optimization with 14-step ramps"
     }
   }
 }

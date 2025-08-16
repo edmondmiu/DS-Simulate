@@ -149,16 +149,26 @@ This project follows the [Token Studio format specification](https://docs.tokens
 
 ### Bidirectional Pipeline
 
-The system supports two primary workflows:
+The system supports complete bidirectional workflows between DSE and Token Studio:
 
-#### 1. Edit Workflow (Recommended for Development)
+#### 1. DSE → Token Studio Workflow
+```
+tokens/ → consolidate → tokensource.json → GitHub → Token Studio → Figma
+```
+
+#### 2. Token Studio → DSE Workflow (NEW)
+```
+Token Studio → GitHub → tokensource.json → split → tokens/ → DSE editing
+```
+
+#### 3. Local DSE Edit Workflow
 ```
 tokensource.json → split → edit tokens/ → consolidate → tokensource.json
 ```
 
-#### 2. Design Workflow (Future Figma Integration)
+#### 4. Sync Workflow (NEW)
 ```
-tokens/ → consolidate → tokensource.json → (Figma Token Studio)
+npm run sync → pull latest → split → tokens/ ready for editing
 ```
 
 ## Script Usage
@@ -172,6 +182,8 @@ npm run lint        # Run ESLint code quality checks
 npm run format      # Format code with Prettier
 npm run consolidate # Run consolidate script
 npm run split       # Run split script
+npm run sync        # Pull latest tokensource.json from GitHub + split to tokens/
+npm run pull-latest # Pull latest tokensource.json from GitHub only
 ```
 
 ### Consolidate Script
@@ -284,6 +296,48 @@ node dist/scripts/split.js --help
 4. Preserves Token Studio format and metadata
 5. Maintains perfect round-trip compatibility
 
+### Sync Script (NEW)
+
+The sync script provides bidirectional Token Studio ↔ DSE workflow by pulling the latest tokensource.json from GitHub and automatically splitting it to the tokens/ directory.
+
+**Basic Usage:**
+```bash
+npm run sync
+```
+
+**Individual Commands:**
+```bash
+npm run pull-latest  # Pull latest tokensource.json from GitHub only
+npm run split-latest # Split current tokensource.json to tokens/ (no backup)
+```
+
+**CLI Options:**
+```bash
+# Pull with verbose output
+npm run pull-latest -- --verbose
+
+# Pull without backup
+npm run pull-latest -- --no-backup
+
+# Pull from custom URL
+npm run pull-latest -- --url https://custom-url/tokensource.json
+
+# Show help
+npm run pull-latest -- --help
+```
+
+**What the Sync Script Does:**
+1. Downloads latest tokensource.json from GitHub repository
+2. Creates backup of current tokensource.json (optional)
+3. Validates downloaded JSON structure and token sets
+4. Automatically splits to tokens/ directory for local editing
+5. Provides summary of changes and next steps
+
+**Use Cases:**
+- **After Token Studio pushes**: Sync latest designer changes to local tokens/
+- **Before starting DSE work**: Ensure you have the latest token state
+- **Collaborative workflow**: Stay in sync with team changes
+
 ## Workflow Examples and Best Practices
 
 ### Complete Design System Engineer Workflows
@@ -311,21 +365,20 @@ ls -la tokensource.json
 
 #### Workflow 2: Editing Tokens (Recommended Development Flow)
 ```bash
-# 1. Start with consolidated tokensource.json
-# 2. Split into modular files for editing
-npm run split
+# 1. Sync with latest changes from Token Studio/GitHub
+npm run sync
 
-# 3. Edit individual token files as needed
+# 2. Edit individual token files as needed
 # Example: Edit tokens/core.json to add new color
 vim tokens/core.json
 
-# 4. Consolidate changes back
+# 3. Consolidate changes back
 npm run consolidate
 
-# 5. Verify round-trip compatibility
+# 4. Verify round-trip compatibility
 npm test
 
-# 6. Commit changes
+# 5. Commit changes
 git add tokensource.json tokens/
 git commit -m "Update core color tokens"
 ```
@@ -348,7 +401,25 @@ npm run consolidate
 npm test
 ```
 
-#### Workflow 4: Recovering from Issues
+#### Workflow 4: Sync After Token Studio Changes (NEW)
+```bash
+# 1. Designer makes changes in Token Studio and pushes to GitHub
+# 2. DSE syncs latest changes
+npm run sync
+
+# 3. Review what changed
+git diff tokens/
+
+# 4. Make additional DSE modifications if needed
+vim tokens/core.json
+
+# 5. Consolidate and commit
+npm run consolidate
+git add tokensource.json tokens/
+git commit -m "Integrate Token Studio changes + DSE enhancements"
+```
+
+#### Workflow 5: Recovering from Issues
 ```bash
 # If you need to restore from backup:
 ls backups/  # Find your backup timestamp

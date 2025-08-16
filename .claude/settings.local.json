@@ -58,8 +58,28 @@
       "Bash(npm run typecheck:*)",
       "WebFetch(domain:docs.anthropic.com)",
       "Bash(npx tsc:*)",
-      "Bash(npx ts-node:*)"
+      "Bash(npx ts-node:*)",
+      "Bash(curl:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(firebase apps:create web design-system-testing)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(firebase deploy --only firestore:rules)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(git reset:*)",
+      "Bash(npm run:*)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }

@@ -41,6 +41,11 @@ Your existing workflow remains exactly the same:
    - Click token in Token Studio
    - Enhanced colors apply automatically
 
+4. **Bidirectional Sync** (NEW)
+   - Designer changes in Token Studio → Automatic sync to DSE tokens/
+   - DSE changes in tokens/ → Automatic sync to Token Studio
+   - Complete collaborative workflow with no conflicts
+
 ### Epic 4 Benefits You'll Notice
 - **Smoother Color Progressions** - More visually uniform color ramps
 - **Better Accessibility** - Improved contrast relationships

@@ -2,7 +2,7 @@
  * OKLCH-based accessibility validation for DSE color system
  * Provides perceptually accurate contrast ratio calculations and WCAG compliance checking
  */
-import { oklch, wcag, deltaE, converter } from 'culori';
+import { oklch, converter } from 'culori';
 export class AccessibilityValidator {
     defaultThresholds = {
         AA: 4.5,

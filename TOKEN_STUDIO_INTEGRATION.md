@@ -104,14 +104,23 @@ npm run validate-token-studio
 
 ## Automated Workflow Integration
 
-### Designer Experience
+### Bidirectional Workflow (NEW)
 
+#### DSE → Token Studio (Existing)
 1. **DSE Updates Tokens:** Design System Engineer modifies `tokens/` directory
 2. **Git Push:** Changes pushed to `main` branch trigger automation
 3. **CI/CD Processing:** GitHub Actions runs consolidation (~2 minutes)
 4. **Auto-Update:** `tokensource.json` updated automatically
 5. **Token Studio Sync:** Plugin detects changes via raw GitHub URL
 6. **Live Updates:** Designers receive token changes in Figma
+
+#### Token Studio → DSE (NEW)
+1. **Designer Updates:** Designer modifies tokens in Token Studio
+2. **Token Studio Push:** Plugin pushes changes to GitHub `tokensource.json`
+3. **Auto-Split:** GitHub Actions automatically splits to `tokens/` directory
+4. **DSE Sync:** DSE runs `npm run sync` to pull latest changes
+5. **Local Editing:** DSE can continue editing with latest designer changes
+6. **Collaborative Flow:** Both sides stay in sync automatically
 
 ### Sync Performance
 
@@ -265,6 +274,8 @@ The system supports all Token Studio token types:
 npm run validate-token-studio    # Token Studio compatibility check
 npm run validate-workflow        # Complete system validation  
 npm run consolidate --verbose    # Regenerate tokens with logging
+npm run sync                     # Pull latest from GitHub + split to tokens/
+npm run pull-latest              # Pull latest tokensource.json only
 npm test                        # Full test suite (11/11 tests)
 npm run build                   # Compile TypeScript sources
 npm run lint                    # Code quality validation

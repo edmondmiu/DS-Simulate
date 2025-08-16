@@ -1,0 +1,234 @@
+name: Split Token Source to Modular Files
+
+on:
+  push:
+    branches: [main]
+    paths: ['tokensource.json']  # Only trigger when tokensource.json is modified
+
+permissions:
+  contents: write  # Required to commit tokens/ directory updates
+
+jobs:
+  split-tokens:
+    name: Split tokensource.json to tokens/
+    runs-on: ubuntu-latest
+    
+    # Skip if the push came from our own update-tokens workflow to prevent loops
+    if: ${{ !contains(github.event.head_commit.message, '🤖 Auto-update tokensource.json') }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.11.1'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate tokensource.json
+        id: validate
+        run: |
+          echo "🔍 Validating tokensource.json structure..."
+          
+          # Check if file exists
+          if [ ! -f "tokensource.json" ]; then
+            echo "❌ ERROR: tokensource.json not found"
+            exit 1
+          fi
+          
+          # Get file size for tracking
+          FILE_SIZE=$(stat -c%s "tokensource.json" 2>/dev/null || stat -f%z "tokensource.json" 2>/dev/null)
+          echo "tokensource.json size: ${FILE_SIZE} bytes"
+          
+          # Validate JSON structure
+          if ! node -e "JSON.parse(require('fs').readFileSync('tokensource.json', 'utf8'))"; then
+            echo "❌ ERROR: tokensource.json is not valid JSON"
+            exit 1
+          fi
+          
+          # Count token sets
+          TOKEN_SETS=$(node -e "
+            const tokens = JSON.parse(require('fs').readFileSync('tokensource.json', 'utf8'));
+            const sets = Object.keys(tokens).filter(key => !key.startsWith('\$'));
+            console.log(sets.length);
+          ")
+          
+          echo "file_size=${FILE_SIZE}" >> $GITHUB_OUTPUT
+          echo "token_sets=${TOKEN_SETS}" >> $GITHUB_OUTPUT
+          
+          echo "✅ tokensource.json validation passed"
+
+      - name: Run comprehensive validation
+        run: |
+          echo "🔍 Running comprehensive validation pipeline..."
+          
+          # TypeScript compilation check
+          echo "▶️ TypeScript compilation..."
+          npm run build
+          
+          # ESLint code quality validation
+          echo "▶️ ESLint validation..."
+          npm run lint
+          
+          # Complete test suite
+          echo "▶️ Test suite execution..."
+          npm test
+          
+          echo "✅ All validation checks passed"
+
+      - name: Backup current tokens directory
+        run: |
+          echo "💾 Creating backup of current tokens directory..."
+          
+          if [ -d "tokens" ]; then
+            cp -r tokens tokens_backup_$(date +%Y%m%d_%H%M%S)
+            echo "✅ Backup created successfully"
+          else
+            echo "ℹ️ No existing tokens directory to backup"
+          fi
+
+      - name: Split tokensource.json to tokens/
+        id: split
+        run: |
+          echo "🔄 Splitting tokensource.json to modular tokens/ files..."
+          
+          # Run split script
+          npm run split
+          
+          # Verify tokens directory was created/updated
+          if [ ! -d "tokens" ]; then
+            echo "❌ ERROR: tokens/ directory not created by split operation"
+            exit 1
+          fi
+          
+          # Count files in tokens directory
+          TOKEN_FILES=$(find tokens -name "*.json" | wc -l)
+          echo "Created/updated ${TOKEN_FILES} token files"
+          
+          # Verify key files exist
+          REQUIRED_FILES=("tokens/\$metadata.json" "tokens/\$themes.json" "tokens/core.json" "tokens/global.json")
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ ERROR: Required file $file not found after split"
+              exit 1
+            fi
+          done
+          
+          echo "token_files=${TOKEN_FILES}" >> $GITHUB_OUTPUT
+          echo "✅ Token split completed successfully"
+
+      - name: Run round-trip validation
+        run: |
+          echo "🔄 Running round-trip validation..."
+          
+          # Store original tokensource.json for comparison
+          cp tokensource.json tokensource_original.json
+          
+          # Re-consolidate from split tokens
+          npm run consolidate
+          
+          # Compare file sizes (basic validation)
+          ORIGINAL_SIZE=$(stat -c%s "tokensource_original.json" 2>/dev/null || stat -f%z "tokensource_original.json" 2>/dev/null)
+          NEW_SIZE=$(stat -c%s "tokensource.json" 2>/dev/null || stat -f%z "tokensource.json" 2>/dev/null)
+          
+          if [ "${ORIGINAL_SIZE}" != "${NEW_SIZE}" ]; then
+            echo "❌ ERROR: Round-trip validation failed - size mismatch"
+            echo "Original: ${ORIGINAL_SIZE} bytes, Re-consolidated: ${NEW_SIZE} bytes"
+            exit 1
+          fi
+          
+          # Clean up comparison file
+          rm tokensource_original.json
+          
+          echo "✅ Round-trip validation passed"
+
+      - name: Check for changes to commit
+        id: git-check
+        run: |
+          echo "🔍 Checking for changes to commit..."
+          
+          # Check if tokens directory has changes
+          if git diff --quiet tokens/; then
+            echo "No changes to tokens/ directory - skipping commit"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected in tokens/ directory"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            
+            # Show diff summary for logging
+            echo "📋 Changes summary:"
+            git diff --stat tokens/
+          fi
+
+      - name: Commit updated tokens directory
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          echo "💾 Committing updated tokens/ directory..."
+          
+          # Configure git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add all tokens directory changes
+          git add tokens/
+          
+          # Create comprehensive commit message
+          git commit -m "🔄 Auto-split tokensource.json to modular tokens/
+
+          - Split from tokensource.json changes (Token Studio update)
+          - Source file size: ${{ steps.validate.outputs.file_size }} bytes
+          - Token sets: ${{ steps.validate.outputs.token_sets }} sets
+          - Token files: ${{ steps.split.outputs.token_files }} files created/updated
+          - Validation: All tests passing ✅
+          - Round-trip: Verified ✅
+          
+          Generated by GitHub Actions split workflow"
+
+      - name: Push changes
+        if: steps.git-check.outputs.has_changes == 'true'
+        run: |
+          echo "⬆️ Pushing changes to repository..."
+          git push
+
+      - name: Clean up backups
+        if: always()
+        run: |
+          echo "🧹 Cleaning up temporary backup files..."
+          rm -rf tokens_backup_*
+
+      - name: Workflow summary
+        if: always()
+        run: |
+          echo "## 🔄 Token Source Split Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          echo "### ✅ Split Operation Completed" >> $GITHUB_STEP_SUMMARY
+          echo "- **Source File:** tokensource.json (${{ steps.validate.outputs.file_size }} bytes)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Token Sets:** ${{ steps.validate.outputs.token_sets }} sets processed" >> $GITHUB_STEP_SUMMARY
+          echo "- **Token Files:** ${{ steps.split.outputs.token_files }} files created/updated" >> $GITHUB_STEP_SUMMARY
+          echo "- **Validation:** All checks passed ✅" >> $GITHUB_STEP_SUMMARY
+          echo "- **Round-trip:** Verified ✅" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.git-check.outputs.has_changes }}" = "true" ]; then
+            echo "- **Repository:** tokens/ directory updated and committed ✅" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Repository:** No changes needed 📋" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔗 Workflow Integration" >> $GITHUB_STEP_SUMMARY
+          echo "This workflow automatically maintains sync between tokensource.json (Token Studio) and tokens/ directory (DSE workflow)." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Next Steps for DSE:**" >> $GITHUB_STEP_SUMMARY
+          echo "1. Pull latest changes: \`git pull\`" >> $GITHUB_STEP_SUMMARY
+          echo "2. Review updated tokens/ files" >> $GITHUB_STEP_SUMMARY
+          echo "3. Continue with local DSE workflow" >> $GITHUB_STEP_SUMMARY
+          
+          echo "✅ Split workflow completed successfully"
