@@ -82,73 +82,73 @@
     "Neutral": {
       "Neutral 0": {
         "$type": "color",
-        "$value": "#f9f9f9",
-        "$description": "Neutral / Neutral 0\n#f9f9f9\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#161616",
+        "$description": "Neutral / Neutral 0\n#161616\nCorrected progression - neutral fixed"
       },
       "Neutral 100": {
         "$type": "color",
-        "$value": "#f1f1f1",
-        "$description": "Neutral / Neutral 100\n#f1f1f1\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#1a1a1a",
+        "$description": "Neutral / Neutral 100\n#1a1a1a\nCorrected progression - neutral fixed"
       },
       "Neutral 200": {
         "$type": "color",
-        "$value": "#e7e7e7",
-        "$description": "Neutral / Neutral 200\n#e7e7e7\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#292929",
+        "$description": "Neutral / Neutral 200\n#292929\nCorrected progression - neutral fixed"
       },
       "Neutral 300": {
         "$type": "color",
-        "$value": "#dcdcdc",
-        "$description": "Neutral / Neutral 300\n#dcdcdc\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#3c3c3c",
+        "$description": "Neutral / Neutral 300\n#3c3c3c\nCorrected progression - neutral fixed"
       },
       "Neutral 400": {
         "$type": "color",
-        "$value": "#cfcfcf",
-        "$description": "Neutral / Neutral 400\n#cfcfcf\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#525252",
+        "$description": "Neutral / Neutral 400\n#525252\nCorrected progression - neutral fixed"
       },
       "Neutral 500": {
         "$type": "color",
-        "$value": "#bfbfbf",
-        "$description": "Neutral / Neutral 500\n#bfbfbf\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#6b6b6b",
+        "$description": "Neutral / Neutral 500\n#6b6b6b\nCorrected progression - neutral fixed"
       },
       "Neutral 600": {
         "$type": "color",
-        "$value": "#a4a4a4",
-        "$description": "Neutral / Neutral 600\n#a4a4a4\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#858585",
+        "$description": "Neutral / Neutral 600\n#858585\nCorrected progression - neutral fixed"
       },
       "Neutral 700": {
         "$type": "color",
-        "$value": "#858585",
-        "$description": "Neutral / Neutral 700\n#858585\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#a4a4a4",
+        "$description": "Neutral / Neutral 700\n#a4a4a4\nCorrected progression - neutral fixed"
       },
       "Neutral 800": {
         "$type": "color",
-        "$value": "#6b6b6b",
-        "$description": "Neutral / Neutral 800\n#6b6b6b\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#bfbfbf",
+        "$description": "Neutral / Neutral 800\n#bfbfbf\nCorrected progression - neutral fixed"
       },
       "Neutral 900": {
         "$type": "color",
-        "$value": "#525252",
-        "$description": "Neutral / Neutral 900\n#525252\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#cfcfcf",
+        "$description": "Neutral / Neutral 900\n#cfcfcf\nCorrected progression - neutral fixed"
       },
       "Neutral 1000": {
         "$type": "color",
-        "$value": "#3c3c3c",
-        "$description": "Neutral / Neutral 1000\n#3c3c3c\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#dcdcdc",
+        "$description": "Neutral / Neutral 1000\n#dcdcdc\nCorrected progression - neutral fixed"
       },
       "Neutral 1100": {
         "$type": "color",
-        "$value": "#292929",
-        "$description": "Neutral / Neutral 1100\n#292929\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#e7e7e7",
+        "$description": "Neutral / Neutral 1100\n#e7e7e7\nCorrected progression - neutral fixed"
       },
       "Neutral 1200": {
         "$type": "color",
-        "$value": "#1a1a1a",
-        "$description": "Neutral / Neutral 1200\n#1a1a1a\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#f1f1f1",
+        "$description": "Neutral / Neutral 1200\n#f1f1f1\nCorrected progression - neutral fixed"
       },
       "Neutral 1300": {
         "$type": "color",
-        "$value": "#161616",
-        "$description": "Neutral / Neutral 1300\n#161616\nOKLCH optimized - reversed_cool_neutral_progression"
+        "$value": "#f9f9f9",
+        "$description": "Neutral / Neutral 1300\n#f9f9f9\nCorrected progression - neutral fixed"
       }
     },
     "Red": {
@@ -997,8 +997,8 @@
       },
       "Neon Green 1300": {
         "$type": "color",
-        "$value": "#003E00",
-        "$description": "Neon Green / Neon Green 000\n#003E00\n1.16:1\n(N/A) Large text\n(N/A) Normal text"
+        "$value": "#f7fff7",
+        "$description": "Neon Green / Neon Green 1300\n#f7fff7\nCorrected - now properly lightest in progression"
       }
     },
     "Cool Neutral": {
