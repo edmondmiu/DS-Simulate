@@ -1991,5 +1991,1053 @@
       "$value": "1.75",
       "$description": "Loose line height"
     }
+  },
+  "Amber": {
+    "value": {
+      "0": {
+        "value": "#1a1608",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#29210d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#3d2c00",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#533700",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#6a4000",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#ffd24d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#f9d97a",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#efdfb0",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#ede4c7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#ede8d7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#efece2",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#f2f0eb",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#f6f4f1",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#f9f8f7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Red": {
+    "value": {
+      "0": {
+        "value": "#350000",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#400001",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#4f0000",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#5f0000",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#840000",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#ed3d3d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#e86666",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#e28485",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#dc9e9f",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#d6b5b5",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#dec6c6",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#e5d8d8",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#eee8e8",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#fbf7f7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Green": {
+    "value": {
+      "0": {
+        "value": "#001d09",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#02240f",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#022c12",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#003515",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#004302",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#119348",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#00a64d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#00b951",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#00cb5c",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#75ce9b",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#9ed7b7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#c1e1ce",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#dfece4",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#f4faf7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Yellow": {
+    "value": {
+      "0": {
+        "value": "#171613",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#1f1d19",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#292418",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#332b14",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#423200",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#957F31",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#a98c16",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#bb9b00",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#d0a800",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#d4bd00",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#dccd5a",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#e6dc96",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#edead0",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#fbf9ec",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Royal Blue": {
+    "value": {
+      "0": {
+        "value": "#00113d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#001549",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#001a51",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#002058",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#00255f",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#1B57AE",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#1566d8",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#4580ce",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#5b95dc",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#6fabe9",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#96beed",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#bed1e9",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#dde4ed",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#f7f8fb",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Mint": {
+    "value": {
+      "0": {
+        "value": "#001d0c",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#002412",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#002d16",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#00351a",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#004311",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#009354",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#20a26d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#59ac8a",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#7ab89d",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#a0c1b2",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#b7cec3",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#cfdbd6",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#e3e9e7",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#f7f9f8",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Tiger Orange": {
+    "value": {
+      "0": {
+        "value": "#270e00",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "100": {
+        "value": "#341400",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "200": {
+        "value": "#411900",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "300": {
+        "value": "#5b0f00",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "400": {
+        "value": "#6e0d00",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "500": {
+        "value": "#E06B08",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "600": {
+        "value": "#f77000",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "700": {
+        "value": "#eb914c",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "800": {
+        "value": "#e9a674",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "900": {
+        "value": "#e0bca1",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1000": {
+        "value": "#e1ccbe",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1100": {
+        "value": "#e9dbcf",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1200": {
+        "value": "#efeae6",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      },
+      "1300": {
+        "value": "#faf8f6",
+        "type": "color",
+        "description": "OKLCH optimized - mathematically consistent"
+      }
+    }
+  },
+  "Cool Neutral": {
+    "value": {
+      "0": {
+        "value": "#141619",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "100": {
+        "value": "#181a1d",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "200": {
+        "value": "#262a2d",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "300": {
+        "value": "#393d41",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "400": {
+        "value": "#4e5357",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "500": {
+        "value": "#676c70",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "600": {
+        "value": "#81868b",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "700": {
+        "value": "#a0a5a9",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "800": {
+        "value": "#bbbfc4",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "900": {
+        "value": "#ccd0d4",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1000": {
+        "value": "#d9dce0",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1100": {
+        "value": "#e4e8eb",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1200": {
+        "value": "#eff1f4",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1300": {
+        "value": "#f7f9fc",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      }
+    }
+  },
+  "Neutral": {
+    "value": {
+      "0": {
+        "value": "#f9f9f9",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "100": {
+        "value": "#f1f1f1",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "200": {
+        "value": "#e7e7e7",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "300": {
+        "value": "#dcdcdc",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "400": {
+        "value": "#cfcfcf",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "500": {
+        "value": "#bfbfbf",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "600": {
+        "value": "#a4a4a4",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "700": {
+        "value": "#858585",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "800": {
+        "value": "#6b6b6b",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "900": {
+        "value": "#525252",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "1000": {
+        "value": "#3c3c3c",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "1100": {
+        "value": "#292929",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "1200": {
+        "value": "#1a1a1a",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      },
+      "1300": {
+        "value": "#161616",
+        "type": "color",
+        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+      }
+    }
+  },
+  "Golden": {
+    "value": {
+      "0": {
+        "value": "#613400",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "100": {
+        "value": "#7f4400",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "200": {
+        "value": "#955900",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "300": {
+        "value": "#b07200",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "400": {
+        "value": "#c99737",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "500": {
+        "value": "#f6b52d",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "600": {
+        "value": "#ffcb6e",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "700": {
+        "value": "#ffe5a2",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "800": {
+        "value": "#fff2af",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "900": {
+        "value": "#ffffc4",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1000": {
+        "value": "#ffffcd",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1100": {
+        "value": "#ffffce",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1200": {
+        "value": "#ffffcf",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1300": {
+        "value": "#ffffce",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      }
+    }
+  },
+  "Crimson": {
+    "value": {
+      "0": {
+        "value": "#530000",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "100": {
+        "value": "#750000",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "200": {
+        "value": "#8a0000",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "300": {
+        "value": "#b20000",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "400": {
+        "value": "#d40005",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "500": {
+        "value": "#f5222d",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "600": {
+        "value": "#ff4142",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "700": {
+        "value": "#ff786f",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "800": {
+        "value": "#ff887d",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "900": {
+        "value": "#ffa093",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1000": {
+        "value": "#ffbdb1",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1100": {
+        "value": "#ffc1b5",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1200": {
+        "value": "#ffc5b9",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1300": {
+        "value": "#ffc7bb",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      }
+    }
+  },
+  "Forest Green": {
+    "value": {
+      "0": {
+        "value": "#003606",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "100": {
+        "value": "#004a01",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "200": {
+        "value": "#006000",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "300": {
+        "value": "#04761a",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "400": {
+        "value": "#33943a",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "500": {
+        "value": "#53b157",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "600": {
+        "value": "#78c179",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "700": {
+        "value": "#90d990",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "800": {
+        "value": "#9ee79e",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "900": {
+        "value": "#c3fac2",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1000": {
+        "value": "#cdffcd",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1100": {
+        "value": "#d1ffd0",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1200": {
+        "value": "#d3ffd2",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1300": {
+        "value": "#d4ffd3",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      }
+    }
+  },
+  "Ocean Blue": {
+    "value": {
+      "0": {
+        "value": "#002856",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "100": {
+        "value": "#003779",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "200": {
+        "value": "#00488c",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "300": {
+        "value": "#005cb4",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "400": {
+        "value": "#0079d4",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "500": {
+        "value": "#2196f3",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "600": {
+        "value": "#5aabf5",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "700": {
+        "value": "#72c3ff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "800": {
+        "value": "#81d1ff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "900": {
+        "value": "#ade8ff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1000": {
+        "value": "#b8f4ff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1100": {
+        "value": "#bbf7ff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1200": {
+        "value": "#bffbff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      },
+      "1300": {
+        "value": "#c0fcff",
+        "type": "color",
+        "description": "OKLCH optimized - smart_anchored"
+      }
+    }
+  },
+  "Cool Grey": {
+    "value": {
+      "0": {
+        "value": "#14161a",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "100": {
+        "value": "#181a1e",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "200": {
+        "value": "#27292e",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "300": {
+        "value": "#393d42",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "400": {
+        "value": "#4f5259",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "500": {
+        "value": "#676b72",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "600": {
+        "value": "#82868d",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "700": {
+        "value": "#a0a4ab",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "800": {
+        "value": "#bbbfc6",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "900": {
+        "value": "#ccd0d6",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1000": {
+        "value": "#d9dce1",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1100": {
+        "value": "#e4e7ec",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1200": {
+        "value": "#eff1f5",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      },
+      "1300": {
+        "value": "#f7f9fd",
+        "type": "color",
+        "description": "OKLCH optimized - cool_neutral_progression_applied"
+      }
+    }
+  },
+  "_deployment": {
+    "version": "4.0.0",
+    "deployedAt": "2025-08-17T18:12:41.518Z",
+    "oklchOptimized": true,
+    "epic": "Epic 4 V2: OKLCH Color Optimization",
+    "statistics": {
+      "totalColors": 294,
+      "newFamilies": 14,
+      "averageSmoothness": 0.5755822135336089,
+      "dualModeSystem": true
+    }
   }
 }

@@ -1,0 +1,2346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 2 Brand Preserved: Key Colors Available in Both Modes</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .brand-principle {
+            background: #2d4a22;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .family-comparison {
+            margin: 40px 0;
+            padding: 20px;
+            border: 2px solid #4a7c59;
+            border-radius: 8px;
+            background: #1a2f1a;
+        }
+        .color-family {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .dark-mode {
+            background: #2a2a2a;
+            border: 1px solid #555;
+        }
+        .light-mode {
+            background: #3a3a3a;
+            border: 1px solid #666;
+        }
+        .color-ramp {
+            display: flex;
+            gap: 2px;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        .color-swatch {
+            min-width: 60px;
+            height: 80px;
+            position: relative;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .color-swatch.brand-primary {
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        .color-swatch.brand-secondary {
+            border: 2px solid #ff8c00;
+        }
+        .color-info {
+            position: absolute;
+            bottom: 2px;
+            left: 2px;
+            right: 2px;
+            background: rgba(0,0,0,0.7);
+            padding: 2px;
+            border-radius: 2px;
+            font-size: 10px;
+            line-height: 1.2;
+        }
+        .color-info span {
+            display: block;
+            color: white;
+        }
+        .brand-tag {
+            background: #ffd700;
+            color: #000;
+            padding: 1px 2px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+        .brand-preservation-info {
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .preserved-brand {
+            display: inline-block;
+            background: #4a7c59;
+            padding: 4px 8px;
+            margin: 2px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .brand-benefits {
+            background: #1a2a4a;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #4a7c59;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .light-preview {
+            background: #f5f5f5;
+            color: #333;
+        }
+        .light-preview .header,
+        .light-preview .brand-principle,
+        .light-preview .family-comparison {
+            background: #fff;
+            color: #333;
+            border-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Light Preview</button>
+    
+    <div class="header">
+        <h1>🎨 Checkpoint 2 Brand Preserved</h1>
+        <h2>Key Brand Colors Available in Both Modes</h2>
+        <p>Ensuring colors like #ffd24d are accessible regardless of theme</p>
+    </div>
+
+    <div class="brand-principle">
+        <h3>🎯 Brand Color Preservation Principle</h3>
+        <p><strong>Problem Solved:</strong> Key brand colors now available in both light and dark modes</p>
+        <p><strong>Example:</strong> Amber #ffd24d (Step 500) preserved in light mode for consistent branding</p>
+        <p><strong>Benefit:</strong> Designers can use brand colors without worrying about theme context</p>
+        <p><strong>Gold border:</strong> Primary brand colors | <strong>Orange border:</strong> Secondary brand colors</p>
+    </div>
+
+    
+      <div class="family-comparison">
+        <h3>Amber Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Amber-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #1c1602;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#1c1602</span>
+              <span class="lightness">L: 0.202</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #2f2404;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#2f2404</span>
+              <span class="lightness">L: 0.266</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #4b3a06;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#4b3a06</span>
+              <span class="lightness">L: 0.357</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #7a5c00;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#7a5c00</span>
+              <span class="lightness">L: 0.492</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #b38600;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#b38600</span>
+              <span class="lightness">L: 0.646</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #ffd24d;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#ffd24d</span>
+              <span class="lightness">L: 0.880</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #ffdf80;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#ffdf80</span>
+              <span class="lightness">L: 0.911</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #ffe8a3;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#ffe8a3</span>
+              <span class="lightness">L: 0.934</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fceec5;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#fceec5</span>
+              <span class="lightness">L: 0.950</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fbf3da;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#fbf3da</span>
+              <span class="lightness">L: 0.964</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fbf7e9;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#fbf7e9</span>
+              <span class="lightness">L: 0.975</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fcfaf2;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#fcfaf2</span>
+              <span class="lightness">L: 0.984</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fdfbf7;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#fdfbf7</span>
+              <span class="lightness">L: 0.989</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fefdfb;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#fefdfb</span>
+              <span class="lightness">L: 0.994</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Amber-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #1a1608;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#1a1608</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #29210d;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#29210d</span>
+              <span class="lightness">L: 0.252</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #3d2c00;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#3d2c00</span>
+              <span class="lightness">L: 0.305</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #533700;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#533700</span>
+              <span class="lightness">L: 0.357</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #6a4000;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#6a4000</span>
+              <span class="lightness">L: 0.409</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #ffd24d;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#ffd24d</span>
+              <span class="lightness">L: 0.880</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f9d97a;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#f9d97a</span>
+              <span class="lightness">L: 0.893</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #efdfb0;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#efdfb0</span>
+              <span class="lightness">L: 0.905</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #ede4c7;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#ede4c7</span>
+              <span class="lightness">L: 0.918</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #ede8d7;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#ede8d7</span>
+              <span class="lightness">L: 0.930</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #efece2;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#efece2</span>
+              <span class="lightness">L: 0.943</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f2f0eb;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#f2f0eb</span>
+              <span class="lightness">L: 0.955</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f6f4f1;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#f6f4f1</span>
+              <span class="lightness">L: 0.968</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f9f8f7;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#f9f8f7</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#ffd24d (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+      <div class="family-comparison">
+        <h3>Red Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Red-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #6d0a0a;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#6d0a0a</span>
+              <span class="lightness">L: 0.343</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #740b0b;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#740b0b</span>
+              <span class="lightness">L: 0.358</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #8d0d0d;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#8d0d0d</span>
+              <span class="lightness">L: 0.410</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #ae1111;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#ae1111</span>
+              <span class="lightness">L: 0.478</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #d41414;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#d41414</span>
+              <span class="lightness">L: 0.552</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #ed3d3d;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#ed3d3d</span>
+              <span class="lightness">L: 0.626</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f16e6e;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#f16e6e</span>
+              <span class="lightness">L: 0.696</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f59595;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#f59595</span>
+              <span class="lightness">L: 0.769</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f8b9b9;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#f8b9b9</span>
+              <span class="lightness">L: 0.843</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FBD9D9;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#FBD9D9</span>
+              <span class="lightness">L: 0.914</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FCE4E4;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#FCE4E4</span>
+              <span class="lightness">L: 0.938</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FEF0F0;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#FEF0F0</span>
+              <span class="lightness">L: 0.966</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FEF5F5;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#FEF5F5</span>
+              <span class="lightness">L: 0.977</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFFAFA;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#FFFAFA</span>
+              <span class="lightness">L: 0.989</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Red-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #350000;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#350000</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #400001;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#400001</span>
+              <span class="lightness">L: 0.233</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #4f0000;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#4f0000</span>
+              <span class="lightness">L: 0.266</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #5f0000;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#5f0000</span>
+              <span class="lightness">L: 0.298</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #840000;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#840000</span>
+              <span class="lightness">L: 0.331</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #ed3d3d;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#ed3d3d</span>
+              <span class="lightness">L: 0.626</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e86666;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#e86666</span>
+              <span class="lightness">L: 0.670</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e28485;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#e28485</span>
+              <span class="lightness">L: 0.715</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #dc9e9f;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#dc9e9f</span>
+              <span class="lightness">L: 0.759</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #d6b5b5;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#d6b5b5</span>
+              <span class="lightness">L: 0.803</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #dec6c6;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#dec6c6</span>
+              <span class="lightness">L: 0.847</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e5d8d8;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#e5d8d8</span>
+              <span class="lightness">L: 0.892</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #eee8e8;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#eee8e8</span>
+              <span class="lightness">L: 0.936</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fbf7f7;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#fbf7f7</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#ed3d3d (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+      <div class="family-comparison">
+        <h3>Green Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Green-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #073c1d;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#073c1d</span>
+              <span class="lightness">L: 0.314</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #074120;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#074120</span>
+              <span class="lightness">L: 0.331</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #095027;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#095027</span>
+              <span class="lightness">L: 0.380</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #0b6431;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#0b6431</span>
+              <span class="lightness">L: 0.442</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #0d7b3c;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#0d7b3c</span>
+              <span class="lightness">L: 0.512</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #119348;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#119348</span>
+              <span class="lightness">L: 0.582</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #14ae55;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#14ae55</span>
+              <span class="lightness">L: 0.658</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #17ca62;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#17ca62</span>
+              <span class="lightness">L: 0.735</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #24e676;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#24e676</span>
+              <span class="lightness">L: 0.812</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #9BF4C0;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#9BF4C0</span>
+              <span class="lightness">L: 0.897</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #BDF7D6;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#BDF7D6</span>
+              <span class="lightness">L: 0.928</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #DBFBE8;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#DBFBE8</span>
+              <span class="lightness">L: 0.960</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #E9FCF1;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#E9FCF1</span>
+              <span class="lightness">L: 0.974</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #F5FEF9;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#F5FEF9</span>
+              <span class="lightness">L: 0.989</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Green-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #001d09;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#001d09</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #02240f;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#02240f</span>
+              <span class="lightness">L: 0.229</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #022c12;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#022c12</span>
+              <span class="lightness">L: 0.259</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #003515;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#003515</span>
+              <span class="lightness">L: 0.288</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #004302;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#004302</span>
+              <span class="lightness">L: 0.318</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #119348;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#119348</span>
+              <span class="lightness">L: 0.582</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #00a64d;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#00a64d</span>
+              <span class="lightness">L: 0.632</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #00b951;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#00b951</span>
+              <span class="lightness">L: 0.682</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #00cb5c;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#00cb5c</span>
+              <span class="lightness">L: 0.731</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #75ce9b;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#75ce9b</span>
+              <span class="lightness">L: 0.781</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #9ed7b7;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#9ed7b7</span>
+              <span class="lightness">L: 0.831</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #c1e1ce;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#c1e1ce</span>
+              <span class="lightness">L: 0.881</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #dfece4;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#dfece4</span>
+              <span class="lightness">L: 0.930</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f4faf7;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#f4faf7</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#119348 (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+      <div class="family-comparison">
+        <h3>Yellow Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Yellow-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #373531;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#373531</span>
+              <span class="lightness">L: 0.330</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #3B3831;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#3B3831</span>
+              <span class="lightness">L: 0.341</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #4D4532;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#4D4532</span>
+              <span class="lightness">L: 0.393</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #645733;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#645733</span>
+              <span class="lightness">L: 0.460</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #7B6A33;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#7B6A33</span>
+              <span class="lightness">L: 0.528</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #957F31;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#957F31</span>
+              <span class="lightness">L: 0.602</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #B79A2C;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#B79A2C</span>
+              <span class="lightness">L: 0.693</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #D6B522;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#D6B522</span>
+              <span class="lightness">L: 0.780</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFD600;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#FFD600</span>
+              <span class="lightness">L: 0.885</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFE900;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#FFE900</span>
+              <span class="lightness">L: 0.923</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFF07E;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#FFF07E</span>
+              <span class="lightness">L: 0.944</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFF5AE;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#FFF5AE</span>
+              <span class="lightness">L: 0.962</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFFAD4;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#FFFAD4</span>
+              <span class="lightness">L: 0.979</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFFCEA;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#FFFCEA</span>
+              <span class="lightness">L: 0.989</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Yellow-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #171613;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#171613</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #1f1d19;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#1f1d19</span>
+              <span class="lightness">L: 0.231</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #292418;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#292418</span>
+              <span class="lightness">L: 0.262</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #332b14;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#332b14</span>
+              <span class="lightness">L: 0.293</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #423200;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#423200</span>
+              <span class="lightness">L: 0.324</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #957F31;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#957F31</span>
+              <span class="lightness">L: 0.602</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #a98c16;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#a98c16</span>
+              <span class="lightness">L: 0.649</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #bb9b00;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#bb9b00</span>
+              <span class="lightness">L: 0.697</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #d0a800;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#d0a800</span>
+              <span class="lightness">L: 0.744</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #d4bd00;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#d4bd00</span>
+              <span class="lightness">L: 0.791</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #dccd5a;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#dccd5a</span>
+              <span class="lightness">L: 0.838</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e6dc96;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#e6dc96</span>
+              <span class="lightness">L: 0.886</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #edead0;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#edead0</span>
+              <span class="lightness">L: 0.933</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #fbf9ec;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#fbf9ec</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#957F31 (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+      <div class="family-comparison">
+        <h3>Royal Blue Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Royal Blue-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #002d72;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#002d72</span>
+              <span class="lightness">L: 0.320</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #003587;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#003587</span>
+              <span class="lightness">L: 0.357</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #003B92;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#003B92</span>
+              <span class="lightness">L: 0.380</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #003F97;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#003F97</span>
+              <span class="lightness">L: 0.394</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #0046A0;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#0046A0</span>
+              <span class="lightness">L: 0.417</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #1B57AE;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#1B57AE</span>
+              <span class="lightness">L: 0.470</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #075ECF;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#075ECF</span>
+              <span class="lightness">L: 0.508</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #4984D3;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#4984D3</span>
+              <span class="lightness">L: 0.611</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #67A2EA;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#67A2EA</span>
+              <span class="lightness">L: 0.702</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #83BFFF;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#83BFFF</span>
+              <span class="lightness">L: 0.789</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #A7CFFF;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#A7CFFF</span>
+              <span class="lightness">L: 0.843</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #D3E6FF;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#D3E6FF</span>
+              <span class="lightness">L: 0.919</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #E8F2FF;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#E8F2FF</span>
+              <span class="lightness">L: 0.957</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #F9FBFF;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#F9FBFF</span>
+              <span class="lightness">L: 0.988</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Royal Blue-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #00113d;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#00113d</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #001549;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#001549</span>
+              <span class="lightness">L: 0.221</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #001a51;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#001a51</span>
+              <span class="lightness">L: 0.242</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #002058;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#002058</span>
+              <span class="lightness">L: 0.262</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #00255f;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#00255f</span>
+              <span class="lightness">L: 0.283</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #1B57AE;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#1B57AE</span>
+              <span class="lightness">L: 0.470</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #1566d8;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#1566d8</span>
+              <span class="lightness">L: 0.534</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #4580ce;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#4580ce</span>
+              <span class="lightness">L: 0.597</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #5b95dc;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#5b95dc</span>
+              <span class="lightness">L: 0.661</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #6fabe9;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#6fabe9</span>
+              <span class="lightness">L: 0.725</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #96beed;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#96beed</span>
+              <span class="lightness">L: 0.789</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #bed1e9;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#bed1e9</span>
+              <span class="lightness">L: 0.853</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #dde4ed;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#dde4ed</span>
+              <span class="lightness">L: 0.916</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f7f8fb;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#f7f8fb</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#1B57AE (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+      <div class="family-comparison">
+        <h3>Mint Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Mint-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #003D23;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#003D23</span>
+              <span class="lightness">L: 0.317</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #004125;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#004125</span>
+              <span class="lightness">L: 0.330</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #00502D;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#00502D</span>
+              <span class="lightness">L: 0.379</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #006439;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#006439</span>
+              <span class="lightness">L: 0.442</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #007B46;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#007B46</span>
+              <span class="lightness">L: 0.512</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #009354;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#009354</span>
+              <span class="lightness">L: 0.583</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #2EAB75;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#2EAB75</span>
+              <span class="lightness">L: 0.661</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #74C7A4;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#74C7A4</span>
+              <span class="lightness">L: 0.767</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #98D6BB;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#98D6BB</span>
+              <span class="lightness">L: 0.826</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #C7E9DA;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#C7E9DA</span>
+              <span class="lightness">L: 0.905</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #D8F0E5;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#D8F0E5</span>
+              <span class="lightness">L: 0.934</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #EAF6F1;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#EAF6F1</span>
+              <span class="lightness">L: 0.963</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #F1FAF6;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#F1FAF6</span>
+              <span class="lightness">L: 0.977</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #F9FCFB;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#F9FCFB</span>
+              <span class="lightness">L: 0.989</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Mint-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #001d0c;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#001d0c</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #002412;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#002412</span>
+              <span class="lightness">L: 0.229</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #002d16;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#002d16</span>
+              <span class="lightness">L: 0.259</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #00351a;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#00351a</span>
+              <span class="lightness">L: 0.288</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #004311;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#004311</span>
+              <span class="lightness">L: 0.318</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #009354;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#009354</span>
+              <span class="lightness">L: 0.583</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #20a26d;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#20a26d</span>
+              <span class="lightness">L: 0.633</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #59ac8a;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#59ac8a</span>
+              <span class="lightness">L: 0.682</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #7ab89d;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#7ab89d</span>
+              <span class="lightness">L: 0.732</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #a0c1b2;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#a0c1b2</span>
+              <span class="lightness">L: 0.782</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #b7cec3;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#b7cec3</span>
+              <span class="lightness">L: 0.831</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #cfdbd6;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#cfdbd6</span>
+              <span class="lightness">L: 0.881</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e3e9e7;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#e3e9e7</span>
+              <span class="lightness">L: 0.930</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f7f9f8;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#f7f9f8</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#009354 (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+      <div class="family-comparison">
+        <h3>Tiger Orange Family - Brand Colors Preserved</h3>
+        
+        <div class="color-family dark-mode">
+          <h4>Tiger Orange-Dark</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #542C10;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#542C10</span>
+              <span class="lightness">L: 0.340</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #693511;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#693511</span>
+              <span class="lightness">L: 0.390</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #7E3F11;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#7E3F11</span>
+              <span class="lightness">L: 0.440</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #984A11;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#984A11</span>
+              <span class="lightness">L: 0.499</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #BC5B0E;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#BC5B0E</span>
+              <span class="lightness">L: 0.580</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #E06B08;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#E06B08</span>
+              <span class="lightness">L: 0.657</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FF7800;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#FF7800</span>
+              <span class="lightness">L: 0.720</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFA35F;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#FFA35F</span>
+              <span class="lightness">L: 0.795</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFBA88;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#FFBA88</span>
+              <span class="lightness">L: 0.842</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFDABF;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#FFDABF</span>
+              <span class="lightness">L: 0.913</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFEADB;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#FFEADB</span>
+              <span class="lightness">L: 0.950</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFF1E5;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#FFF1E5</span>
+              <span class="lightness">L: 0.966</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFF7F2;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#FFF7F2</span>
+              <span class="lightness">L: 0.981</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #FFFBF9;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#FFFBF9</span>
+              <span class="lightness">L: 0.991</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+        <div class="color-family light-mode">
+          <h4>Tiger Orange-Light</h4>
+          <div class="color-ramp">
+            
+          <div class="color-swatch " 
+               style="background-color: #270e00;">
+            <div class="color-info">
+              <span class="step">0</span>
+              <span class="hex">#270e00</span>
+              <span class="lightness">L: 0.200</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #341400;">
+            <div class="color-info">
+              <span class="step">100</span>
+              <span class="hex">#341400</span>
+              <span class="lightness">L: 0.235</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #411900;">
+            <div class="color-info">
+              <span class="step">200</span>
+              <span class="hex">#411900</span>
+              <span class="lightness">L: 0.270</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #5b0f00;">
+            <div class="color-info">
+              <span class="step">300</span>
+              <span class="hex">#5b0f00</span>
+              <span class="lightness">L: 0.305</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #6e0d00;">
+            <div class="color-info">
+              <span class="step">400</span>
+              <span class="hex">#6e0d00</span>
+              <span class="lightness">L: 0.341</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch brand-primary" 
+               style="background-color: #E06B08;">
+            <div class="color-info">
+              <span class="step">500</span>
+              <span class="hex">#E06B08</span>
+              <span class="lightness">L: 0.657</span>
+              <span class="brand-tag">BRAND</span>
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #f77000;">
+            <div class="color-info">
+              <span class="step">600</span>
+              <span class="hex">#f77000</span>
+              <span class="lightness">L: 0.697</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #eb914c;">
+            <div class="color-info">
+              <span class="step">700</span>
+              <span class="hex">#eb914c</span>
+              <span class="lightness">L: 0.738</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e9a674;">
+            <div class="color-info">
+              <span class="step">800</span>
+              <span class="hex">#e9a674</span>
+              <span class="lightness">L: 0.778</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e0bca1;">
+            <div class="color-info">
+              <span class="step">900</span>
+              <span class="hex">#e0bca1</span>
+              <span class="lightness">L: 0.819</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e1ccbe;">
+            <div class="color-info">
+              <span class="step">1000</span>
+              <span class="hex">#e1ccbe</span>
+              <span class="lightness">L: 0.859</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #e9dbcf;">
+            <div class="color-info">
+              <span class="step">1100</span>
+              <span class="hex">#e9dbcf</span>
+              <span class="lightness">L: 0.899</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #efeae6;">
+            <div class="color-info">
+              <span class="step">1200</span>
+              <span class="hex">#efeae6</span>
+              <span class="lightness">L: 0.940</span>
+              
+            </div>
+          </div>
+        
+          <div class="color-swatch " 
+               style="background-color: #faf8f6;">
+            <div class="color-info">
+              <span class="step">1300</span>
+              <span class="hex">#faf8f6</span>
+              <span class="lightness">L: 0.980</span>
+              
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      
+        
+      <div class="brand-preservation-info">
+        <h4>🎨 Preserved Brand Colors:</h4>
+        <span class="preserved-brand">#E06B08 (Step 500)</span>
+      </div>
+    
+        <div class="brand-benefits">
+          <div><strong>✅ Brand Consistency:</strong> Key colors available in both modes</div>
+          <div><strong>✅ Design Flexibility:</strong> Use brand colors regardless of mode</div>
+          <div><strong>✅ User Recognition:</strong> Brand identity maintained across themes</div>
+        </div>
+      </div>
+    
+
+    <div style="text-align: center; margin-top: 40px; opacity: 0.6;">
+        <p>Phase 2 Complete - Brand colors preserved across modes</p>
+        <p>Ready for Phase 3: Problem Family Fixes</p>
+    </div>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light-preview');
+            const button = document.querySelector('.mode-toggle');
+            button.textContent = document.body.classList.contains('light-preview') 
+                ? 'Toggle Dark Preview' 
+                : 'Toggle Light Preview';
+        }
+    </script>
+</body>
+</html>
+  
