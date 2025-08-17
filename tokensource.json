@@ -1811,6 +1811,10 @@
           ],
           "deletedCount": 4,
           "description": "Removed unused/duplicate color families for cleaner system"
+        },
+        "tokenStudioSynced": {
+          "syncedAt": "2025-08-17T22:43:35.341Z",
+          "description": "Synchronized with Token Studio export for compatibility"
         }
       }
     }
