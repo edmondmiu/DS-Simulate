@@ -2587,74 +2587,74 @@
   "Neutral": {
     "value": {
       "0": {
-        "value": "#f9f9f9",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "100": {
-        "value": "#f1f1f1",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "200": {
-        "value": "#e7e7e7",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "300": {
-        "value": "#dcdcdc",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "400": {
-        "value": "#cfcfcf",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "500": {
-        "value": "#bfbfbf",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "600": {
-        "value": "#a4a4a4",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "700": {
-        "value": "#858585",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "800": {
-        "value": "#6b6b6b",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "900": {
-        "value": "#525252",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "1000": {
-        "value": "#3c3c3c",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "1100": {
-        "value": "#292929",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "1200": {
-        "value": "#1a1a1a",
-        "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
-      },
-      "1300": {
         "value": "#161616",
         "type": "color",
-        "description": "OKLCH optimized - reversed_cool_neutral_progression"
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "100": {
+        "value": "#1a1a1a",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "200": {
+        "value": "#292929",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "300": {
+        "value": "#3c3c3c",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "400": {
+        "value": "#525252",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "500": {
+        "value": "#6b6b6b",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "600": {
+        "value": "#858585",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "700": {
+        "value": "#a4a4a4",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "800": {
+        "value": "#bfbfbf",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "900": {
+        "value": "#cfcfcf",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "1000": {
+        "value": "#dcdcdc",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "1100": {
+        "value": "#e7e7e7",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "1200": {
+        "value": "#f1f1f1",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
+      },
+      "1300": {
+        "value": "#f9f9f9",
+        "type": "color",
+        "description": "OKLCH optimized - Neutral progression corrected (was reversed)"
       }
     }
   },
