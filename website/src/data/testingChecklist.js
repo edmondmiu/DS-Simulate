@@ -1,51 +1,53 @@
-// Epic 4 MVP Testing Checklist Data
+// Epic 4 V2 Testing Checklist Data
 export const testingPhases = [
   {
     id: 'connection',
     name: 'Phase 1: Connection & Import Testing',
-    description: 'Validate Epic 4 token import and system connection',
+    description: 'Validate Epic 4 V2 two-repo architecture and Token Studio integration',
     tests: [
       {
         id: 'token-import',
-        name: 'Epic 4 Token Import',
-        description: 'Import 662 tokens using GitHub URL',
+        name: 'Epic 4 V2 Token Import',
+        description: 'Import 25 OKLCH color families using direct file integration',
         steps: [
           'Open Token Studio in Figma',
-          'Configure GitHub source: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokensource.json',
-          'Click "Update" to import tokens',
-          'Verify 662 tokens loaded across 9 sets',
-          'Confirm import completes within 60 seconds'
+          'Configure GitHub source: https://github.com/edmondmiu/DS-SimulateV2',
+          'Select direct file integration (not raw URL)',
+          'Click "Update" to import tokens from tokens/ directory',
+          'Verify 25 color families loaded across 9 token files',
+          'Confirm import completes within 30 seconds'
         ],
-        expected: '662 tokens loaded across 9 sets within 60 seconds'
+        expected: '25 OKLCH color families loaded from DS-SimulateV2 repo'
       },
       {
         id: 'token-sets',
-        name: 'Token Set Verification',
-        description: 'Verify all 9 token sets are present',
+        name: 'Token File Verification',
+        description: 'Verify all 9 token files from DS-SimulateV2 are present',
         steps: [
-          'Check core - Foundation color ramps with OKLCH processing',
-          'Check global - Semantic tokens with enhanced accessibility',
-          'Check components - Component-specific tokens',
-          'Check bet9ja dark - Brand theme with OKLCH optimization',
-          'Check bet9ja light - Light mode brand theme',
-          'Check global light - Light mode overrides',
-          'Check Content Typography - Typography system',
-          'Check $metadata - System metadata',
-          'Check $themes - Theme configurations'
+          'Check core.json - 25 OKLCH-optimized color families',
+          'Check global.json - Semantic tokens with enhanced accessibility',
+          'Check components.json - Component-specific tokens',
+          'Check bet9ja dark.json - Brand theme with OKLCH optimization',
+          'Check bet9ja light.json - Light mode brand theme',
+          'Check global light.json - Light mode overrides',
+          'Check Content Typography.json - Typography system',
+          'Check $metadata.json - System metadata',
+          'Check $themes.json - Theme configurations'
         ],
-        expected: 'All 9 token sets visible and properly loaded'
+        expected: 'All 9 token files visible and properly loaded from DS-SimulateV2'
       },
       {
         id: 'oklch-colors',
-        name: 'OKLCH Color Verification',
-        description: 'Validate OKLCH color processing',
+        name: 'OKLCH Color Family Verification',
+        description: 'Validate 25 OKLCH-optimized color families',
         steps: [
-          'Navigate to core → Color Ramp → Amber tokens',
-          'Verify perceptually uniform progression (0000 → 0900)',
-          'Check color descriptions include OKLCH metadata',
-          'Test color harmony across different ramps'
+          'Navigate to core.json → Color Ramp → Amber family',
+          'Verify perceptually uniform progression (0 → 1300)',
+          'Check color descriptions include OKLCH optimization notes',
+          'Test Logifuture Green and Navy Blue brand families',
+          'Verify mathematical consistency across all 25 families'
         ],
-        expected: 'Smooth perceptual transitions between color steps'
+        expected: 'Smooth perceptual transitions across 25 OKLCH color families'
       }
     ]
   },

@@ -20,7 +20,7 @@
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <button @click="$emit('show-testing')" class="btn-primary text-lg px-8 py-3">
-              Start Epic 4 Testing
+              Start Epic 4 V2 Testing
             </button>
             <button @click="scrollToFeatures" class="btn-secondary text-lg px-8 py-3">
               Explore Features
@@ -55,10 +55,10 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Epic 4 Key Features
+            Epic 4 V2 Key Features
           </h2>
           <p class="text-xl text-gray-600 dark:text-gray-300">
-            Advanced color science meets practical design system needs
+            Two-repo architecture with advanced OKLCH color science
           </p>
         </div>
         
@@ -127,10 +127,10 @@
               </svg>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-              DSE Architecture
+              Two-Repo Architecture
             </h3>
             <p class="text-gray-600 dark:text-gray-300">
-              Clean separation between DSE configurations and Token Studio files
+              DS-SimulateV2 for Token Studio integration, DS-Simulate for DSE development
             </p>
           </div>
           
