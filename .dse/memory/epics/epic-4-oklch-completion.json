@@ -1,24 +1,26 @@
 {
-  "id": "epic-4",
-  "name": "OKLCH Color Management Integration",
+  "id": "epic-4-v2",
+  "name": "OKLCH Color Management with Two-Repo Architecture",
   "status": "completed",
   "startDate": "2024-12-01",
-  "completionDate": "2025-01-15",
+  "completionDate": "2025-08-18",
+  "version": "Epic 4 V2",
   "goals": [
     "Integrate OKLCH color space for perceptually uniform color processing",
     "Enhance accessibility compliance with WCAG AA+ standards",
-    "Maintain 100% Token Studio compatibility",
-    "Implement multi-brand theme optimization (Base + Bet9ja)",
+    "Solve Token Studio integration complexity with two-repository architecture",
+    "Implement multi-brand theme optimization (Base, Logifuture, Bet9ja)",
     "Create advanced color validation and generation pipeline"
   ],
   "outcomes": [
-    "662 design tokens with OKLCH enhancement across 4 themes",
-    "Perceptually uniform color progressions for improved visual consistency",
+    "25 OKLCH-optimized color families with mathematical consistency",
+    "Two-repository architecture: DS-SimulateV2 (clean) ↔ DS-Simulate (DSE)",
+    "Direct file integration with Token Studio (no consolidation needed)",
+    "Multi-brand support: Base, Logifuture Green/Navy, Bet9ja variants",
     "Enhanced accessibility compliance built into color generation",
     "Zero workflow disruption for designers using Token Studio",
     "Mathematical precision in color relationships and harmony",
-    "Advanced 3D surface effect capabilities with subtle color variations",
-    "Complete bidirectional pipeline: Token Studio ↔ DSE ↔ GitHub"
+    "Complete project cleanup: removed 15,000+ lines of obsolete documentation"
   ],
   "keyDecisions": [
     {
@@ -62,6 +64,21 @@
         "Claude Code integration compatibility", 
         "Incremental complexity introduction"
       ]
+    },
+    {
+      "id": "d4",
+      "timestamp": "2025-08-18",
+      "context": "Token Studio integration complexity - repository too large/complex",
+      "options": ["Fix current repo", "Clean current repo", "Two-repository architecture"],
+      "chosen": "Two-repository architecture",
+      "rationale": "Token Studio works with fresh repos but not complex ones (403MB, 31K+ files). Split into DS-SimulateV2 (clean, Token Studio) and DS-Simulate (DSE engineering).",
+      "impacts": [
+        "Token Studio direct file integration successful",
+        "Preserved all Epic 4 OKLCH work and documentation",
+        "Clean designer workflow via DS-SimulateV2",
+        "Full DSE development environment maintained",
+        "Eliminated consolidate/split complexity"
+      ]
     }
   ],
   "learnings": [
@@ -75,10 +92,10 @@
     },
     {
       "id": "l2",
-      "category": "process",
-      "description": "Bidirectional pipeline enables true collaborative workflow between designers and engineers",
-      "application": "Always maintain sync/split/consolidate workflow for team collaboration",
-      "importance": "high",
+      "category": "process", 
+      "description": "Two-repository architecture solves Token Studio integration complexity while preserving all capabilities",
+      "application": "Use DS-SimulateV2 for Token Studio integration, DS-Simulate for DSE development. Direct file integration, no consolidation needed.",
+      "importance": "critical",
       "verified": true
     },
     {
@@ -103,6 +120,14 @@
       "description": "Brand consistency achieved through mathematical color harmony rather than manual adjustment",
       "application": "Use OKLCH parameters for brand color variations instead of manual tweaking",
       "importance": "medium",
+      "verified": true
+    },
+    {
+      "id": "l6",
+      "category": "architecture",
+      "description": "Repository complexity blocks third-party integration - simplicity enables adoption",
+      "application": "Maintain clean, minimal repositories for external tool integration. Use separate repos for development complexity.",
+      "importance": "critical",
       "verified": true
     }
   ],
