@@ -24,14 +24,12 @@ A comprehensive design system engineering environment with two-repository workfl
 4. **Choose Theme:** 25 OKLCH-optimized color families available
 5. **Start Designing** with mathematically consistent colors!
 
-### **Designer Documentation**
-- **🎯 Testing Guide:** [`docs/DESIGNER_MVP_TESTING_GUIDE.md`](docs/DESIGNER_MVP_TESTING_GUIDE.md) - Complete Epic 4 testing
-- **⚡ Quick Reference:** [`docs/DESIGNER_QUICK_REFERENCE.md`](docs/DESIGNER_QUICK_REFERENCE.md) - 5-minute setup
-- **📖 Complete Setup:** [`docs/DESIGNER_SETUP.md`](docs/DESIGNER_SETUP.md) - Full documentation
+### **Resources**
+- **🌐 Live Website:** [https://simulate-ds-v2.web.app](https://simulate-ds-v2.web.app) - Interactive showcase
+- **📚 Two-Repo Workflow:** [.dse/TWO_REPO_WORKFLOW.md](.dse/TWO_REPO_WORKFLOW.md) - Complete workflow guide  
+- **🎨 Token Studio Integration:** [TOKEN_STUDIO_INTEGRATION.md](TOKEN_STUDIO_INTEGRATION.md) - Setup instructions
 
 ---
-
-## Overview
 
 ## Architecture Overview
 
