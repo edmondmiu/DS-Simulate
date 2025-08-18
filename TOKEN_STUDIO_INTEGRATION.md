@@ -2,21 +2,21 @@
 
 ## Overview
 
-This guide provides complete instructions for integrating the design system tokens with Figma Token Studio plugin. The system automatically generates Token Studio-compatible `tokensource.json` with full metadata and theme support.
+This guide provides complete instructions for integrating the design system tokens with Figma Token Studio plugin using the two-repository architecture. Token Studio connects directly to DS-SimulateV2 for a clean, minimal integration.
 
-## Integration Status: ✅ Ready
+## Integration Status: ✅ Two-Repo Architecture Ready
 
-**Validation Results:**
-- ✅ **662 tokens** validated and ready
-- ✅ **5 token sets** properly configured
-- ✅ **4 themes** available (Base Dark, Base Light, Bet9ja Dark, Bet9ja Light)
-- ✅ **Token Studio format** fully compatible
-- ✅ **Automated CI/CD** workflow operational
-- ✅ **Raw GitHub URL** accessible
+**Epic 4 V2 Results:**
+- ✅ **25 color families** OKLCH optimized and ready
+- ✅ **9 token files** in direct file format
+- ✅ **Multi-brand support** (Base, Logifuture, Bet9ja)
+- ✅ **Token Studio compatibility** via DS-SimulateV2
+- ✅ **Two-repo workflow** operational
+- ✅ **Clean repository** for designer workflow
 
-## Quick Start
+## Quick Start - Two-Repo Workflow
 
-### 1. Token Studio Plugin Setup
+### 1. Token Studio Plugin Setup (Designers)
 
 1. **Install Plugin:** Add "Token Studio" to your Figma workspace
 2. **Configure Source:** Select "GitHub" as token source  

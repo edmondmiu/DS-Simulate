@@ -1,24 +1,24 @@
-# Design System Website - Epic 4 Testing Portal
+# Design System Website - Epic 4 V2 Testing Portal
 
 **🌐 Interactive testing portal and design system showcase**
 
-A Vue.js application with Firebase backend for Epic 4 MVP testing, designer feedback collection, and design system showcase.
+A Vue.js application with Firebase backend for Epic 4 V2 testing, designer feedback collection, and two-repo architecture showcase.
 
 ## 🚀 Features
 
-### **Epic 4 Testing Portal**
-- ✅ Interactive 5-phase testing checklist
+### **Epic 4 V2 Testing Portal**
+- ✅ Interactive two-repo workflow testing
+- ✅ OKLCH color optimization validation
 - ✅ Real-time progress tracking
-- ✅ Form validation and submission
 - ✅ Firebase Firestore data collection
 - ✅ Responsive design for all devices
 
 ### **Design System Showcase**
-- ✅ Beautiful landing page with Epic 4 features
-- ✅ Quick start guide for designers
-- ✅ Token system statistics and info
+- ✅ Beautiful landing page with Epic 4 V2 features
+- ✅ Two-repository architecture explanation
+- ✅ 25 color families and OKLCH optimization highlights
 - ✅ Dark/light mode support
-- ✅ Future-ready for management presentations
+- ✅ Token Studio integration guide
 
 ## 📋 Prerequisites
 

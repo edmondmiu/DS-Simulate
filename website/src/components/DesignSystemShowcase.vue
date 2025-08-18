@@ -6,16 +6,16 @@
         <div class="text-center">
           <div class="inline-flex items-center px-4 py-2 bg-primary-100 dark:bg-primary-900 rounded-full text-primary-800 dark:text-primary-200 text-sm font-medium mb-6">
             <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-            Epic 4 Complete - Ready for Testing
+            Epic 4 V2 Complete - Two-Repo Architecture
           </div>
           
           <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Simulate DS V2
-            <span class="text-primary-500">Epic 4</span>
+            <span class="text-primary-500">Epic 4 V2</span>
           </h1>
           
           <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            OKLCH Color Management | Enhanced Accessibility | Multi-Brand Token Pipeline
+            Two-Repo Architecture | OKLCH Color Science | Token Studio Integration
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -31,20 +31,20 @@
         <!-- Quick Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
           <div class="text-center">
-            <div class="text-3xl font-bold text-primary-500">662</div>
-            <div class="text-gray-600 dark:text-gray-400">Design Tokens</div>
+            <div class="text-3xl font-bold text-primary-500">25</div>
+            <div class="text-gray-600 dark:text-gray-400">Color Families</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-primary-500">9</div>
-            <div class="text-gray-600 dark:text-gray-400">Token Sets</div>
+            <div class="text-3xl font-bold text-primary-500">2</div>
+            <div class="text-gray-600 dark:text-gray-400">Repositories</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-primary-500">4</div>
-            <div class="text-gray-600 dark:text-gray-400">Complete Themes</div>
+            <div class="text-3xl font-bold text-primary-500">3</div>
+            <div class="text-gray-600 dark:text-gray-400">Brand Variants</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-primary-500">AA</div>
-            <div class="text-gray-600 dark:text-gray-400">WCAG Compliance</div>
+            <div class="text-3xl font-bold text-primary-500">AA+</div>
+            <div class="text-gray-600 dark:text-gray-400">OKLCH Optimized</div>
           </div>
         </div>
       </div>

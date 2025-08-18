@@ -1,0 +1,1866 @@
+{
+  "Color Ramp": {
+    "Black": {
+      "Black 0": {
+        "$type": "color",
+        "$value": "#272a2f",
+        "$description": "darkest colour"
+      },
+      "Black 000": {
+        "$type": "color",
+        "$value": "#000"
+      }
+    },
+    "Amber": {
+      "Amber 0": {
+        "$type": "color",
+        "$value": "#1c1602",
+        "$description": "Amber / Amber 0\n#1c1602\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 100": {
+        "$type": "color",
+        "$value": "#2f2404",
+        "$description": "Amber / Amber 100\n#2f2404\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 200": {
+        "$type": "color",
+        "$value": "#4b3a06",
+        "$description": "Amber / Amber 200\n#4b3a06\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 300": {
+        "$type": "color",
+        "$value": "#7a5c00",
+        "$description": "Amber / Amber 300\n#7a5c00\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 400": {
+        "$type": "color",
+        "$value": "#b38600",
+        "$description": "Amber / Amber 400\n#b38600\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 500": {
+        "$type": "color",
+        "$value": "#ffd24d",
+        "$description": "Amber / Amber 500\n#ffd24d\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 600": {
+        "$type": "color",
+        "$value": "#ffdf80",
+        "$description": "Amber / Amber 600\n#ffdf80\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 700": {
+        "$type": "color",
+        "$value": "#ffe8a3",
+        "$description": "Amber / Amber 700\n#ffe8a3\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 800": {
+        "$type": "color",
+        "$value": "#fceec5",
+        "$description": "Amber / Amber 800\n#fceec5\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 900": {
+        "$type": "color",
+        "$value": "#fbf3da",
+        "$description": "Amber / Amber 900\n#fbf3da\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 1000": {
+        "$type": "color",
+        "$value": "#fbf7e9",
+        "$description": "Amber / Amber 1000\n#fbf7e9\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 1100": {
+        "$type": "color",
+        "$value": "#fcfaf2",
+        "$description": "Amber / Amber 1100\n#fcfaf2\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 1200": {
+        "$type": "color",
+        "$value": "#fdfbf7",
+        "$description": "Amber / Amber 1200\n#fdfbf7\nOKLCH optimized - mathematically consistent"
+      },
+      "Amber 1300": {
+        "$type": "color",
+        "$value": "#fefdfb",
+        "$description": "Amber / Amber 1300\n#fefdfb\nOKLCH optimized - mathematically consistent"
+      }
+    },
+    "Neutral": {
+      "Neutral 0": {
+        "$type": "color",
+        "$value": "#161616",
+        "$description": "Neutral / Neutral 0\n#161616\nCorrected progression - neutral fixed"
+      },
+      "Neutral 100": {
+        "$type": "color",
+        "$value": "#1a1a1a",
+        "$description": "Neutral / Neutral 100\n#1a1a1a\nCorrected progression - neutral fixed"
+      },
+      "Neutral 200": {
+        "$type": "color",
+        "$value": "#292929",
+        "$description": "Neutral / Neutral 200\n#292929\nCorrected progression - neutral fixed"
+      },
+      "Neutral 300": {
+        "$type": "color",
+        "$value": "#3c3c3c",
+        "$description": "Neutral / Neutral 300\n#3c3c3c\nCorrected progression - neutral fixed"
+      },
+      "Neutral 400": {
+        "$type": "color",
+        "$value": "#525252",
+        "$description": "Neutral / Neutral 400\n#525252\nCorrected progression - neutral fixed"
+      },
+      "Neutral 500": {
+        "$type": "color",
+        "$value": "#6b6b6b",
+        "$description": "Neutral / Neutral 500\n#6b6b6b\nCorrected progression - neutral fixed"
+      },
+      "Neutral 600": {
+        "$type": "color",
+        "$value": "#858585",
+        "$description": "Neutral / Neutral 600\n#858585\nCorrected progression - neutral fixed"
+      },
+      "Neutral 700": {
+        "$type": "color",
+        "$value": "#a4a4a4",
+        "$description": "Neutral / Neutral 700\n#a4a4a4\nCorrected progression - neutral fixed"
+      },
+      "Neutral 800": {
+        "$type": "color",
+        "$value": "#bfbfbf",
+        "$description": "Neutral / Neutral 800\n#bfbfbf\nCorrected progression - neutral fixed"
+      },
+      "Neutral 900": {
+        "$type": "color",
+        "$value": "#cfcfcf",
+        "$description": "Neutral / Neutral 900\n#cfcfcf\nCorrected progression - neutral fixed"
+      },
+      "Neutral 1000": {
+        "$type": "color",
+        "$value": "#dcdcdc",
+        "$description": "Neutral / Neutral 1000\n#dcdcdc\nCorrected progression - neutral fixed"
+      },
+      "Neutral 1100": {
+        "$type": "color",
+        "$value": "#e7e7e7",
+        "$description": "Neutral / Neutral 1100\n#e7e7e7\nCorrected progression - neutral fixed"
+      },
+      "Neutral 1200": {
+        "$type": "color",
+        "$value": "#f1f1f1",
+        "$description": "Neutral / Neutral 1200\n#f1f1f1\nCorrected progression - neutral fixed"
+      },
+      "Neutral 1300": {
+        "$type": "color",
+        "$value": "#f9f9f9",
+        "$description": "Neutral / Neutral 1300\n#f9f9f9\nCorrected progression - neutral fixed"
+      }
+    },
+    "Red": {
+      "Red 0": {
+        "$type": "color",
+        "$value": "#6d0a0a",
+        "$description": "Red / Red 0\n#6d0a0a\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 100": {
+        "$type": "color",
+        "$value": "#740b0b",
+        "$description": "Red / Red 100\n#740b0b\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 200": {
+        "$type": "color",
+        "$value": "#8d0d0d",
+        "$description": "Red / Red 200\n#8d0d0d\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 300": {
+        "$type": "color",
+        "$value": "#ae1111",
+        "$description": "Red / Red 300\n#ae1111\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 400": {
+        "$type": "color",
+        "$value": "#d41414",
+        "$description": "Red / Red 400\n#d41414\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 500": {
+        "$type": "color",
+        "$value": "#ed3d3d",
+        "$description": "Red / Red 500\n#ed3d3d\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 600": {
+        "$type": "color",
+        "$value": "#f16e6e",
+        "$description": "Red / Red 600\n#f16e6e\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 700": {
+        "$type": "color",
+        "$value": "#f59595",
+        "$description": "Red / Red 700\n#f59595\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 800": {
+        "$type": "color",
+        "$value": "#f8b9b9",
+        "$description": "Red / Red 800\n#f8b9b9\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 900": {
+        "$type": "color",
+        "$value": "#FBD9D9",
+        "$description": "Red / Red 900\n#FBD9D9\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 1000": {
+        "$type": "color",
+        "$value": "#FCE4E4",
+        "$description": "Red / Red 1000\n#FCE4E4\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 1100": {
+        "$type": "color",
+        "$value": "#FEF0F0",
+        "$description": "Red / Red 1100\n#FEF0F0\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 1200": {
+        "$type": "color",
+        "$value": "#FEF5F5",
+        "$description": "Red / Red 1200\n#FEF5F5\nOKLCH optimized - mathematically consistent"
+      },
+      "Red 1300": {
+        "$type": "color",
+        "$value": "#FFFAFA",
+        "$description": "Red / Red 1300\n#FFFAFA\nOKLCH optimized - mathematically consistent"
+      }
+    },
+    "Green": {
+      "Green 0": {
+        "$type": "color",
+        "$value": "#073c1d",
+        "$description": "Green / Green 0\n#073c1d\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 100": {
+        "$type": "color",
+        "$value": "#074120",
+        "$description": "Green / Green 100\n#074120\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 200": {
+        "$type": "color",
+        "$value": "#095027",
+        "$description": "Green / Green 200\n#095027\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 300": {
+        "$type": "color",
+        "$value": "#0b6431",
+        "$description": "Green / Green 300\n#0b6431\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 400": {
+        "$type": "color",
+        "$value": "#0d7b3c",
+        "$description": "Green / Green 400\n#0d7b3c\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 500": {
+        "$type": "color",
+        "$value": "#119348",
+        "$description": "Green / Green 500\n#119348\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 600": {
+        "$type": "color",
+        "$value": "#14ae55",
+        "$description": "Green / Green 600\n#14ae55\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 700": {
+        "$type": "color",
+        "$value": "#17ca62",
+        "$description": "Green / Green 700\n#17ca62\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 800": {
+        "$type": "color",
+        "$value": "#24e676",
+        "$description": "Green / Green 800\n#24e676\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 900": {
+        "$type": "color",
+        "$value": "#9BF4C0",
+        "$description": "Green / Green 900\n#9BF4C0\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 1000": {
+        "$type": "color",
+        "$value": "#BDF7D6",
+        "$description": "Green / Green 1000\n#BDF7D6\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 1100": {
+        "$type": "color",
+        "$value": "#DBFBE8",
+        "$description": "Green / Green 1100\n#DBFBE8\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 1200": {
+        "$type": "color",
+        "$value": "#E9FCF1",
+        "$description": "Green / Green 1200\n#E9FCF1\nOKLCH optimized - mathematically consistent"
+      },
+      "Green 1300": {
+        "$type": "color",
+        "$value": "#F5FEF9",
+        "$description": "Green / Green 1300\n#F5FEF9\nOKLCH optimized - mathematically consistent"
+      }
+    },
+    "Orange": {
+      "Orange 0": {
+        "$type": "color",
+        "$value": "#572706",
+        "$description": "Orange / Orange 000\n#572706\n1.16:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Orange 100": {
+        "$type": "color",
+        "$value": "#5c2907",
+        "$description": "Orange / Orange 100\n#5C2907\n1.22:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Orange 200": {
+        "$type": "color",
+        "$value": "#723308",
+        "$description": "Orange / Orange 200\n#723308\n1.50:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Orange 300": {
+        "$type": "color",
+        "$value": "#8e400a",
+        "$description": "Orange / Orange 300\n#8E400A\n1.98:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Orange 400": {
+        "$type": "color",
+        "$value": "#ae4f0c",
+        "$description": "Orange / Orange 400\n#AE4F0C\n2.69:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Orange 500": {
+        "$type": "color",
+        "$value": "#d15e0f",
+        "$description": "Orange / Orange 500\n#D15E0F\n3.65:1\n(AA) Large text\n(N/A) Normal text"
+      },
+      "Orange 600": {
+        "$type": "color",
+        "$value": "#ef7520",
+        "$description": "Orange / Orange 600\n#EF7520\n4.96:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Orange 700": {
+        "$type": "color",
+        "$value": "#F5A56F",
+        "$description": "Orange / Orange 700\n#F5A56F\n7.20:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Orange 800": {
+        "$type": "color",
+        "$value": "#F7BD94",
+        "$description": "Orange / Orange 800\n#F7BD94\n8.68:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Orange 900": {
+        "$type": "color",
+        "$value": "#FBDBC6",
+        "$description": "Orange / Orange 900\n#FBDBC6\n11.00:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Orange 1000": {
+        "$type": "color",
+        "$value": "#FCE6D8",
+        "$description": "Orange / Orange 1000\n#FCE6D8\n11.96:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Orange 1100": {
+        "$type": "color",
+        "$value": "#FDF1E9",
+        "$description": "Orange / Orange 1000\n#FDF1E9\n12.98:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Orange 1200": {
+        "$type": "color",
+        "$value": "#FEF6F1",
+        "$description": "Orange / Orange 1100\n#FEF6F1\n13.48:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Orange 1300": {
+        "$type": "color",
+        "$value": "#fffbf9",
+        "$description": "Orange / Orange 1300\n#FFFBF9\n14.00:1\n(AAA) Large text\n(AAA) Normal text"
+      }
+    },
+    "Yellow": {
+      "Yellow 0": {
+        "$type": "color",
+        "$value": "#373531",
+        "$description": "Yellow / Yellow 0\n#373531\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 100": {
+        "$type": "color",
+        "$value": "#3B3831",
+        "$description": "Yellow / Yellow 100\n#3B3831\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 200": {
+        "$type": "color",
+        "$value": "#4D4532",
+        "$description": "Yellow / Yellow 200\n#4D4532\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 300": {
+        "$type": "color",
+        "$value": "#645733",
+        "$description": "Yellow / Yellow 300\n#645733\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 400": {
+        "$type": "color",
+        "$value": "#7B6A33",
+        "$description": "Yellow / Yellow 400\n#7B6A33\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 500": {
+        "$type": "color",
+        "$value": "#957F31",
+        "$description": "Yellow / Yellow 500\n#957F31\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 600": {
+        "$type": "color",
+        "$value": "#B79A2C",
+        "$description": "Yellow / Yellow 600\n#B79A2C\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 700": {
+        "$type": "color",
+        "$value": "#D6B522",
+        "$description": "Yellow / Yellow 700\n#D6B522\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 800": {
+        "$type": "color",
+        "$value": "#FFD600",
+        "$description": "Yellow / Yellow 800\n#FFD600\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 900": {
+        "$type": "color",
+        "$value": "#FFE900",
+        "$description": "Yellow / Yellow 900\n#FFE900\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 1000": {
+        "$type": "color",
+        "$value": "#FFF07E",
+        "$description": "Yellow / Yellow 1000\n#FFF07E\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 1100": {
+        "$type": "color",
+        "$value": "#FFF5AE",
+        "$description": "Yellow / Yellow 1100\n#FFF5AE\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 1200": {
+        "$type": "color",
+        "$value": "#FFFAD4",
+        "$description": "Yellow / Yellow 1200\n#FFFAD4\nOKLCH optimized - mathematically consistent"
+      },
+      "Yellow 1300": {
+        "$type": "color",
+        "$value": "#FFFCEA",
+        "$description": "Yellow / Yellow 1300\n#FFFCEA\nOKLCH optimized - mathematically consistent"
+      }
+    },
+    "Gold Yellow": {
+      "Gold Yellow 0": {
+        "$type": "color",
+        "$value": "#493012",
+        "$description": "Gold Yellow / Gold Yellow 000\n#493012\n1.18:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Gold Yellow 100": {
+        "$type": "color",
+        "$value": "#4c3312",
+        "$description": "Gold Yellow / Gold Yellow 100\n#4c3312\n1.23:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Gold Yellow 200": {
+        "$type": "color",
+        "$value": "#603f13",
+        "$description": "Gold Yellow / Gold Yellow 200\n#603f13\n1.52:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Gold Yellow 300": {
+        "$type": "color",
+        "$value": "#784f14",
+        "$description": "Gold Yellow / Gold Yellow 300\n#784f14\n2.01:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Gold Yellow 400": {
+        "$type": "color",
+        "$value": "#956014",
+        "$description": "Gold Yellow / Gold Yellow 400\n#956014\n2.72:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Gold Yellow 500": {
+        "$type": "color",
+        "$value": "#b27312",
+        "$description": "Gold Yellow / Gold Yellow 500\n#b27312\n3.67:1\n(AA) Large text\n(N/A) Normal text"
+      },
+      "Gold Yellow 600": {
+        "$type": "color",
+        "$value": "#d98c0c",
+        "$description": "Gold Yellow / Gold Yellow 600\n#d98c0c\n5.28:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Gold Yellow 700": {
+        "$type": "color",
+        "$value": "#ffa300",
+        "$description": "Gold Yellow / Gold Yellow 700\n#ffa300\n7.19:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 800": {
+        "$type": "color",
+        "$value": "#ffbc60",
+        "$description": "Gold Yellow / Gold Yellow 800\n#ffbc60\n8.65:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 900": {
+        "$type": "color",
+        "$value": "#ffdcad",
+        "$description": "Gold Yellow / Gold Yellow 900\n#ffdcad\n11.03:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1000": {
+        "$type": "color",
+        "$value": "#ffebcf",
+        "$description": "Gold Yellow / Gold Yellow 1000\n#ffebcf\n12.37:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1100": {
+        "$type": "color",
+        "$value": "#fff1df",
+        "$description": "Gold Yellow / Gold Yellow 1100\n#fff1df\n12.96:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1200": {
+        "$type": "color",
+        "$value": "#fff7ed",
+        "$description": "Gold Yellow / Gold Yellow 1200\n#fff7ed\n13.56:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Gold Yellow 1300": {
+        "$type": "color",
+        "$value": "#fffcf7",
+        "$description": "Gold Yellow / Gold Yellow 1300\n\n#fffcf7\n14.07:1\n(AAA) Large text\n(AAA) Normal text"
+      }
+    },
+    "Royal Blue": {
+      "Royal Blue 0": {
+        "$type": "color",
+        "$value": "#002d72",
+        "$description": "Royal Blue / Royal Blue 0\n#002d72\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 100": {
+        "$type": "color",
+        "$value": "#003587",
+        "$description": "Royal Blue / Royal Blue 100\n#003587\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 200": {
+        "$type": "color",
+        "$value": "#003B92",
+        "$description": "Royal Blue / Royal Blue 200\n#003B92\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 300": {
+        "$type": "color",
+        "$value": "#003F97",
+        "$description": "Royal Blue / Royal Blue 300\n#003F97\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 400": {
+        "$type": "color",
+        "$value": "#0046A0",
+        "$description": "Royal Blue / Royal Blue 400\n#0046A0\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 500": {
+        "$type": "color",
+        "$value": "#1B57AE",
+        "$description": "Royal Blue / Royal Blue 500\n#1B57AE\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 600": {
+        "$type": "color",
+        "$value": "#075ECF",
+        "$description": "Royal Blue / Royal Blue 600\n#075ECF\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 700": {
+        "$type": "color",
+        "$value": "#4984D3",
+        "$description": "Royal Blue / Royal Blue 700\n#4984D3\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 800": {
+        "$type": "color",
+        "$value": "#67A2EA",
+        "$description": "Royal Blue / Royal Blue 800\n#67A2EA\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 900": {
+        "$type": "color",
+        "$value": "#83BFFF",
+        "$description": "Royal Blue / Royal Blue 900\n#83BFFF\nOKLCH optimized - mathematically consistent"
+      },
+      "Royal Blue 1000": {
+        "$type": "color",
+        "$value": "#cfdff8",
+        "$description": "Royal Blue / Royal Blue 1000\n#cfdff8\nOKLCH optimized - blue lighter end fixed"
+      },
+      "Royal Blue 1100": {
+        "$type": "color",
+        "$value": "#d7e6fb",
+        "$description": "Royal Blue / Royal Blue 1100\n#d7e6fb\nOKLCH optimized - blue lighter end fixed"
+      },
+      "Royal Blue 1200": {
+        "$type": "color",
+        "$value": "#e0ecff",
+        "$description": "Royal Blue / Royal Blue 1200\n#e0ecff\nOKLCH optimized - blue lighter end fixed"
+      },
+      "Royal Blue 1300": {
+        "$type": "color",
+        "$value": "#e9f3ff",
+        "$description": "Royal Blue / Royal Blue 1300\n#e9f3ff\nOKLCH optimized - blue lighter end fixed"
+      }
+    },
+    "Deep Blue": {
+      "Deep Blue 0": {
+        "$type": "color",
+        "$value": "#2D2F4C",
+        "$description": "Deep Blue / Deep Blue 000\n#2D2F4C\n1.08:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Deep Blue 100": {
+        "$type": "color",
+        "$value": "#373855",
+        "$description": "Deep Blue / Deep Blue 100\n#373855\n1.24:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Deep Blue 200": {
+        "$type": "color",
+        "$value": "#3D3E5A",
+        "$description": "Deep Blue / Deep Blue 200\n#603f13\n1.35:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Deep Blue 300": {
+        "$type": "color",
+        "$value": "#41425E",
+        "$description": "Deep Blue / Deep Blue 300\n#41425E\n1.44:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Deep Blue 400": {
+        "$type": "color",
+        "$value": "#484863",
+        "$description": "Deep Blue / Deep Blue 400\n#484863\n1.59:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Deep Blue 500": {
+        "$type": "color",
+        "$value": "#575770",
+        "$description": "Deep Blue / Deep Blue 500\n#575770\n2.00:1\n(AA) Large text\n(N/A) Normal text"
+      },
+      "Deep Blue 600": {
+        "$type": "color",
+        "$value": "#6C6C82",
+        "$description": "Deep Blue / Deep Blue 600\n#6C6C82\n2.73:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Deep Blue 700": {
+        "$type": "color",
+        "$value": "#828195",
+        "$description": "Deep Blue / Deep Blue 700\n#828195\n3.68:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 800": {
+        "$type": "color",
+        "$value": "#9E9EAD",
+        "$description": "Deep Blue / Deep Blue 800\n#9E9EAD\n5.29:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 900": {
+        "$type": "color",
+        "$value": "#BAB9C5",
+        "$description": "Deep Blue / Deep Blue 900\n#BAB9C5\n7.21:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1000": {
+        "$type": "color",
+        "$value": "#CBCAD3",
+        "$description": "Gold Yellow / Gold Yellow 1000\n#CBCAD3\n8.60:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1100": {
+        "$type": "color",
+        "$value": "#E4E3E8",
+        "$description": "Deep Blue / Deep Blue 1100\n#E4E3E8\n10.95:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1200": {
+        "$type": "color",
+        "$value": "#F1F0F3",
+        "$description": "Deep Blue / Deep Blue 1200\n#F1F0F3\n12.31:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Deep Blue 1300": {
+        "$type": "color",
+        "$value": "#FCFBFC",
+        "$description": "Deep Blue / Deep Blue 1300\n\n#FCFBFC\n13.54:1\n(AAA) Large text\n(AAA) Normal text"
+      }
+    },
+    "Midnight": {
+      "Midnight 0": {
+        "$type": "color",
+        "$value": "#1d1c2b",
+        "$description": "Midnight / Midnight 000\n#1d1c2b\n1.25:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 100": {
+        "$type": "color",
+        "$value": "#2A2D3F",
+        "$description": "Midnight / Midnight 100\n#2A2D3F\n1.28:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 200": {
+        "$type": "color",
+        "$value": "#313452",
+        "$description": "Midnight / Midnight 200\n#313452\n1.32:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 300": {
+        "$type": "color",
+        "$value": "#3E415C",
+        "$description": "Midnight / Midnight 300\n#3E415C\n1.47:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 400": {
+        "$type": "color",
+        "$value": "#52526B",
+        "$description": "Midnight / Midnight 400\n#52526B\n1.68:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 500": {
+        "$type": "color",
+        "$value": "#373855",
+        "$description": "Midnight / Midnight 500\n#373855\n1.86:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 600": {
+        "$type": "color",
+        "$value": "#3b3d59",
+        "$description": "Midnight / Midnight 600\n#3b3d59\n2.00:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 700": {
+        "$type": "color",
+        "$value": "#3c3e5a",
+        "$description": "Midnight / Midnight 700\n#3c3e5a\n2.03:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 800": {
+        "$type": "color",
+        "$value": "#52526b",
+        "$description": "Midnight / Midnight 800\n#52526b\n2.78:1\n(N/A) Large text\n(N/A) Normal text"
+      },
+      "Midnight 900": {
+        "$type": "color",
+        "$value": "#757589",
+        "$description": "Midnight / Midnight 900\n#757589\n4.66:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Midnight 1000": {
+        "$type": "color",
+        "$value": "#9393a2",
+        "$description": "Midnight / Midnight 1000\n#9393a2\n6.94:1\n(AAA) Large text\n(AA) Normal text"
+      },
+      "Midnight 1100": {
+        "$type": "color",
+        "$value": "#aeafb9",
+        "$description": "Midnight / Midnight 1100\n#aeafb9\n9.63:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Midnight 1200": {
+        "$type": "color",
+        "$value": "#c7c9ce",
+        "$description": "Midnight / Midnight 1200\n#c7c9ce\n12.67:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Midnight 1300": {
+        "$type": "color",
+        "$value": "#fafbfc",
+        "$description": "Midnight / Midnight 1300\n\n#fafbfc\n20.27:1\n(AAA) Large text\n(AAA) Normal text"
+      }
+    },
+    "Mint": {
+      "Mint 0": {
+        "$type": "color",
+        "$value": "#003D23",
+        "$description": "Mint / Mint 0\n#003D23\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 100": {
+        "$type": "color",
+        "$value": "#004125",
+        "$description": "Mint / Mint 100\n#004125\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 200": {
+        "$type": "color",
+        "$value": "#00502D",
+        "$description": "Mint / Mint 200\n#00502D\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 300": {
+        "$type": "color",
+        "$value": "#006439",
+        "$description": "Mint / Mint 300\n#006439\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 400": {
+        "$type": "color",
+        "$value": "#007B46",
+        "$description": "Mint / Mint 400\n#007B46\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 500": {
+        "$type": "color",
+        "$value": "#009354",
+        "$description": "Mint / Mint 500\n#009354\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 600": {
+        "$type": "color",
+        "$value": "#2EAB75",
+        "$description": "Mint / Mint 600\n#2EAB75\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 700": {
+        "$type": "color",
+        "$value": "#74C7A4",
+        "$description": "Mint / Mint 700\n#74C7A4\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 800": {
+        "$type": "color",
+        "$value": "#98D6BB",
+        "$description": "Mint / Mint 800\n#98D6BB\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 900": {
+        "$type": "color",
+        "$value": "#C7E9DA",
+        "$description": "Mint / Mint 900\n#C7E9DA\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 1000": {
+        "$type": "color",
+        "$value": "#D8F0E5",
+        "$description": "Mint / Mint 1000\n#D8F0E5\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 1100": {
+        "$type": "color",
+        "$value": "#EAF6F1",
+        "$description": "Mint / Mint 1100\n#EAF6F1\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 1200": {
+        "$type": "color",
+        "$value": "#F1FAF6",
+        "$description": "Mint / Mint 1200\n#F1FAF6\nOKLCH optimized - mathematically consistent"
+      },
+      "Mint 1300": {
+        "$type": "color",
+        "$value": "#F9FCFB",
+        "$description": "Mint / Mint 1300\n#F9FCFB\nOKLCH optimized - mathematically consistent"
+      }
+    },
+    "Tiger Orange": {
+      "Tiger Orange 0": {
+        "$type": "color",
+        "$value": "#542C10",
+        "$description": "Tiger Orange / Tiger Orange 0\n#542C10\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 100": {
+        "$type": "color",
+        "$value": "#693511",
+        "$description": "Tiger Orange / Tiger Orange 100\n#693511\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 200": {
+        "$type": "color",
+        "$value": "#7E3F11",
+        "$description": "Tiger Orange / Tiger Orange 200\n#7E3F11\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 300": {
+        "$type": "color",
+        "$value": "#984A11",
+        "$description": "Tiger Orange / Tiger Orange 300\n#984A11\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 400": {
+        "$type": "color",
+        "$value": "#BC5B0E",
+        "$description": "Tiger Orange / Tiger Orange 400\n#BC5B0E\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 500": {
+        "$type": "color",
+        "$value": "#E06B08",
+        "$description": "Tiger Orange / Tiger Orange 500\n#E06B08\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 600": {
+        "$type": "color",
+        "$value": "#FF7800",
+        "$description": "Tiger Orange / Tiger Orange 600\n#FF7800\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 700": {
+        "$type": "color",
+        "$value": "#FFA35F",
+        "$description": "Tiger Orange / Tiger Orange 700\n#FFA35F\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 800": {
+        "$type": "color",
+        "$value": "#FFBA88",
+        "$description": "Tiger Orange / Tiger Orange 800\n#FFBA88\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 900": {
+        "$type": "color",
+        "$value": "#FFDABF",
+        "$description": "Tiger Orange / Tiger Orange 900\n#FFDABF\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 1000": {
+        "$type": "color",
+        "$value": "#FFEADB",
+        "$description": "Tiger Orange / Tiger Orange 1000\n#FFEADB\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 1100": {
+        "$type": "color",
+        "$value": "#FFF1E5",
+        "$description": "Tiger Orange / Tiger Orange 1100\n#FFF1E5\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 1200": {
+        "$type": "color",
+        "$value": "#FFF7F2",
+        "$description": "Tiger Orange / Tiger Orange 1200\n#FFF7F2\nOKLCH optimized - mathematically consistent"
+      },
+      "Tiger Orange 1300": {
+        "$type": "color",
+        "$value": "#FFFBF9",
+        "$description": "Tiger Orange / Tiger Orange 1300\n#FFFBF9\nOKLCH optimized - mathematically consistent"
+      }
+    },
+    "NeutralLight": {
+      "NeutralLight 0": {
+        "$type": "color",
+        "$value": "#F9F9F9"
+      },
+      "NeutralLight 100": {
+        "$type": "color",
+        "$value": "#F3F3F3"
+      },
+      "NeutralLight 200": {
+        "$type": "color",
+        "$value": "#EAEAEA"
+      },
+      "NeutralLight 300": {
+        "$type": "color",
+        "$value": "#E1E1E1"
+      },
+      "NeutralLight 400": {
+        "$type": "color",
+        "$value": "#D7D7D7"
+      },
+      "NeutralLight 500": {
+        "$type": "color",
+        "$value": "#C9C9C9"
+      },
+      "NeutralLight 600": {
+        "$type": "color",
+        "$value": "#B1B1B1"
+      },
+      "NeutralLight 700": {
+        "$type": "color",
+        "$value": "#979797"
+      },
+      "NeutralLight 800": {
+        "$type": "color",
+        "$value": "#808080"
+      },
+      "NeutralLight 900": {
+        "$type": "color",
+        "$value": "#6A6A6A"
+      },
+      "NeutralLight 1000": {
+        "$type": "color",
+        "$value": "#575757"
+      },
+      "NeutralLight 1100": {
+        "$type": "color",
+        "$value": "#454545"
+      },
+      "NeutralLight 1200": {
+        "$type": "color",
+        "$value": "#383838"
+      },
+      "NeutralLight 1300": {
+        "$type": "color",
+        "$value": "#343434"
+      }
+    },
+    "Neon Green": {
+      "Neon Green 0": {
+        "$type": "color",
+        "$value": "#004400",
+        "$description": "Neon Green / Neon Green 100\n#004400\n1.25:1\n(N/A) Large text\n(N/A) Small text"
+      },
+      "Neon Green 100": {
+        "$type": "color",
+        "$value": "#005200",
+        "$description": "Neon Green / Neon Green 200\n#005200\n1.51:1\n(N/A) Large text\n(N/A) Small text"
+      },
+      "Neon Green 200": {
+        "$type": "color",
+        "$value": "#006600",
+        "$description": "Neon Green / Neon Green 300\n#006600\n1.99:1\n(N/A) Large text\n(N/A) Small text"
+      },
+      "Neon Green 300": {
+        "$type": "color",
+        "$value": "#008A00",
+        "$description": "Neon Green / Neon Green 400\n#008A00\n3.18:1\n(N/A) Large text\n(N/A) Small text"
+      },
+      "Neon Green 400": {
+        "$type": "color",
+        "$value": "#00B600",
+        "$description": "Neon Green / Neon Green 500\n#00B600\n5.27:1\n(AA) Large text\n(N/A) Small text"
+      },
+      "Neon Green 500": {
+        "$type": "color",
+        "$value": "#00CF00",
+        "$description": "Neon Green / Neon Green 600\n#00CF00\n6.81:1\n(AAA) Large text\n(AA) Small text"
+      },
+      "Neon Green 600": {
+        "$type": "color",
+        "$value": "#00E600",
+        "$description": "Neon Green / Neon Green 700\n#00E600\n8.45:1\n(AAA) Large text\n(AAA) Small text"
+      },
+      "Neon Green 700": {
+        "$type": "color",
+        "$value": "#00FF00",
+        "$description": "Neon Green / Neon Green 800\n#00FF00\n10.49:1\n(AAA) Large text\n(AAA) Small text"
+      },
+      "Neon Green 800": {
+        "$type": "color",
+        "$value": "#69FF69",
+        "$description": "Neon Green / Neon Green 900\n#69FF69\n11.04:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 900": {
+        "$type": "color",
+        "$value": "#A7FFA7",
+        "$description": "Neon Green / Neon Green 1000\n#A7FFA7\n12.00:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1000": {
+        "$type": "color",
+        "$value": "#D2FFD2",
+        "$description": "Neon Green / Neon Green 1100\n#D2FFD2\n13.01:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1100": {
+        "$type": "color",
+        "$value": "#E5FFE5",
+        "$description": "Neon Green / Neon Green 1200\n#E5FFE5\n13.55:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1200": {
+        "$type": "color",
+        "$value": "#F3FFF3",
+        "$description": "Neon Green / Neon Green 1300\n#F3FFF3\n13.99:1\n(AAA) Large text\n(AAA) Normal text"
+      },
+      "Neon Green 1300": {
+        "$type": "color",
+        "$value": "#f7fff7",
+        "$description": "Neon Green / Neon Green 1300\n#f7fff7\nCorrected - now properly lightest in progression"
+      }
+    },
+    "Cool Neutral": {
+      "Cool Neutral 0": {
+        "$type": "color",
+        "$value": "#141619",
+        "$description": "Cool Neutral / Cool Neutral 0\n#141619\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 100": {
+        "$type": "color",
+        "$value": "#181a1d",
+        "$description": "Cool Neutral / Cool Neutral 100\n#181a1d\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 200": {
+        "$type": "color",
+        "$value": "#262a2d",
+        "$description": "Cool Neutral / Cool Neutral 200\n#262a2d\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 300": {
+        "$type": "color",
+        "$value": "#393d41",
+        "$description": "Cool Neutral / Cool Neutral 300\n#393d41\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 400": {
+        "$type": "color",
+        "$value": "#4e5357",
+        "$description": "Cool Neutral / Cool Neutral 400\n#4e5357\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 500": {
+        "$type": "color",
+        "$value": "#676c70",
+        "$description": "Cool Neutral / Cool Neutral 500\n#676c70\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 600": {
+        "$type": "color",
+        "$value": "#81868b",
+        "$description": "Cool Neutral / Cool Neutral 600\n#81868b\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 700": {
+        "$type": "color",
+        "$value": "#a0a5a9",
+        "$description": "Cool Neutral / Cool Neutral 700\n#a0a5a9\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 800": {
+        "$type": "color",
+        "$value": "#bbbfc4",
+        "$description": "Cool Neutral / Cool Neutral 800\n#bbbfc4\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 900": {
+        "$type": "color",
+        "$value": "#ccd0d4",
+        "$description": "Cool Neutral / Cool Neutral 900\n#ccd0d4\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 1000": {
+        "$type": "color",
+        "$value": "#d9dce0",
+        "$description": "Cool Neutral / Cool Neutral 1000\n#d9dce0\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 1100": {
+        "$type": "color",
+        "$value": "#e4e8eb",
+        "$description": "Cool Neutral / Cool Neutral 1100\n#e4e8eb\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 1200": {
+        "$type": "color",
+        "$value": "#eff1f4",
+        "$description": "Cool Neutral / Cool Neutral 1200\n#eff1f4\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Neutral 1300": {
+        "$type": "color",
+        "$value": "#f7f9fc",
+        "$description": "Cool Neutral / Cool Neutral 1300\n#f7f9fc\nOKLCH optimized - cool_neutral_progression_applied"
+      }
+    },
+    "Logifuture Green": {
+      "Logifuture Green 0": {
+        "$type": "color",
+        "$value": "#001800",
+        "$description": "Logifuture Green / Logifuture Green 0\n#001800\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 100": {
+        "$type": "color",
+        "$value": "#002600",
+        "$description": "Logifuture Green / Logifuture Green 100\n#002600\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 200": {
+        "$type": "color",
+        "$value": "#003900",
+        "$description": "Logifuture Green / Logifuture Green 200\n#003900\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 300": {
+        "$type": "color",
+        "$value": "#005300",
+        "$description": "Logifuture Green / Logifuture Green 300\n#005300\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 400": {
+        "$type": "color",
+        "$value": "#00a349",
+        "$description": "Logifuture Green / Logifuture Green 400\n#00a349\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 500": {
+        "$type": "color",
+        "$value": "#0ad574",
+        "$description": "Logifuture Green / Logifuture Green 500\n#0ad574\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 600": {
+        "$type": "color",
+        "$value": "#8aecaa",
+        "$description": "Logifuture Green / Logifuture Green 600\n#8aecaa\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 700": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 700\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 800": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 800\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 900": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 900\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 1000": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 1000\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 1100": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 1100\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 1200": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 1200\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      },
+      "Logifuture Green 1300": {
+        "$type": "color",
+        "$value": "#c7ffd6",
+        "$description": "Logifuture Green / Logifuture Green 1300\n#c7ffd6\nOKLCH optimized - generated from #0ad574"
+      }
+    },
+    "Logifuture Blue": {
+      "Logifuture Blue 0": {
+        "$type": "color",
+        "$value": "#1C2744",
+        "$description": "Logifuture Blue / Logifuture Blue 000\n#1C2744\n1.07:1\n(N/A) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 100": {
+        "$type": "color",
+        "$value": "#222F51",
+        "$description": "Logifuture Blue / Logifuture Blue 100\n#222F51\n1.20:1\n(N/A) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 200": {
+        "$type": "color",
+        "$value": "#2A3A64",
+        "$description": "Logifuture Blue / Logifuture Blue 200\n#2A3A64\n1.42:1\n(N/A) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 300": {
+        "$type": "color",
+        "$value": "#314370",
+        "$description": "Logifuture Blue / Logifuture Blue 300\n#314370\n1.63:1\n(N/A) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 400": {
+        "$type": "color",
+        "$value": "#43507B",
+        "$description": "Logifuture Blue/ Logifuture Blue 400\n#43507B\n2.01:1\n(N/A) Large Text\n(N/A) Small Text\n"
+      },
+      "Logifuture Blue 500": {
+        "$type": "color",
+        "$value": "#545E87",
+        "$description": "Logifuture Blue / Logifuture Blue 500\n#545E87\n2.50:1\n(N/A) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 600": {
+        "$type": "color",
+        "$value": "#656E93",
+        "$description": "Logifuture Blue / Logifuture Blue600\n#656E93\n3.16:1\n(AA) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 700": {
+        "$type": "color",
+        "$value": "#777EA0",
+        "$description": "Logifuture Blue / Logifuture Blue 700\n#777EA0\n3.96:1\n(AA) Large Text\n(N/A) Small Text"
+      },
+      "Logifuture Blue 800": {
+        "$type": "color",
+        "$value": "#898FAC",
+        "$description": "Logifuture Blue/ Logifuture Blue 800\n#898FAC\n4.95:1\n(AAA) Large Text\n(AA) Small Text"
+      },
+      "Logifuture Blue 900": {
+        "$type": "color",
+        "$value": "#9CA0BA",
+        "$description": "Logifuture Blue / Logifuture Blue 900\n#9CA0BA\n6.12:1\n(AAA) Large Text\n(AA) Small Text"
+      },
+      "Logifuture Blue 1000": {
+        "$type": "color",
+        "$value": "#AFB2C7",
+        "$description": "Logifuture Blue / Logifuture Blue 1000\n#AFB2C7\n7.53:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Blue 1100": {
+        "$type": "color",
+        "$value": "#C2C5D5",
+        "$description": "Logifuture Blue/ Logifuture Blue 1100\n#C2C5D5\n9.20:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Blue 1200": {
+        "$type": "color",
+        "$value": "#D6D8E2",
+        "$description": "Logifuture Blue / Logifuture Blue 1200\n#D6D8E2\n11.11:1\n(AAA) Large Text\n(AAA) Small Text"
+      },
+      "Logifuture Blue 1300": {
+        "$type": "color",
+        "$value": "#F3F3F7",
+        "$description": "Logifuture Blue / Logifuture Blue 1300\n#F3F3F7\n14.26:1\n(AAA) Large Text\n(AAA) Small Text"
+      }
+    },
+    "Casino": {
+      "Casino 0": {
+        "$type": "color",
+        "$value": "#074F37"
+      },
+      "Casino 100": {
+        "$type": "color",
+        "$value": "#05C75C"
+      },
+      "Casino 200": {
+        "$type": "color",
+        "$value": "#4C5EBA"
+      },
+      "Casino 300": {
+        "$type": "color",
+        "$value": "#CFD867"
+      },
+      "Casino 400": {
+        "$type": "color",
+        "$value": "#009945"
+      },
+      "Casino 500": {
+        "$type": "color",
+        "$value": "#3F4B88"
+      },
+      "Casino 600": {
+        "$type": "color",
+        "$value": "#8B942E"
+      }
+    },
+    "Golden": {
+      "Golden 0": {
+        "$type": "color",
+        "$value": "#613400",
+        "$description": "Golden / Golden 0\n#613400\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 100": {
+        "$type": "color",
+        "$value": "#7f4400",
+        "$description": "Golden / Golden 100\n#7f4400\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 200": {
+        "$type": "color",
+        "$value": "#955900",
+        "$description": "Golden / Golden 200\n#955900\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 300": {
+        "$type": "color",
+        "$value": "#b07200",
+        "$description": "Golden / Golden 300\n#b07200\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 400": {
+        "$type": "color",
+        "$value": "#c99737",
+        "$description": "Golden / Golden 400\n#c99737\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 500": {
+        "$type": "color",
+        "$value": "#f6b52d",
+        "$description": "Golden / Golden 500\n#f6b52d\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 600": {
+        "$type": "color",
+        "$value": "#ffcb6e",
+        "$description": "Golden / Golden 600\n#ffcb6e\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 700": {
+        "$type": "color",
+        "$value": "#ffe5a2",
+        "$description": "Golden / Golden 700\n#ffe5a2\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 800": {
+        "$type": "color",
+        "$value": "#fff2af",
+        "$description": "Golden / Golden 800\n#fff2af\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 900": {
+        "$type": "color",
+        "$value": "#ffffc4",
+        "$description": "Golden / Golden 900\n#ffffc4\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 1000": {
+        "$type": "color",
+        "$value": "#ffffcd",
+        "$description": "Golden / Golden 1000\n#ffffcd\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 1100": {
+        "$type": "color",
+        "$value": "#ffffce",
+        "$description": "Golden / Golden 1100\n#ffffce\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 1200": {
+        "$type": "color",
+        "$value": "#ffffcf",
+        "$description": "Golden / Golden 1200\n#ffffcf\nOKLCH optimized - smart_anchored"
+      },
+      "Golden 1300": {
+        "$type": "color",
+        "$value": "#ffffce",
+        "$description": "Golden / Golden 1300\n#ffffce\nOKLCH optimized - smart_anchored"
+      }
+    },
+    "Crimson": {
+      "Crimson 0": {
+        "$type": "color",
+        "$value": "#530000",
+        "$description": "Crimson / Crimson 0\n#530000\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 100": {
+        "$type": "color",
+        "$value": "#750000",
+        "$description": "Crimson / Crimson 100\n#750000\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 200": {
+        "$type": "color",
+        "$value": "#8a0000",
+        "$description": "Crimson / Crimson 200\n#8a0000\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 300": {
+        "$type": "color",
+        "$value": "#b20000",
+        "$description": "Crimson / Crimson 300\n#b20000\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 400": {
+        "$type": "color",
+        "$value": "#d40005",
+        "$description": "Crimson / Crimson 400\n#d40005\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 500": {
+        "$type": "color",
+        "$value": "#f5222d",
+        "$description": "Crimson / Crimson 500\n#f5222d\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 600": {
+        "$type": "color",
+        "$value": "#ff4142",
+        "$description": "Crimson / Crimson 600\n#ff4142\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 700": {
+        "$type": "color",
+        "$value": "#ff786f",
+        "$description": "Crimson / Crimson 700\n#ff786f\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 800": {
+        "$type": "color",
+        "$value": "#ff887d",
+        "$description": "Crimson / Crimson 800\n#ff887d\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 900": {
+        "$type": "color",
+        "$value": "#ffa093",
+        "$description": "Crimson / Crimson 900\n#ffa093\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 1000": {
+        "$type": "color",
+        "$value": "#ffbdb1",
+        "$description": "Crimson / Crimson 1000\n#ffbdb1\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 1100": {
+        "$type": "color",
+        "$value": "#ffc1b5",
+        "$description": "Crimson / Crimson 1100\n#ffc1b5\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 1200": {
+        "$type": "color",
+        "$value": "#ffc5b9",
+        "$description": "Crimson / Crimson 1200\n#ffc5b9\nOKLCH optimized - smart_anchored"
+      },
+      "Crimson 1300": {
+        "$type": "color",
+        "$value": "#ffc7bb",
+        "$description": "Crimson / Crimson 1300\n#ffc7bb\nOKLCH optimized - smart_anchored"
+      }
+    },
+    "Forest Green": {
+      "Forest Green 0": {
+        "$type": "color",
+        "$value": "#003606",
+        "$description": "Forest Green / Forest Green 0\n#003606\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 100": {
+        "$type": "color",
+        "$value": "#004a01",
+        "$description": "Forest Green / Forest Green 100\n#004a01\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 200": {
+        "$type": "color",
+        "$value": "#006000",
+        "$description": "Forest Green / Forest Green 200\n#006000\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 300": {
+        "$type": "color",
+        "$value": "#04761a",
+        "$description": "Forest Green / Forest Green 300\n#04761a\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 400": {
+        "$type": "color",
+        "$value": "#33943a",
+        "$description": "Forest Green / Forest Green 400\n#33943a\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 500": {
+        "$type": "color",
+        "$value": "#53b157",
+        "$description": "Forest Green / Forest Green 500\n#53b157\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 600": {
+        "$type": "color",
+        "$value": "#78c179",
+        "$description": "Forest Green / Forest Green 600\n#78c179\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 700": {
+        "$type": "color",
+        "$value": "#90d990",
+        "$description": "Forest Green / Forest Green 700\n#90d990\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 800": {
+        "$type": "color",
+        "$value": "#9ee79e",
+        "$description": "Forest Green / Forest Green 800\n#9ee79e\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 900": {
+        "$type": "color",
+        "$value": "#c3fac2",
+        "$description": "Forest Green / Forest Green 900\n#c3fac2\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 1000": {
+        "$type": "color",
+        "$value": "#cdffcd",
+        "$description": "Forest Green / Forest Green 1000\n#cdffcd\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 1100": {
+        "$type": "color",
+        "$value": "#d1ffd0",
+        "$description": "Forest Green / Forest Green 1100\n#d1ffd0\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 1200": {
+        "$type": "color",
+        "$value": "#d3ffd2",
+        "$description": "Forest Green / Forest Green 1200\n#d3ffd2\nOKLCH optimized - smart_anchored"
+      },
+      "Forest Green 1300": {
+        "$type": "color",
+        "$value": "#d4ffd3",
+        "$description": "Forest Green / Forest Green 1300\n#d4ffd3\nOKLCH optimized - smart_anchored"
+      }
+    },
+    "Ocean Blue": {
+      "Ocean Blue 0": {
+        "$type": "color",
+        "$value": "#002856",
+        "$description": "Ocean Blue / Ocean Blue 0\n#002856\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 100": {
+        "$type": "color",
+        "$value": "#003779",
+        "$description": "Ocean Blue / Ocean Blue 100\n#003779\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 200": {
+        "$type": "color",
+        "$value": "#00488c",
+        "$description": "Ocean Blue / Ocean Blue 200\n#00488c\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 300": {
+        "$type": "color",
+        "$value": "#005cb4",
+        "$description": "Ocean Blue / Ocean Blue 300\n#005cb4\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 400": {
+        "$type": "color",
+        "$value": "#0079d4",
+        "$description": "Ocean Blue / Ocean Blue 400\n#0079d4\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 500": {
+        "$type": "color",
+        "$value": "#2196f3",
+        "$description": "Ocean Blue / Ocean Blue 500\n#2196f3\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 600": {
+        "$type": "color",
+        "$value": "#5aabf5",
+        "$description": "Ocean Blue / Ocean Blue 600\n#5aabf5\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 700": {
+        "$type": "color",
+        "$value": "#72c3ff",
+        "$description": "Ocean Blue / Ocean Blue 700\n#72c3ff\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 800": {
+        "$type": "color",
+        "$value": "#81d1ff",
+        "$description": "Ocean Blue / Ocean Blue 800\n#81d1ff\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 900": {
+        "$type": "color",
+        "$value": "#ade8ff",
+        "$description": "Ocean Blue / Ocean Blue 900\n#ade8ff\nOKLCH optimized - smart_anchored"
+      },
+      "Ocean Blue 1000": {
+        "$type": "color",
+        "$value": "#c3e2ff",
+        "$description": "Ocean Blue / Ocean Blue 1000\n#c3e2ff\nOKLCH optimized - blue lighter end fixed"
+      },
+      "Ocean Blue 1100": {
+        "$type": "color",
+        "$value": "#cfe8ff",
+        "$description": "Ocean Blue / Ocean Blue 1100\n#cfe8ff\nOKLCH optimized - blue lighter end fixed"
+      },
+      "Ocean Blue 1200": {
+        "$type": "color",
+        "$value": "#daeeff",
+        "$description": "Ocean Blue / Ocean Blue 1200\n#daeeff\nOKLCH optimized - blue lighter end fixed"
+      },
+      "Ocean Blue 1300": {
+        "$type": "color",
+        "$value": "#e5f4ff",
+        "$description": "Ocean Blue / Ocean Blue 1300\n#e5f4ff\nOKLCH optimized - blue lighter end fixed"
+      }
+    },
+    "Cool Grey": {
+      "Cool Grey 0": {
+        "$type": "color",
+        "$value": "#14161a",
+        "$description": "Cool Grey / Cool Grey 0\n#14161a\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 100": {
+        "$type": "color",
+        "$value": "#181a1e",
+        "$description": "Cool Grey / Cool Grey 100\n#181a1e\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 200": {
+        "$type": "color",
+        "$value": "#27292e",
+        "$description": "Cool Grey / Cool Grey 200\n#27292e\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 300": {
+        "$type": "color",
+        "$value": "#393d42",
+        "$description": "Cool Grey / Cool Grey 300\n#393d42\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 400": {
+        "$type": "color",
+        "$value": "#4f5259",
+        "$description": "Cool Grey / Cool Grey 400\n#4f5259\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 500": {
+        "$type": "color",
+        "$value": "#676b72",
+        "$description": "Cool Grey / Cool Grey 500\n#676b72\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 600": {
+        "$type": "color",
+        "$value": "#82868d",
+        "$description": "Cool Grey / Cool Grey 600\n#82868d\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 700": {
+        "$type": "color",
+        "$value": "#a0a4ab",
+        "$description": "Cool Grey / Cool Grey 700\n#a0a4ab\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 800": {
+        "$type": "color",
+        "$value": "#bbbfc6",
+        "$description": "Cool Grey / Cool Grey 800\n#bbbfc6\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 900": {
+        "$type": "color",
+        "$value": "#ccd0d6",
+        "$description": "Cool Grey / Cool Grey 900\n#ccd0d6\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 1000": {
+        "$type": "color",
+        "$value": "#d9dce1",
+        "$description": "Cool Grey / Cool Grey 1000\n#d9dce1\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 1100": {
+        "$type": "color",
+        "$value": "#e4e7ec",
+        "$description": "Cool Grey / Cool Grey 1100\n#e4e7ec\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 1200": {
+        "$type": "color",
+        "$value": "#eff1f5",
+        "$description": "Cool Grey / Cool Grey 1200\n#eff1f5\nOKLCH optimized - cool_neutral_progression_applied"
+      },
+      "Cool Grey 1300": {
+        "$type": "color",
+        "$value": "#f7f9fd",
+        "$description": "Cool Grey / Cool Grey 1300\n#f7f9fd\nOKLCH optimized - cool_neutral_progression_applied"
+      }
+    },
+    "Logifuture Navy Blue": {
+      "Logifuture Navy Blue 0": {
+        "$type": "color",
+        "$value": "#040920",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 0\n#040920\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 100": {
+        "$type": "color",
+        "$value": "#0b142e",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 100\n#0b142e\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 200": {
+        "$type": "color",
+        "$value": "#1a2542",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 200\n#1a2542\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 300": {
+        "$type": "color",
+        "$value": "#2f3c5c",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 300\n#2f3c5c\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 400": {
+        "$type": "color",
+        "$value": "#4b5a7f",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 400\n#4b5a7f\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 500": {
+        "$type": "color",
+        "$value": "#1c2744",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 500\n#1c2744\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 600": {
+        "$type": "color",
+        "$value": "#36415c",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 600\n#36415c\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 700": {
+        "$type": "color",
+        "$value": "#525d76",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 700\n#525d76\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 800": {
+        "$type": "color",
+        "$value": "#707a90",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 800\n#707a90\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 900": {
+        "$type": "color",
+        "$value": "#8f98aa",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 900\n#8f98aa\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 1000": {
+        "$type": "color",
+        "$value": "#a0a7b8",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 1000\n#a0a7b8\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 1100": {
+        "$type": "color",
+        "$value": "#b0b7c6",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 1100\n#b0b7c6\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 1200": {
+        "$type": "color",
+        "$value": "#c1c7d4",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 1200\n#c1c7d4\nOKLCH optimized - generated from #1c2744"
+      },
+      "Logifuture Navy Blue 1300": {
+        "$type": "color",
+        "$value": "#ebeef6",
+        "$description": "Logifuture Navy Blue / Logifuture Navy Blue 1300\n#ebeef6\nOKLCH optimized - generated from #1c2744"
+      }
+    }
+  },
+  "Font Family": {
+    "Roboto": {
+      "$type": "fontFamily",
+      "$value": "Roboto",
+      "$description": "Primary font family"
+    },
+    "Roboto Condensed": {
+      "$type": "fontFamily",
+      "$value": "Roboto Condensed",
+      "$description": "Condensed font family"
+    },
+    "Roboto Slab": {
+      "$type": "fontFamily",
+      "$value": "Roboto Slab",
+      "$description": "Slab serif font family"
+    },
+    "Fieldwork": {
+      "$type": "fontFamily",
+      "$value": "Fieldwork",
+      "$description": "Brand font family"
+    }
+  },
+  "Font Size": {
+    "xs": {
+      "$type": "fontSize",
+      "$value": "12",
+      "$description": "Extra small text size"
+    },
+    "sm": {
+      "$type": "fontSize",
+      "$value": "14",
+      "$description": "Small text size"
+    },
+    "md": {
+      "$type": "fontSize",
+      "$value": "16",
+      "$description": "Medium text size - base"
+    },
+    "lg": {
+      "$type": "fontSize",
+      "$value": "18",
+      "$description": "Large text size"
+    },
+    "xl": {
+      "$type": "fontSize",
+      "$value": "20",
+      "$description": "Extra large text size"
+    },
+    "2xl": {
+      "$type": "fontSize",
+      "$value": "24",
+      "$description": "2x large text size"
+    },
+    "3xl": {
+      "$type": "fontSize",
+      "$value": "32",
+      "$description": "3x large text size"
+    },
+    "4xl": {
+      "$type": "fontSize",
+      "$value": "48",
+      "$description": "4x large text size"
+    },
+    "5xl": {
+      "$type": "fontSize",
+      "$value": "64",
+      "$description": "5x large text size"
+    }
+  },
+  "Font Weight": {
+    "light": {
+      "$type": "fontWeight",
+      "$value": "300",
+      "$description": "Light font weight"
+    },
+    "regular": {
+      "$type": "fontWeight",
+      "$value": "400",
+      "$description": "Regular font weight"
+    },
+    "medium": {
+      "$type": "fontWeight",
+      "$value": "500",
+      "$description": "Medium font weight"
+    },
+    "bold": {
+      "$type": "fontWeight",
+      "$value": "700",
+      "$description": "Bold font weight"
+    },
+    "black": {
+      "$type": "fontWeight",
+      "$value": "900",
+      "$description": "Black font weight"
+    }
+  },
+  "Line Height": {
+    "tight": {
+      "$type": "lineHeight",
+      "$value": "1.2",
+      "$description": "Tight line height"
+    },
+    "normal": {
+      "$type": "lineHeight",
+      "$value": "1.5",
+      "$description": "Normal line height"
+    },
+    "loose": {
+      "$type": "lineHeight",
+      "$value": "1.75",
+      "$description": "Loose line height"
+    }
+  },
+  "_metadata": {
+    "oklchOptimization": {
+      "version": {
+        "$type": "other",
+        "$value": "Epic 4 V2"
+      },
+      "updatedAt": {
+        "$type": "other",
+        "$value": "2025-08-17T18:15:41.298Z"
+      },
+      "totalColorsUpdated": {
+        "$type": "other",
+        "$value": 196
+      },
+      "familiesUpdated": {
+        "$type": "other",
+        "$value": 14
+      },
+      "description": {
+        "$type": "other",
+        "$value": "OKLCH color space optimization for mathematical consistency and dual-mode support"
+      },
+      "lastCleanup": {
+        "cleanedAt": {
+          "$type": "other",
+          "$value": "2025-08-17T22:33:52.495Z"
+        },
+        "deletedFamilies": {
+          "0": {
+            "$type": "other",
+            "$value": "Dynamic Neutral"
+          },
+          "1": {
+            "$type": "other",
+            "$value": "Dynamic Amber"
+          },
+          "2": {
+            "$type": "other",
+            "$value": "Smoked Grey"
+          },
+          "3": {
+            "$type": "other",
+            "$value": "Logifuture Skynight"
+          }
+        },
+        "deletedCount": {
+          "$type": "other",
+          "$value": 4
+        },
+        "description": {
+          "$type": "other",
+          "$value": "Removed unused/duplicate color families for cleaner system"
+        }
+      },
+      "tokenStudioSynced": {
+        "syncedAt": {
+          "$type": "other",
+          "$value": "2025-08-17T22:43:35.341Z"
+        },
+        "description": {
+          "$type": "other",
+          "$value": "Synchronized with Token Studio export for compatibility"
+        }
+      }
+    }
+  }
+}

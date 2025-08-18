@@ -2,7 +2,7 @@
 
 ## Vision
 
-Create a modern automation system that works seamlessly with Token Studio's direct file integration while preserving and enhancing our Epic 4 V2 OKLCH optimization capabilities.
+Create a modern automation system that works seamlessly with the two-repository architecture (DS-SimulateV2 ↔ DS-Simulate) while preserving and enhancing our Epic 4 V2 OKLCH optimization capabilities.
 
 ## Current Foundation
 
@@ -12,10 +12,11 @@ Create a modern automation system that works seamlessly with Token Studio's dire
 ✅ **Advanced Color Science**: Perceptual uniformity, dual-mode support  
 ✅ **Token Studio Compatibility**: Direct file integration enabled  
 
-### Cleaned Foundation
-✅ **Simplified Repository**: Removed conflicting automation  
-✅ **Direct Integration**: Token Studio works with tokens/ files  
-✅ **Preserved Knowledge**: Archived systems documented for reference  
+### Two-Repo Foundation
+✅ **Repository Separation**: DS-SimulateV2 (clean) ↔ DS-Simulate (DSE)
+✅ **Token Studio Integration**: Works seamlessly with minimal DS-SimulateV2
+✅ **Development Environment**: Full tooling preserved in DS-Simulate
+✅ **Preserved Knowledge**: All Epic 4 documentation and automation archived  
 
 ## Epic 6 Scope
 

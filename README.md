@@ -1,28 +1,28 @@
-# Design System Tooling - Epic 4 Complete ✅
+# Design System Engineering - Epic 4 V2 Complete ✅
 
-**🎯 OKLCH Color Management | Enhanced Accessibility | Multi-Brand Token Pipeline**
+**🎯 Two-Repo Architecture | OKLCH Color Science | Token Studio Integration**
 
-A TypeScript-based pipeline for managing design tokens with bidirectional consolidate/split workflow, OKLCH color science, and Token Studio format support.
+A comprehensive design system engineering environment with two-repository workflow for Token Studio integration and development operations.
 
-## 🚀 Epic 4 MVP Status - Ready for Designer Testing!
+## 🚀 Epic 4 V2 Status - Production Ready!
 
-✅ **Epic 4 Complete** - DSE Color Management with OKLCH Integration  
-✅ **662 Design Tokens** - Production-ready across 9 token sets  
-✅ **OKLCH Color Science** - Perceptually uniform color processing  
-✅ **Enhanced Accessibility** - WCAG AA compliance by design  
-✅ **Multi-Brand Support** - Base + Bet9ja themes with light/dark modes  
-✅ **Token Studio Compatible** - Zero designer workflow disruption  
+✅ **25 Color Families** - OKLCH optimized with mathematical consistency  
+✅ **Multi-Brand Support** - Base, Logifuture, Bet9ja themes complete  
+✅ **Two-Repo Architecture** - Clean separation: DS-SimulateV2 ↔ DS-Simulate  
+✅ **Token Studio Integration** - Direct file workflow via DS-SimulateV2  
+✅ **OKLCH Color Science** - Perceptual uniformity across all families  
+✅ **Accessibility Compliance** - WCAG AA+ standards met  
 
 ---
 
-## 👨‍🎨 For Designers - Start Testing Now!
+## 👨‍🎨 For Designers - Token Studio Workflow
 
-### **Quick Start (5 minutes)**
+### **Quick Start (2 minutes)**
 1. **Open Figma** → Install Token Studio plugin
-2. **Connect Repository:** `https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokensource.json`
-3. **Import Tokens:** 662 tokens will load (30-60 seconds)
-4. **Choose Theme:** Base Dark, Base Light, Bet9ja Dark, Bet9ja Light
-5. **Start Designing** with OKLCH-optimized tokens!
+2. **Connect Repository:** `https://github.com/edmondmiu/DS-SimulateV2`
+3. **Direct File Integration:** Token Studio reads tokens/ directory directly
+4. **Choose Theme:** 25 OKLCH-optimized color families available
+5. **Start Designing** with mathematically consistent colors!
 
 ### **Designer Documentation**
 - **🎯 Testing Guide:** [`docs/DESIGNER_MVP_TESTING_GUIDE.md`](docs/DESIGNER_MVP_TESTING_GUIDE.md) - Complete Epic 4 testing
@@ -33,20 +33,32 @@ A TypeScript-based pipeline for managing design tokens with bidirectional consol
 
 ## Overview
 
-This project provides a comprehensive token management system that enables design teams to work with tokens in both modular and consolidated formats. The system supports seamless integration with Figma Token Studio while maintaining a clean, maintainable codebase.
+## Architecture Overview
 
-### Epic 4 Key Features
+### Two-Repository Design
 
-- **OKLCH Color Science**: Perceptually uniform color processing for enhanced accessibility
-- **DSE Architecture**: Clean separation between DSE configs (.dse/) and Token Studio files
-- **Multi-Brand Support**: 4 complete theme variations (Base + Bet9ja, Light + Dark)
-- **Enhanced Accessibility**: WCAG AA compliance through color science optimization
-- **Token Studio Compatible**: Zero workflow disruption for designers
-- **Bidirectional Pipeline**: Convert between modular token files and consolidated format
-- **TypeScript Implementation**: Type-safe, professional-grade codebase
-- **Safety Features**: Automatic backups, dry-run modes, and validation
-- **Round-trip Validation**: Byte-perfect compatibility ensures no data loss
-- **Professional CLI**: Comprehensive help systems and error handling
+**DS-SimulateV2** (Clean Repo)
+- **Purpose**: Token Studio integration point
+- **Structure**: Minimal (tokens/ + README only)  
+- **Access**: Designers via Token Studio
+- **Content**: 25 OKLCH-optimized color families
+
+**DS-Simulate** (DSE Repo - This Repository)
+- **Purpose**: Design system engineering and development
+- **Structure**: Full development environment (Epic 4 documentation, tooling)
+- **Access**: Engineers, Claude DSE agent
+- **Content**: OKLCH processors, memory system, automation
+
+### Epic 4 V2 Key Features
+
+- **Two-Repo Workflow**: Clean separation for Token Studio compatibility
+- **25 Color Families**: Complete OKLCH optimization with mathematical consistency
+- **Multi-Brand System**: Base, Logifuture (Green/Navy), Bet9ja variants
+- **OKLCH Color Science**: Perceptually uniform, accessibility-focused
+- **Token Studio Integration**: Direct file workflow via DS-SimulateV2
+- **Memory-Enhanced DSE**: Claude agent with Epic 4 context preservation
+- **Accessibility Excellence**: WCAG AA+ compliance through color science
+- **Workflow Documentation**: Complete Epic 4 knowledge preservation
 
 ## System Requirements
 
