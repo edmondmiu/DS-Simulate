@@ -15,7 +15,7 @@
       "Amber 0": {
         "$type": "color",
         "$value": "#1c1602",
-        "$description": "Amber / Amber 0\n#1c1602\nOKLCH optimized - mathematically consistent"
+        "$description": "Amber / Amber 0\n#1c1602\nOKLCH optimized - mathematically consistent\n[TEST-CHANGE-2025-08-18]"
       },
       "Amber 100": {
         "$type": "color",
