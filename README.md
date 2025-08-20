@@ -122,20 +122,63 @@ npm run validate-workflow
 
 ## 🎨 Token Studio Integration
 
-1. **Install Token Studio plugin** in Figma
-2. **Connect to repository** using direct file integration
-3. **Access token sets**: Core, Global, Global Light, Components, Brand-specific themes
-4. **Import color families**: 21 OKLCH-optimized families with 294 total colors
+### For Designers: Setting Up Token Studio
+1. **Install Token Studio plugin** in Figma from the Community tab
+2. **Open Token Studio** and select "Add new credentials" 
+3. **Choose "GitHub"** as the sync provider
+4. **Enter GitHub URL**:
+   ```
+   https://github.com/edmondmiu/DS-Simulate/tree/main/tokens
+   ```
+   Or enter repository details manually:
+   - Repository: `edmondmiu/DS-Simulate`
+   - Branch: `main`
+   - File Path: `tokens`
+5. **GitHub Authentication**: Use personal access token with repo read permissions
+6. **Import token sets**: All 6 token files will be available for import
+7. **Apply themes**: Switch between Base, Logifuture, and Bet9ja themes
 
-**Token Structure:**
-- `tokens/core.json` - Base color ramps and foundations
-- `tokens/global.json` - Semantic color tokens
+### Direct GitHub Raw URLs (Alternative Access)
+If you need direct access to token files:
+```
+Core Colors: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/core.json
+Semantic Colors: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/global.json
+Light Theme: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/global%20light.json
+Components: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/components.json
+Bet9ja Dark: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/bet9ja%20dark.json
+Bet9ja Light: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/bet9ja%20light.json
+Themes Config: https://raw.githubusercontent.com/edmondmiu/DS-Simulate/main/tokens/%24themes.json
+```
+
+### Token Structure Overview
+- `tokens/core.json` - Base color ramps and foundations (21 OKLCH families)
+- `tokens/global.json` - Semantic color tokens (primary, secondary, surface, etc.)
 - `tokens/global light.json` - Light theme overrides  
 - `tokens/components.json` - Component-specific tokens
 - `tokens/bet9ja dark.json` - Bet9ja dark theme
 - `tokens/bet9ja light.json` - Bet9ja light theme
 - `tokens/$metadata.json` - Token set ordering
 - `tokens/$themes.json` - Theme configurations
+
+### DSE Workflow: Editing Tokens
+**For Design System Engineers managing the tokens:**
+
+1. **Local Development**:
+   - Clone repository: `git clone https://github.com/edmondmiu/DS-Simulate.git`
+   - Edit token files directly in `tokens/` folder
+   - Use validation scripts: `npm run validate-workflow`
+   - Commit and push changes
+
+2. **Token Studio Integration**:
+   - Set up Token Studio with **write permissions** (GitHub personal access token)
+   - Make changes in Token Studio interface
+   - Push changes directly to GitHub repository
+   - Changes sync automatically to all designers using the same repo
+
+3. **Validation & Testing**:
+   - Run `npm run validate-token-studio` after changes
+   - Test theme switching in Figma components
+   - Verify OKLCH mathematical consistency maintained
 
 ## 📊 Key Achievements
 

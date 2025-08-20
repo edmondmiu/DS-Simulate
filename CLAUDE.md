@@ -153,11 +153,35 @@ tokens/
 5. **File Generation**: Create token files and update metadata
 6. **Validation**: Test with Token Studio and accessibility tools
 
-### Token Studio Integration
-- **Connection**: Direct file integration to `tokens/` folder
-- **Sync Method**: Token Studio reads files directly (no additional sync needed)
-- **Updates**: Changes made in Token Studio reflect immediately in repository
-- **Validation**: Use validation scripts to ensure consistency
+### Token Studio Integration Workflows
+
+**Designer Workflow (Read-Only)**:
+1. Install Token Studio plugin in Figma
+2. Connect to GitHub URL: `https://github.com/edmondmiu/DS-Simulate/tree/main/tokens`
+3. Set up with read permissions (basic GitHub access)
+4. Import token sets from `tokens/` folder (6 token files available)
+5. Apply themes and use tokens in Figma designs
+6. Request changes through DSE when modifications needed
+
+**DSE Workflow (Read-Write)**:
+1. **Local Development Route**:
+   - Clone repository locally
+   - Edit token files directly in `tokens/` folder
+   - Run validation scripts (`npm run validate-workflow`)
+   - Commit and push changes to GitHub
+   - Changes automatically sync to all Token Studio users
+
+2. **Token Studio Route**:
+   - Set up Token Studio with write permissions (GitHub PAT)
+   - Make changes directly in Token Studio interface
+   - Push changes to repository from Token Studio
+   - Validate changes with local scripts afterward
+
+**Integration Benefits**:
+- **Bi-directional sync**: Changes flow both ways (local ↔ GitHub ↔ Token Studio)
+- **Real-time collaboration**: Multiple designers see updates immediately
+- **Version control**: All changes tracked in GitHub commit history
+- **Validation integration**: Local scripts ensure mathematical consistency maintained
 
 ## 📊 Success Metrics
 
